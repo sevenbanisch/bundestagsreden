@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import requests
 import spacy
-nlp = spacy.load('de') #load spacy model
+#nlp = spacy.load('de') #load spacy model
+nlp = spacy.load('de_core_news_sm') #load spacy model
 import tqdm
 import seaborn as sns
 import matplotlib.pyplot as plt
