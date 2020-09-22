@@ -123,8 +123,8 @@ def build_df(speeches_arg):
                 fraktionslos.append(speech['text'].count(such_term))
             else: 
                 fraktionslos.append(0)
-   #         if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
-      #!          st.write(speech['party'])
+            if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
+                st.write(speech['party'])
   #              gruene.append(speech['text'].count(such_term))
                      
         # Create an empty dataframe
@@ -171,8 +171,10 @@ def build_df(speeches_arg):
                 spd.append(1)
             else: 
                 spd.append(0)
-            if (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen'):
-                gruene.append(1)
+            #if (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen'):
+            #    gruene.append(1)
+            if (' 90' in speech['party']):
+                gruene.append(1)    
             else: 
                 gruene.append(0)    
             if (speech['party'] == 'DIE LINKE'):
@@ -191,8 +193,8 @@ def build_df(speeches_arg):
                 fraktionslos.append(1)
             else: 
                 fraktionslos.append(0)
-  #          if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
-   #             st.write(speech['party'])
+            if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and ' 90' in speech['party'] and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
+                st.write(speech['party'])
        #!         gruene.append(1)
 
         # Create an empty dataframe
