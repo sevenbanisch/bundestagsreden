@@ -23,7 +23,7 @@ img_height = 200
 
 st.title("Wer sagt was im Bundestag?")
 
-hints = st.checkbox("Hinweise anzeigen")
+hints = st.checkbox("Hinweise anzeigen", value = True)
 if hints:
     st.write("- Groß- und Kleinschreibung wird unterschieden.  \n (Beispiel: 'Bundestag' enthält nicht 'bund')" )
     st.write("- Der Suchbegriff wird auch innerhalb einzelner Wörter gesucht.  \n (Beispiel: 'Bundestag' enthält die Suchbegriffe 'Bund', sowie 'des') ")
@@ -191,8 +191,8 @@ def build_df(speeches_arg):
                 fraktionslos.append(1)
             else: 
                 fraktionslos.append(0)
-#            if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
-      #          st.write(speech['party'])
+  #          if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
+   #             st.write(speech['party'])
        #!         gruene.append(1)
 
         # Create an empty dataframe
@@ -433,6 +433,7 @@ else:
     else:
         st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Parteien**")
     st.area_chart(df2agg_bal,img_width,img_height,True)
+
     
 #########################################################
 
@@ -469,6 +470,8 @@ else:
         else:
             st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Parteien**")
         st.area_chart(dfjagg_bal,img_width,img_height,True)
+        
+ #       st.write(jointspeeches)
 
 #######################
         
