@@ -103,7 +103,7 @@ def build_df(speeches_arg):
                 spd.append(speech['text'].count(such_term))
             else: 
                 spd.append(0)
-            if (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen' or speech['party'] == 'BUENDNIS 90/DIE GRUENEN'):
+            if ('90' in speech['party']):                   #if (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen' or speech['party'] == 'BUENDNIS 90/DIE GRUENEN'):
                 gruene.append(speech['text'].count(such_term))
             else: 
                 gruene.append(0)    
@@ -123,8 +123,8 @@ def build_df(speeches_arg):
                 fraktionslos.append(speech['text'].count(such_term))
             else: 
                 fraktionslos.append(0)
-            if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
-                st.write(speech['party'])
+  #          if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
+   #             st.write(speech['party'])
   #              gruene.append(speech['text'].count(such_term))
                      
         # Create an empty dataframe
@@ -171,10 +171,8 @@ def build_df(speeches_arg):
                 spd.append(1)
             else: 
                 spd.append(0)
-            #if (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen'):
-            #    gruene.append(1)
-            if (' 90' in speech['party']):
-                gruene.append(1)    
+            if ('90' in speech['party']):                                       # if (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen'):
+                gruene.append(1)
             else: 
                 gruene.append(0)    
             if (speech['party'] == 'DIE LINKE'):
@@ -193,8 +191,8 @@ def build_df(speeches_arg):
                 fraktionslos.append(1)
             else: 
                 fraktionslos.append(0)
-            if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and ' 90' in speech['party'] and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
-                st.write(speech['party'])
+  #          if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
+   #             st.write(speech['party'])
        #!         gruene.append(1)
 
         # Create an empty dataframe
@@ -227,7 +225,7 @@ def count_words(speeches):
             num_words_party[0] += len(speech['text'].split())
         elif (speech['party'] == 'SPD'):
             num_words_party[1] += len(speech['text'].split())
-        elif (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen' or speech['party'] == 'BUENDNIS 90/DIE GRUENEN'):
+        elif ('90'in speech['party']):                                              # speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen' or speech['party'] == 'BUENDNIS 90/DIE GRUENEN'):
             num_words_party[2] += len(speech['text'].split()) 
         elif (speech['party'] == 'DIE LINKE'):
             num_words_party[3] += len(speech['text'].split())  
@@ -250,7 +248,7 @@ def count_speeches(speeches):
             num_speeches_party[0] += 1
         elif (speech['party'] == 'SPD'):
             num_speeches_party[1] += 1
-        elif (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen' or speech['party'] == 'BUENDNIS 90/DIE GRUENEN'):
+        elif ('90'in speech['party']):                                          # (speech['party'] == 'BÜNDNIS 90/DIE GRÜNEN' or speech['party'] == 'Bündnis 90/Die Grünen' or speech['party'] == 'BUENDNIS 90/DIE GRUENEN'):
             num_speeches_party[2] += 1
         elif (speech['party'] == 'DIE LINKE'):
             num_speeches_party[3] += 1
@@ -262,7 +260,67 @@ def count_speeches(speeches):
             num_speeches_party[6] += 1     
     return num_speeches_party
 
-#########################
+######################### 
+
+
+def fct_dfplot(dfagg):  
+  
+    date = []
+    party = []                                                           #df['CDU/CSU']+df['SPD']+df['BÜNDNIS 90/DIE GRÜNEN']+df['DIE LINKE']+df['AfD']+df['FDP']+df['fraktionslos']
+    num = []
+    
+    dfagg = dfagg.reset_index()
+    
+#    st.write("dfagg:",dfagg)
+    
+    for i in dfagg.index:
+        date.append(dfagg['datetime'][i]) 
+        date.append(dfagg['datetime'][i])
+        date.append(dfagg['datetime'][i])
+        date.append(dfagg['datetime'][i])
+        date.append(dfagg['datetime'][i])
+        date.append(dfagg['datetime'][i])
+        date.append(dfagg['datetime'][i])       
+        
+        party.append('CDU/CSU')
+        party.append('SPD')
+        party.append('BÜNDNIS 90/DIE GRÜNEN')    
+        party.append('DIE LINKE')
+        party.append('AfD')
+        party.append('FDP')
+        party.append('fraktionslos')
+
+        num.append(dfagg['CDU/CSU'][i])
+        num.append(dfagg['SPD'][i])
+        num.append(dfagg['BÜNDNIS 90/DIE GRÜNEN'][i])
+        num.append(dfagg['DIE LINKE'][i])
+        num.append(dfagg['AfD'][i])
+        num.append(dfagg['FDP'][i])
+        num.append(dfagg['fraktionslos'][i])
+
+    dfplot = pd.DataFrame()
+    dfplot['Datum'] = date
+    dfplot.index = dfplot['Datum']
+    dfplot['Fraktion'] = party
+    dfplot['n'] = num
+    
+#    st.write(dfplot)
+
+    return dfplot
+
+##########################
+
+def altair_plot(dfplot):
+
+    data = alt.Chart(dfplot).mark_area(opacity = 0.7).encode(
+            x= 'Datum',
+            y= 'n',                    
+            color= alt.Color('Fraktion', scale=alt.Scale(domain=domain, range=range_)),
+            tooltip = ['Datum', 'n', 'Fraktion']
+            ).properties(width = img_width, height = img_height*1.2)   
+    st.altair_chart(data, use_container_width=True)
+
+##########################
     
 all_speeches = laden()
 #st.write("number of all speeches:", len(all_speeches) , "type:", type(all_speeches), "size in bytes:" ,sys.getsizeof(all_speeches), "first elements:", all_speeches[:2])      # alle 11990 Reden
@@ -277,11 +335,8 @@ num_speeches_party = count_speeches(all_speeches)
 # Gewichtung: Nennung pro 1000 Reden
 speeches_bal = [i/j for i,j in zip([1000 for i in range(7)],num_speeches_party)]
 
-
-
-
 st.subheader("**Erster Suchbegriff**")
-search_query = st.text_input("", "erneuerbar" )                                             
+search_query = st.text_input("", "Fridays for Future" )                                             
 if search_query == "":
     search_query = " "    
 
@@ -315,6 +370,11 @@ else:
         
 #####################
 
+# colors for plotting
+domain = ['AfD', 'BÜNDNIS 90/DIE GRÜNEN', 'CDU/CSU', 'DIE LINKE', 'FDP', 'SPD', 'fraktionslos']
+range_ = ["#009ee0","#46962b","#000000","#800080","#ffed00", "#e3000f","#808080" ] # color codes parties
+
+
 if m == 0 or l == 0:
     pass
 else:
@@ -327,66 +387,39 @@ else:
             speeches_bal[6] = 0                                                 # Fraktionslosen keine Gewichtung zuweisen
         dfagg_bal = dfagg*speeches_bal                            
     
-    
-    
     st.write("**Absolute Anzahl**")
-    st.area_chart(dfagg,img_width, img_height,True)
+  
+#    st.area_chart(dfagg,img_width, img_height,True)                            # alte Visualisierung
 
-# Farben entsprechend der Parteien
+    dfplot = fct_dfplot(dfagg)         
+    altair_plot(dfplot)
     
- #   st.area_chart = (dfagg,img_width, img_height,True, color = alt.Color(col))
 
- #   st.write(dfagg)
+    st.write("**Anteil der Fraktionen an absoluter Anzahl**")
 
-     #define colors (parties)
-#    pal = ["#009ee0","#46962b","#000000","#800080","ffed00", "#e3000f","#808080" ]
- #   x = [1,2,3,4,5,6,7,8,9]
-  #  y = dfagg['SPD']       
-   # fig = plt.stackplot(x,y, colors=pal, alpha=0.4 )
-#    st.pyplot(fig)
+#    st.area_chart(dfagg.div(dfagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
     
-#    x = [1,2,3,4,5,6,7,8,9]
-   # y = dfagg['SPD']       
- #   fig = plt.stackplot(x,y, colors=pal, alpha=0.4 )
-   # st.pyplot(fig)
-    
-#    df0 = pd.DataFrame(np.random.randn(200, 3),columns=['a', 'b', 'c'])
- #   c = alt.Chart(df0).mark_circle().encode(
-  #  x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
-
-   # st.altair_chart(c, use_container_width=True)    
-    
-#    data = alt.Chart(df).mark_area().encode(
-#            x= 'datetime',
- #           y= 'CDU/CSU',
-  #          y2 = 'SPD',
-   #         y3 = 'BÜNDNIS 90/DIE GRÜNEN',
-    #        y4 = 'DIE LINKE',
-     #       y5 = 'AfD',
-      #      y6 = 'FDP',
-       #     y7 = 'fraktionslos',
-            #color= alt.Color('pal',scale=None)
-      #      )
-    
-   # st.altair_chart(data, use_container_width=True)
-    
-#    ax = dfagg.plot.area(linewidth=0, colormap=col)     
- #   st.area_chart(dfagg,img_width, img_height,True, color = col)
-
-    st.write("**Anteil der Parteien an absoluter Anzahl**")
-    st.area_chart(dfagg.div(dfagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+    total_n = np.array(dfplot['n'])
+    chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)                              # summiert 
+    dfplot_div = dfplot
+    dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
+    altair_plot(dfplot)   
 
     if per_word:
-        st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Parteien**")
+        st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
     else:
-        st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Parteien**")
-    st.area_chart(dfagg_bal,img_width, img_height,True)   
+        st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
+
+#    st.area_chart(dfagg_bal,img_width, img_height,True)   
+
+    dfplot = fct_dfplot(dfagg_bal)           
+    altair_plot(dfplot)
     
 #######################################################
 
 st.subheader("**Zweiter Suchbegriff**")
 
-search_query2 = st.text_input("", "wirtschaftlich")
+search_query2 = st.text_input("", "Greta")
 if search_query2 == "":
     search_query2 = " "                                             
 speeches2 = suche(search_query2)
@@ -425,17 +458,29 @@ else:
         df2agg_bal = df2agg*speeches_bal
 
     st.write("**Absolute Anzahl**")    
-    st.area_chart(df2agg,img_width,img_height,True)
+#    st.area_chart(df2agg,img_width,img_height,True)
     
-    st.write("**Anteil der Parteien an absoluter Anzahl**")
-    st.area_chart(df2agg.div(df2agg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+    dfplot = fct_dfplot(df2agg)         
+    altair_plot(dfplot)
+    
+    st.write("**Anteil der Fraktionen an absoluter Anzahl**")
+    
+#    st.area_chart(df2agg.div(df2agg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+
+    total_n = np.array(dfplot['n'])
+    chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)         # summiert 
+    dfplot_div = dfplot
+    dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
+    altair_plot(dfplot_div)
 
     if per_word:
-        st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Parteien**")
+        st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
     else:
-        st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Parteien**")
-    st.area_chart(df2agg_bal,img_width,img_height,True)
+        st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
+#    st.area_chart(df2agg_bal,img_width,img_height,True)
 
+    dfplot = fct_dfplot(df2agg_bal)           
+    altair_plot(dfplot)
     
 #########################################################
 
@@ -462,16 +507,28 @@ else:
         dfjagg_bal = dfjagg*speeches_bal
 
         st.write("**Absolute Anzahl**")  
-        st.area_chart(dfjagg,img_width,img_height,True)
-        
-        st.write("**Anteil der Parteien an absoluter Anzahl**")
-        st.area_chart(dfjagg.div(dfjagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+#        st.area_chart(dfjagg,img_width,img_height,True)
+
+        dfplot = fct_dfplot(dfjagg)         
+        altair_plot(dfplot)
+
+        st.write("**Anteil der Fraktionen an absoluter Anzahl**")
+#        st.area_chart(dfjagg.div(dfjagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+
+        total_n = np.array(dfplot['n'])
+        chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)     # summiert 
+        dfplot_div = dfplot
+        dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
+        altair_plot(dfplot_div)
 
         if per_word:
-            st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Parteien**")
+            st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
         else:
-            st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Parteien**")
-        st.area_chart(dfjagg_bal,img_width,img_height,True)
+            st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
+#        st.area_chart(dfjagg_bal,img_width,img_height,True)
+
+        dfplot = fct_dfplot(dfjagg)         
+        altair_plot(dfplot)
         
  #       st.write(jointspeeches)
 
