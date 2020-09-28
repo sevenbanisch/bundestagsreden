@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 sns.set_style("whitegrid")
 
 import json
-
 import altair as alt
 import sys
 
@@ -19,37 +18,38 @@ import sys
 img_width = 300
 img_height = 200
 ##################### 
-    
+
 st.markdown('<p style="font-size: 30pt; font-weight: bold; color: white; \
     background-color: #000">&nbsp;\
     <a >Wer sagt was im Bundestag?</a>\
     </p>', unsafe_allow_html=True)
     
-st.sidebar.header("**Sidebar**")
+st.sidebar.header("**sidebar**")
 st.sidebar.markdown("")
 hints = st.sidebar.checkbox("Hinweise anzeigen", value = True)
+
 if hints:
     
-    st.sidebar.markdown("- Groß- und Kleinschreibung wird unterschieden.  \n (Beispiel: 'Bundestag' enthält nicht 'bund')" )
-    st.sidebar.markdown("- Der Suchbegriff wird auch innerhalb einzelner Wörter gesucht.  \n (Beispiel: 'Bundestag' enthält die Suchbegriffe 'Bund', sowie 'des') ")
-    st.sidebar.markdown("- Die Suche innerhalb einzelner Wörter kann vermieden werden, indem vor und/oder nach dem Suchbegriff ein Leerzeichen gesetzt wird.  \n (Beispiel: 'Bundestag' enthält '*Leerzeichen*Bund', jedoch nicht 'Bund*Leerzeichen*')")
-    #st.write(f"*(Der Datensatz enthält momentan {num_words_all:,} Wörter - häufig genannte Suchbegriffe können zu einer etwas längeren Rechendauer führen.)*")
-    st.sidebar.markdown(f"*(Der Datensatz enthält momentan rund 7 mio. Wörter - häufig genannte Suchbegriffe können zu einer etwas längeren Rechendauer führen.)*")
+    st.sidebar.info("- Groß- und Kleinschreibung wird unterschieden.  \n (Beispiel: 'Bundestag' enthält nicht 'bund')" )
+    st.sidebar.info("- Der Suchbegriff wird auch innerhalb einzelner Wörter gesucht.  \n (Beispiel: 'Bundestag' enthält die Suchbegriffe 'Bund', sowie 'des') ")
+    st.sidebar.info("- Die Suche innerhalb einzelner Wörter kann vermieden werden, indem vor und/oder nach dem Suchbegriff ein Leerzeichen gesetzt wird.  \n (Beispiel: 'Bundestag' enthält '*Leerzeichen*Bund', jedoch nicht 'Bund*Leerzeichen*')")
+    
+    
+   # st.sidebar.info(f"*(Der Datensatz enthält momentan rund 7 mio. Wörter - häufig genannte Suchbegriffe können zu einer etwas längeren Rechendauer führen.)*")
 st.sidebar.markdown("**Einstellungen**")
 st.sidebar.markdown(" ")
-
-advanced = st.sidebar.checkbox("Erweiterte Einstellungen")
 
 per_word = False
 wo_fraktionslos = False
 saetz = True
+advanced = st.sidebar.checkbox("Erweiterte Einstellungen")
 
 if advanced:
 
     per_word = st.sidebar.checkbox("Anzahl der Nennungen des Suchbegriffs anstatt Anzahl der Redebeiträge (Mehrfachnennungen des Suchbegriffs innerhalb einer Rede werden gezählt)")
-    
-    wo_fraktionslos = st.sidebar.checkbox("Fraktionslose für Reskalierung ausschließen")
+    wo_fraktionslos = st.sidebar.checkbox("Fraktionslose für Normalisierung ausschließen")
     saetz = st.sidebar.checkbox("Aussagen (Sätze) heraussuchen, die beide Suchbegriffe enthalten", value = True)
+
 
 ##################### 
 @st.cache(suppress_st_warning=True, show_spinner=False)
@@ -349,8 +349,8 @@ num_speeches_party = count_speeches(all_speeches)
 speeches_bal = [i/j for i,j in zip([1000 for i in range(7)],num_speeches_party)]
 
 
-
 st.subheader(" **Wonach willst du suchen?**")
+
 search_query = st.text_input("", "Fridays for Future" )                                             
 if search_query == "":
     search_query = " "    
@@ -374,14 +374,14 @@ if per_word:
     if search_query == ' ' or search_query == '':                               
         st.write(f"Der Datensatz umfasst insgesamt {num_words_all:,} Wörter.")
     else:
-        st.write(f"Das Wort _{search_query}_ wird {m} mal genannt.")
+        st.write(f"Der Begriff _{search_query}_ wird {m} mal genannt.")
 
 else:
     l = len(speeches)
     if search_query == ' ' or search_query == '':
         st.write(f"Der Datensatz umfasst {l} Reden.")
     else:
-        st.write(f"Das Wort _{search_query}_ wird in {l} verschiedenen Reden genannt.")
+        st.write(f"Der Begriff _{search_query}_ wird in {l} verschiedenen Reden genannt.")
         
 #####################
 
@@ -410,6 +410,7 @@ else:
     altair_plot(dfplot)
     
     if advanced:
+
         st.write("**Anteil der Fraktionen an absoluter Anzahl**")
     
     #    st.area_chart(dfagg.div(dfagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
@@ -450,14 +451,14 @@ if per_word:
     if search_query2 == ' ' or search_query2 == '':                               
         st.write(f"Der Datensatz umfasst insgesamt {m2} Wörter.")                    
     else:
-        st.write(f"Das Wort _{search_query2}_ wird {m2} mal genannt.")
+        st.write(f"Der Begriff _{search_query2}_ wird {m2} mal genannt.")
 
 else:
     l2 = len(speeches2)
     if search_query2 == ' ' or search_query == '':
         st.write(f"Der Datensatz umfasst {l2} Reden.")
     else:
-        st.write(f"Das Wort _{search_query2}_ wird in {l2} verschiedenen Reden genannt.")
+        st.write(f"Der Begriff _{search_query2}_ wird in {l2} verschiedenen Reden genannt.")
 
 if m2 == 0 or l2 == 0:
     pass
@@ -479,6 +480,7 @@ else:
     altair_plot(dfplot)
     
     if advanced:
+    
         st.write("**Anteil der Fraktionen an absoluter Anzahl**")
         
     #    st.area_chart(df2agg.div(df2agg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
@@ -527,8 +529,9 @@ else:
 
         dfplot = fct_dfplot(dfjagg)         
         altair_plot(dfplot)
-
+        
         if advanced:
+        
             st.write("**Anteil der Fraktionen an absoluter Anzahl**")
     #        st.area_chart(dfjagg.div(dfjagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
     
