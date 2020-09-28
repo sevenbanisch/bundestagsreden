@@ -19,24 +19,37 @@ import sys
 img_width = 300
 img_height = 200
 ##################### 
-
-
-st.title("Wer sagt was im Bundestag?")
-
-hints = st.checkbox("Hinweise anzeigen", value = True)
+    
+st.markdown('<p style="font-size: 30pt; font-weight: bold; color: white; \
+    background-color: #000">&nbsp;\
+    <a >Wer sagt was im Bundestag?</a>\
+    </p>', unsafe_allow_html=True)
+    
+st.sidebar.header("**Sidebar**")
+st.sidebar.markdown("")
+hints = st.sidebar.checkbox("Hinweise anzeigen", value = True)
 if hints:
-    st.write("- Groß- und Kleinschreibung wird unterschieden.  \n (Beispiel: 'Bundestag' enthält nicht 'bund')" )
-    st.write("- Der Suchbegriff wird auch innerhalb einzelner Wörter gesucht.  \n (Beispiel: 'Bundestag' enthält die Suchbegriffe 'Bund', sowie 'des') ")
-    st.write("- Die Suche innerhalb einzelner Wörter kann vermieden werden, indem vor und/oder nach dem Suchbegriff ein Leerzeichen gesetzt wird.  \n (Beispiel: 'Bundestag' enthält '*Leerzeichen*Bund', jedoch nicht 'Bund*Leerzeichen*')")
+    
+    st.sidebar.markdown("- Groß- und Kleinschreibung wird unterschieden.  \n (Beispiel: 'Bundestag' enthält nicht 'bund')" )
+    st.sidebar.markdown("- Der Suchbegriff wird auch innerhalb einzelner Wörter gesucht.  \n (Beispiel: 'Bundestag' enthält die Suchbegriffe 'Bund', sowie 'des') ")
+    st.sidebar.markdown("- Die Suche innerhalb einzelner Wörter kann vermieden werden, indem vor und/oder nach dem Suchbegriff ein Leerzeichen gesetzt wird.  \n (Beispiel: 'Bundestag' enthält '*Leerzeichen*Bund', jedoch nicht 'Bund*Leerzeichen*')")
     #st.write(f"*(Der Datensatz enthält momentan {num_words_all:,} Wörter - häufig genannte Suchbegriffe können zu einer etwas längeren Rechendauer führen.)*")
-    st.write(f"*(Der Datensatz enthält momentan rund 7 mio. Wörter - häufig genannte Suchbegriffe können zu einer etwas längeren Rechendauer führen.)*")
-st.write("**Einstellungen**")
-st.write(" ")
+    st.sidebar.markdown(f"*(Der Datensatz enthält momentan rund 7 mio. Wörter - häufig genannte Suchbegriffe können zu einer etwas längeren Rechendauer führen.)*")
+st.sidebar.markdown("**Einstellungen**")
+st.sidebar.markdown(" ")
 
-per_word = st.checkbox("Anzahl der Nennungen des Suchbegriffs anstatt Anzahl der Redebeiträge (Mehrfachnennungen des Suchbegriffs innerhalb einer Rede werden gezählt)")
+advanced = st.sidebar.checkbox("Erweiterte Einstellungen")
 
-wo_fraktionslos = st.checkbox("Fraktionslose für Reskalierung ausschließen")
-saetz = st.checkbox("Aussagen (Sätze) heraussuchen, die beide Suchbegriffe enthalten")
+per_word = False
+wo_fraktionslos = False
+saetz = True
+
+if advanced:
+
+    per_word = st.sidebar.checkbox("Anzahl der Nennungen des Suchbegriffs anstatt Anzahl der Redebeiträge (Mehrfachnennungen des Suchbegriffs innerhalb einer Rede werden gezählt)")
+    
+    wo_fraktionslos = st.sidebar.checkbox("Fraktionslose für Reskalierung ausschließen")
+    saetz = st.sidebar.checkbox("Aussagen (Sätze) heraussuchen, die beide Suchbegriffe enthalten", value = True)
 
 ##################### 
 @st.cache(suppress_st_warning=True, show_spinner=False)
@@ -335,7 +348,9 @@ num_speeches_party = count_speeches(all_speeches)
 # Gewichtung: Nennung pro 1000 Reden
 speeches_bal = [i/j for i,j in zip([1000 for i in range(7)],num_speeches_party)]
 
-st.subheader("**Erster Suchbegriff**")
+
+
+st.subheader(" **Wonach willst du suchen?**")
 search_query = st.text_input("", "Fridays for Future" )                                             
 if search_query == "":
     search_query = " "    
@@ -394,30 +409,30 @@ else:
     dfplot = fct_dfplot(dfagg)         
     altair_plot(dfplot)
     
-
-    st.write("**Anteil der Fraktionen an absoluter Anzahl**")
-
-#    st.area_chart(dfagg.div(dfagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+    if advanced:
+        st.write("**Anteil der Fraktionen an absoluter Anzahl**")
     
-    total_n = np.array(dfplot['n'])
-    chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)                              # summiert 
-    dfplot_div = dfplot
-    dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
-    altair_plot(dfplot)   
-
-    if per_word:
-        st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
-    else:
-        st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
-
-#    st.area_chart(dfagg_bal,img_width, img_height,True)   
-
-    dfplot = fct_dfplot(dfagg_bal)           
-    altair_plot(dfplot)
+    #    st.area_chart(dfagg.div(dfagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+        
+        total_n = np.array(dfplot['n'])
+        chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)                              # summiert 
+        dfplot_div = dfplot
+        dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
+        altair_plot(dfplot)   
+    
+        if per_word:
+            st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
+        else:
+            st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
+    
+    #    st.area_chart(dfagg_bal,img_width, img_height,True)   
+    
+        dfplot = fct_dfplot(dfagg_bal)           
+        altair_plot(dfplot)
     
 #######################################################
 
-st.subheader("**Zweiter Suchbegriff**")
+st.subheader("**Wonach willst du noch suchen?**")
 
 search_query2 = st.text_input("", "Greta")
 if search_query2 == "":
@@ -463,24 +478,25 @@ else:
     dfplot = fct_dfplot(df2agg)         
     altair_plot(dfplot)
     
-    st.write("**Anteil der Fraktionen an absoluter Anzahl**")
+    if advanced:
+        st.write("**Anteil der Fraktionen an absoluter Anzahl**")
+        
+    #    st.area_chart(df2agg.div(df2agg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
     
-#    st.area_chart(df2agg.div(df2agg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
-
-    total_n = np.array(dfplot['n'])
-    chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)         # summiert 
-    dfplot_div = dfplot
-    dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
-    altair_plot(dfplot_div)
-
-    if per_word:
-        st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
-    else:
-        st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
-#    st.area_chart(df2agg_bal,img_width,img_height,True)
-
-    dfplot = fct_dfplot(df2agg_bal)           
-    altair_plot(dfplot)
+        total_n = np.array(dfplot['n'])
+        chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)         # summiert 
+        dfplot_div = dfplot
+        dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
+        altair_plot(dfplot_div)
+    
+        if per_word:
+            st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
+        else:
+            st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
+    #    st.area_chart(df2agg_bal,img_width,img_height,True)
+    
+        dfplot = fct_dfplot(df2agg_bal)           
+        altair_plot(dfplot)
     
 #########################################################
 
@@ -512,25 +528,26 @@ else:
         dfplot = fct_dfplot(dfjagg)         
         altair_plot(dfplot)
 
-        st.write("**Anteil der Fraktionen an absoluter Anzahl**")
-#        st.area_chart(dfjagg.div(dfjagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
-
-        total_n = np.array(dfplot['n'])
-        chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)     # summiert 
-        dfplot_div = dfplot
-        dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
-        altair_plot(dfplot_div)
-
-        if per_word:
-            st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
-        else:
-            st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
-#        st.area_chart(dfjagg_bal,img_width,img_height,True)
-
-        dfplot = fct_dfplot(dfjagg)         
-        altair_plot(dfplot)
-        
- #       st.write(jointspeeches)
+        if advanced:
+            st.write("**Anteil der Fraktionen an absoluter Anzahl**")
+    #        st.area_chart(dfjagg.div(dfjagg.sum(axis=1), axis=0).fillna(0),img_width,img_height,True)
+    
+            total_n = np.array(dfplot['n'])
+            chunked_sum  = np.repeat(np.sum(total_n.reshape(-1,7), axis = 1),7)     # summiert 
+            dfplot_div = dfplot
+            dfplot_div['n'] = [i/j for i,j in zip(dfplot['n'], chunked_sum)] 
+            altair_plot(dfplot_div)
+    
+            if per_word:
+                st.write("**Absolute Anzahl pro 100.000 gesprochene Wörter der Fraktionen**")
+            else:
+                st.write("**Absolute Anzahl pro 1000 gehaltene Reden der Fraktionen**")
+    #        st.area_chart(dfjagg_bal,img_width,img_height,True)
+    
+            dfplot = fct_dfplot(dfjagg)         
+            altair_plot(dfplot)
+            
+     #       st.write(jointspeeches)
 
 #######################
         
