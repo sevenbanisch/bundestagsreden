@@ -204,8 +204,13 @@ def build_df(speeches_arg):
                 fraktionslos.append(1)
             else: 
                 fraktionslos.append(0)
+<<<<<<< Updated upstream:Wer-sagt-was-im-Bundestag/wersagtwasimbundestag.py
   #          if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and speech['party'] != 'BÜNDNIS 90/DIE GRÜNEN' and speech['party'] != 'Bündnis 90/Die Grünen' and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
    #             st.write(speech['party'])
+=======
+        #    if speech['party'] != 'CDU/CSU' and speech['party'] != 'SPD' and speech['party'] != 'AfD' and speech['party'] != 'FDP' and ' 90' in speech['party'] and speech['party'] != 'DIE LINKE' and speech['party'] != 'fraktionslos' and speech['party'] != 'Fraktionslos' and speech['party'] != 'Bremen':
+        #        st.write(speech['party'])
+>>>>>>> Stashed changes:wersagtwasimbundestag.py
        #!         gruene.append(1)
 
         # Create an empty dataframe
