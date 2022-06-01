@@ -156,7 +156,7 @@ def parser(legislaturperiode):
 
                         #newly added
                         if (info.tag == "kommentar") and (type(info.text) is str):
-                            text += f"<<<{str(info.text)}>>> "
+                            text += f"{{{str(info.text)}}} "
 
                         # paste the text into the dict entry
                         rededict["text"] = text
