@@ -21,6 +21,8 @@ def filter_for(what, search_terms, speeches):
     filtered_speeches.sort(key = lambda x:x['date'])   
     return filtered_speeches
 
+
+
 def groupSpeechesByDiscussionTitle(speeches):
     groupedSpeeches = {}
     for speech in speeches:
