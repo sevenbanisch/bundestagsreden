@@ -26,10 +26,10 @@ def filter_for(what, search_terms, speeches):
 def groupSpeechesByDiscussionTitle(speeches):
     groupedSpeeches = {}
     for speech in speeches:
-        tpo = speech['discussion_title']
-        if tpo in groupedSpeeches:
-            groupedSpeeches[tpo].append(speech)
+        top = speech['discussion_title']
+        if top in groupedSpeeches:
+            groupedSpeeches[top].append(speech)
         else:
-            groupedSpeeches[tpo] = [speech]
+            groupedSpeeches[top] = [speech]
     
     return groupedSpeeches
