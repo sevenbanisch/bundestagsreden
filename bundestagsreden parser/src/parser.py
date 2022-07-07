@@ -13,7 +13,7 @@ __version__ = "1.0"
 __email__ = "pournaki@mis.mpg.de"
 
 
-def parser(legislaturperiode,withcomments):
+def parser(legislaturperiode):
 
     def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█'):
         percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
@@ -155,9 +155,8 @@ def parser(legislaturperiode,withcomments):
                                 text = text.replace(u'\xad', u'')
 
                         #newly added
-                        if withcomments == 'y':
-                            if (info.tag == "kommentar") and (type(info.text) is str):
-                                text += f"{{{str(info.text)}}} "
+                        if (info.tag == "kommentar") and (type(info.text) is str):
+                            text += f"{{{str(info.text)}}} "
 
                         # paste the text into the dict entry
                         rededict["text"] = text
