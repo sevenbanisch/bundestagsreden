@@ -132,3 +132,6 @@ dmypy.json
 data/*
 private/*
 #html/*
+
+# Jetbrains IDEs
+/.idea
