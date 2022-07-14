@@ -1,0 +1,26 @@
+<head>
+            <style> body {margin: 0;} </style>
+            <script src="https://unpkg.com/force-graph"></script>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+        <div id="graph"></div>
+        <script>
+            var data = {'nodes': [{'id': 1, 'top': 7, 'date': '2022-04-28', 'nReden': 17}, {'id': 2, 'top': 8, 'date': '2022-04-28', 'nReden': 16}, {'id': 3, 'top': 17, 'date': '2022-04-28', 'nReden': 7}, {'id': 4, 'top': 18, 'date': '2022-04-28', 'nReden': 8}, {'id': 5, 'top': 35, 'date': '2022-02-18', 'nReden': 8}, {'id': 6, 'top': 78, 'date': '2022-04-07', 'nReden': 16}, {'id': 7, 'top': 81, 'date': '2022-04-07', 'nReden': 9}, {'id': 8, 'top': 84, 'date': '2022-04-07', 'nReden': 9}, {'id': 9, 'top': 86, 'date': '2022-04-07', 'nReden': 3}, {'id': 10, 'top': 136, 'date': '2022-05-11', 'nReden': 9}, {'id': 11, 'top': 161, 'date': '2022-05-12', 'nReden': 7}, {'id': 12, 'top': 163, 'date': '2022-05-12', 'nReden': 6}, {'id': 13, 'top': 166, 'date': '2022-05-12', 'nReden': 4}, {'id': 14, 'top': 173, 'date': '2022-05-13', 'nReden': 9}, {'id': 15, 'top': 174, 'date': '2022-05-13', 'nReden': 10}, {'id': 16, 'top': 177, 'date': '2022-04-08', 'nReden': 10}, {'id': 17, 'top': 186, 'date': '2022-02-17', 'nReden': 9}, {'id': 18, 'top': 192, 'date': '2022-02-17', 'nReden': 13}], 'links': [{'source': 1, 'target': 2, 'weight': 0.16434153626117406}, {'source': 1, 'target': 5, 'weight': 0.21791989170959586}, {'source': 1, 'target': 6, 'weight': 0.3172528192398413}, {'source': 1, 'target': 9, 'weight': 0.19357342401235483}, {'source': 1, 'target': 12, 'weight': 0.16585233990682954}, {'source': 1, 'target': 13, 'weight': 0.16927189700338457}, {'source': 1, 'target': 14, 'weight': 0.2871194924128971}, {'source': 1, 'target': 15, 'weight': 0.24361940123354509}, {'source': 1, 'target': 16, 'weight': 0.2997523902606612}, {'source': 1, 'target': 17, 'weight': 0.320710317960858}, {'source': 2, 'target': 6, 'weight': 0.19501170152254277}, {'source': 2, 'target': 15, 'weight': 0.17792213190390505}, {'source': 2, 'target': 16, 'weight': 0.16212017851469268}, {'source': 2, 'target': 17, 'weight': 0.15146117872711257}, {'source': 3, 'target': 13, 'weight': 0.15058173222903715}, {'source': 5, 'target': 6, 'weight': 0.17476185974890407}, {'source': 5, 'target': 8, 'weight': 0.16717397723082988}, {'source': 5, 'target': 14, 'weight': 0.23770576920333544}, {'source': 5, 'target': 16, 'weight': 0.186119973692625}, {'source': 5, 'target': 17, 'weight': 0.15777848684396736}, {'source': 6, 'target': 12, 'weight': 0.1878431691920574}, {'source': 6, 'target': 14, 'weight': 0.3337850612030553}, {'source': 6, 'target': 15, 'weight': 0.25468505839046507}, {'source': 6, 'target': 16, 'weight': 0.2552566842076966}, {'source': 8, 'target': 16, 'weight': 0.2807424002213553}, {'source': 14, 'target': 15, 'weight': 0.23908306015905378}, {'source': 14, 'target': 16, 'weight': 0.22954390115612594}, {'source': 15, 'target': 16, 'weight': 0.228296352025936}, {'source': 16, 'target': 17, 'weight': 0.23413543554837918}]};
+            const elem = document.getElementById('graph');
+            const Graph = ForceGraph()(elem)
+                .graphData(data)
+                .nodeLabel('top')
+                .nodeRelSize(1)
+                .nodeVal('nReden')
+                //.linkVisibility('true')
+                //.onNodeClick (node => {window.open(`wordnet.html`, '_blank')})
+                //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+                .onNodeRightClick(node => {
+                    // Center/zoom on node
+                    Graph.centerAt(node.x, node.y, 1000);
+                    Graph.zoom(4, 2000);
+                });
+        </script>
+        </body>
+        
