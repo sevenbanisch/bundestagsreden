@@ -92,6 +92,8 @@ def main():
     mdbs = read_mdbs_from_json()
 
     print(f'got {len(mdbs)} mdbs from json')
+    print('This is the first mdb entry:')
+    print(mdbs[0])
 
 if __name__ == '__main__':
     main()

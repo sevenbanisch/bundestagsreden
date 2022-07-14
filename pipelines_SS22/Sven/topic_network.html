@@ -1,0 +1,43 @@
+<head>
+        <style>
+            body {margin: 0;}
+            h3 {text-align: center;}
+            .center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+        </style>
+        <script src="https://unpkg.com/force-graph"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <img src="Logo.png" height="150" width="300" class="center">
+    <h3>DebSearch ist eine statistische Website, welche die aktuelle Legislaturperiode</h3>
+    <h3>in verschiedenen Kategorieren auswertet und visualisiert.</h3>
+    <div id="graph"></div>
+    <script>
+        var data = {'nodes': [{'id': 1, 'topicname': 'topic_Energie_Gas_Ausbau'}, {'id': 2, 'topicname': 'topic_Krieg_Putin_Russland'}, {'id': 3, 'topicname': 'topic_Impfpflicht_Impfung_Pandemie'}, {'id': 4, 'topicname': 'topic_Mandat_Soldat_Mission'}, {'id': 5, 'topicname': 'topic_Euro_Milliarde_Haushalt'}, {'id': 6, 'topicname': 'topic_Landwirt_Landwirtschaft_Hunger'}, {'id': 7, 'topicname': 'topic_Kind_Kommune_Ganztagsbetreuung'}, {'id': 8, 'topicname': 'topic_Inflation_Euro_Entlastung'}, {'id': 9, 'topicname': 'topic_Antrag_Opfer_Demokratie'}, {'id': 10, 'topicname': 'topic_Gesetz_Gesetzentwurf_Unternehmen'}], 'links': [{'source': 1, 'target': 2, 'weight': 0.19546653888025445}, {'source': 1, 'target': 5, 'weight': 0.24172834501491822}, {'source': 1, 'target': 6, 'weight': 0.17564734952835137}, {'source': 1, 'target': 7, 'weight': 0.15009450413284198}, {'source': 1, 'target': 8, 'weight': 0.3053922600157664}, {'source': 1, 'target': 9, 'weight': 0.19708880118276595}, {'source': 1, 'target': 10, 'weight': 0.24413424241631607}, {'source': 2, 'target': 4, 'weight': 0.26671310659321446}, {'source': 2, 'target': 5, 'weight': 0.19972131341147256}, {'source': 2, 'target': 6, 'weight': 0.1505477528558645}, {'source': 2, 'target': 7, 'weight': 0.1845778236793745}, {'source': 2, 'target': 9, 'weight': 0.306005508916713}, {'source': 2, 'target': 10, 'weight': 0.1684439886734004}, {'source': 3, 'target': 7, 'weight': 0.16519918741229797}, {'source': 3, 'target': 9, 'weight': 0.17408181075195503}, {'source': 3, 'target': 10, 'weight': 0.28254085576236376}, {'source': 5, 'target': 6, 'weight': 0.172903428673601}, {'source': 5, 'target': 7, 'weight': 0.226349507171988}, {'source': 5, 'target': 8, 'weight': 0.33645372741931556}, {'source': 5, 'target': 9, 'weight': 0.17049590939244152}, {'source': 5, 'target': 10, 'weight': 0.24434427012391116}, {'source': 7, 'target': 8, 'weight': 0.19390651616036267}, {'source': 7, 'target': 9, 'weight': 0.2081866351583565}, {'source': 7, 'target': 10, 'weight': 0.2071819275201293}, {'source': 8, 'target': 9, 'weight': 0.18021116303048013}, {'source': 8, 'target': 10, 'weight': 0.25623933844806873}, {'source': 9, 'target': 10, 'weight': 0.22114684694255163}]};
+        const elem = document.getElementById('graph');
+        const Graph = ForceGraph()(elem)
+            .graphData(data)
+            .nodeLabel('topicname')
+            .nodeRelSize(3)
+            .nodeVal('nReden')
+            .nodeAutoColorBy('topicname')
+            //.backgroundColor('#000000')
+            //.linkColor(() => 'rgba(255,255,255,0.2)')
+            //.linkVisibility('false')
+            //.linkDirectionalParticles(2)
+            //.linkDirectionalParticleWidth(1.4)
+            //.onNodeClick (node => {window.open('./TOPnets/TOPnet4topic0.html', '_blank')})
+            .onNodeClick (node => {window.open(`./TOPnets/TOPnet4topic${node.id-1}.html`, '_blank')})
+            //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+            .onNodeRightClick(node => {
+                // Center/zoom on node
+                Graph.centerAt(node.x, node.y, 1000);
+                Graph.zoom(4, 2000);
+            });
+    </script>
+    </body>
+    

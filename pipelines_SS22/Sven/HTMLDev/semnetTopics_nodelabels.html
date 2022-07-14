@@ -1,0 +1,53 @@
+<head>
+        <style> body {margin: 0;} </style>
+        <script src="https://unpkg.com/force-graph"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <div id="graph"></div>
+    <script>
+        var data = {'nodes': [{'id': 1, 'topicname': 'russland putin waffe bundeskanzler friede präsident außenpolitik nato partner diplomatie'}, {'id': 2, 'topicname': 'mandat mission soldat einsatz soldatinnen operation südsudan bundeswehr region nation'}, {'id': 3, 'topicname': 'impfpflicht impfung pflege variante impfungen impfstoff genesenenstatus pflegekräfte herbst impfen'}, {'id': 4, 'topicname': 'inflation entlastung einkommen preis progression rentner energiepreispauschale steuer umlage eeg'}, {'id': 5, 'topicname': 'kommune ganztagsbetreuung schule frist bildung fristverlängerung rechtsanspruch bund gesetzentwurf eltern'}, {'id': 6, 'topicname': 'landwirt landwirtschaft ernährung hunger lebensmittel bauer fläche betrieb agrarpolitik getreide'}, {'id': 7, 'topicname': 'energie gas ausbau energieversorgung strom versorgungssicherheit eeg erneuerbaren energiewende umlage'}, {'id': 8, 'topicname': 'haushalt wirtschaft nachtragshaushalt investition schuldenbremse transformation schulde klimaschutz haushaltsentwurf digitalisierung'}, {'id': 9, 'topicname': 'opfer anschlag sicherheitsbehörden rechtsextremismus extremismus straftat angehörige rechtsstaat kriminalität islamismus'}, {'id': 10, 'topicname': 'gesetzentwurf maskenpflicht impfen maske infektionsschutzgesetz welle inzidenz schule virus ministerpräsidenten'}, {'id': 11, 'topicname': 'wohnung wohnen mieter bau wohnraum mieterinnen wohnungsbau vermieter vorkaufsrecht kommune'}, {'id': 12, 'topicname': 'bundeswehr soldat sondervermögen soldatinnen zeitenwende ausrüstung bundeskanzler truppe verteidigungsfähigkeit haushalt'}, {'id': 13, 'topicname': 'registrierung geflüchtete flüchtling kommune bundespolizei abschiebung geflüchteter aufnahme migration integration'}, {'id': 14, 'topicname': 'wohle nutzen gerechtigkeit grundgesetz schaden volk pflicht bund entwicklungspolitik entwicklungszusammenarbeit'}, {'id': 15, 'topicname': 'sanktion geldwäsche sanktionsdurchsetzungsgesetz oligarchen bürgergeld immobilie vermögen vermögenswerte taskforce behörde'}], 'links': [{'source': 1, 'target': 2, 'weight': 0.1801768778617418}, {'source': 1, 'target': 7, 'weight': 0.15312391573829146}, {'source': 1, 'target': 8, 'weight': 0.15073878198778248}, {'source': 1, 'target': 9, 'weight': 0.19129833555128403}, {'source': 1, 'target': 12, 'weight': 0.24671895734867572}, {'source': 1, 'target': 13, 'weight': 0.217544512020501}, {'source': 1, 'target': 15, 'weight': 0.20732455454765727}, {'source': 2, 'target': 12, 'weight': 0.32359484352187096}, {'source': 3, 'target': 10, 'weight': 0.29317627921758427}, {'source': 4, 'target': 7, 'weight': 0.2346662847771807}, {'source': 4, 'target': 8, 'weight': 0.2036231437131759}, {'source': 4, 'target': 10, 'weight': 0.15596048879380978}, {'source': 4, 'target': 11, 'weight': 0.16132032321791695}, {'source': 5, 'target': 10, 'weight': 0.20646018614091108}, {'source': 5, 'target': 13, 'weight': 0.22974000643085396}, {'source': 6, 'target': 8, 'weight': 0.15128978509721386}, {'source': 7, 'target': 8, 'weight': 0.221029760783997}, {'source': 7, 'target': 11, 'weight': 0.16761673561633253}, {'source': 8, 'target': 10, 'weight': 0.1832311845331714}, {'source': 8, 'target': 11, 'weight': 0.15690153073860477}, {'source': 8, 'target': 12, 'weight': 0.20282238216734305}, {'source': 9, 'target': 13, 'weight': 0.19831248029618354}]};
+        const elem = document.getElementById('graph');
+        const Graph = ForceGraph()(elem)
+            .graphData(data)
+            .nodeLabel('topicname')
+            .nodeRelSize(10)
+            .nodeVal('nReden')
+            .nodeAutoColorBy('topicname')
+            //.backgroundColor('#000000')
+            //.linkColor(() => 'rgba(255,255,255,0.2)')
+            //.linkVisibility('false')
+            //.linkDirectionalParticles(2)
+            //.linkDirectionalParticleWidth(1.4)
+            .onNodeClick (node => {window.open(`wordnet.html`, '_blank')})
+            //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+            .onNodeRightClick(node => {
+                // Center/zoom on node
+                Graph.centerAt(node.x, node.y, 1000);
+                Graph.zoom(4, 2000);
+            })
+            .nodeCanvasObject((node, ctx, globalScale) => {
+          const label = node.topicname;
+          const fontSize = 12/globalScale;
+          ctx.font = `${fontSize}px Sans-Serif`;
+          const textWidth = ctx.measureText(label).width;
+          const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+          ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillStyle = node.color;
+          ctx.fillText(label, node.x, node.y);
+
+          node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
+        })
+        .nodePointerAreaPaint((node, color, ctx) => {
+          ctx.fillStyle = color;
+          const bckgDimensions = node.__bckgDimensions;
+          bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+        });
+    </script>
+    </body>
+    

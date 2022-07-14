@@ -1,0 +1,26 @@
+<head>
+            <style> body {margin: 0;} </style>
+            <script src="https://unpkg.com/force-graph"></script>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+        <div id="graph"></div>
+        <script>
+            var data = {'nodes': [{'id': 1, 'top': 5, 'date': '2022-04-27', 'nReden': 11}, {'id': 2, 'top': 77, 'date': '2022-04-07', 'nReden': 14}], 'links': [{'source': 1, 'target': 2, 'weight': 0.1590769059547879}]};
+            const elem = document.getElementById('graph');
+            const Graph = ForceGraph()(elem)
+                .graphData(data)
+                .nodeLabel('top')
+                .nodeRelSize(1)
+                .nodeVal('nReden')
+                //.linkVisibility('true')
+                //.onNodeClick (node => {window.open(`wordnet.html`, '_blank')})
+                //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+                .onNodeRightClick(node => {
+                    // Center/zoom on node
+                    Graph.centerAt(node.x, node.y, 1000);
+                    Graph.zoom(4, 2000);
+                });
+        </script>
+        </body>
+        
