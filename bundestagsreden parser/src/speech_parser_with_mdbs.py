@@ -4,27 +4,26 @@ import os
 from datetime import datetime
 import json
 from lxml import etree
-from mdb_parser import read_mdbs_from_json
+from .mdb_parser import read_mdbs_from_json
 
 MDB_JSON_FILE = 'parsed_mdbs.json'
-DATA_DIRECTORY = '../../data/'
+DATA_DIRECTORY = '../data/'
 SPEECHES_DIRECTORY = 'data_20/speeches'
 
 
-def filter_active_mdbs(mdbs):
+def filter_active_mdbs(mdbs, lp):
     active_mdbs = {}
-    active_period = '20'
     for mdb in mdbs:
         for period in mdb['legislative_periods']:
-            if period['period_number'] == active_period:
+            if period['period_number'] == lp:
                 active_mdbs[mdb['id']] = mdb
         
     return active_mdbs
 
 
-def read_speeches_xml():
+def read_speeches_xml(lp):
     speeches = []
-    path = os.path.join(DATA_DIRECTORY, SPEECHES_DIRECTORY)
+    path = os.path.join(DATA_DIRECTORY, f'data_{lp}/speeches')
 
     for file in os.listdir(path):
         speeches.append(os.path.join(path, file))
@@ -33,7 +32,35 @@ def read_speeches_xml():
     return speeches
 
 
-def parse_top(top, date, mdbs):
+def write_speeches(speeches_list, lp):
+    path = f'./speeches_{lp}.jsonl'
+    with open(path, 'w', encoding='utf-8') as f:
+        for line in speeches_list:
+            json.dump(line, f, ensure_ascii=False)
+            f.write('\n')
+
+    print(f'saved {len(speeches_list)} speeches in `{path}`')
+
+
+def parse_text(info, with_comments):
+    text = ''
+    if (info.attrib == {'klasse': 'J'}) or (info.attrib == {'klasse': 'J_1'}) or (info.attrib == {'klasse': 'O'}):
+        if type(info.text) is str:
+            text = info.text
+            text += ' '
+
+            # remove encoding errors
+            text = text.replace(u'\xa0', u' ')
+            text = text.replace(u'\xad', u'')
+
+    if with_comments:
+        if (info.tag == 'kommentar') and (type(info.text) is str):
+            text += f"{{{str(info.text)}}} "
+
+    return text
+
+
+def parse_top(top, date, mdbs, with_comments):
     jsondict = {}
     tagesordnungspunkt = ''
     if top.tag == 'tagesordnungspunkt':
@@ -46,8 +73,7 @@ def parse_top(top, date, mdbs):
 
     for child in top.getchildren():
         if child.tag == 'rede':
-            speech_dict = {}
-            text = ''
+            speech_dict = { 'text': ''}
 
             for info in child.getchildren():
                 if info.attrib == {'klasse': 'redner'}:
@@ -78,7 +104,7 @@ def parse_top(top, date, mdbs):
                 speech_dict['party'] = party
                 speech_dict['redner_id'] = redner_id
 
-                speech_dict['text'] = text
+                speech_dict['text'] += parse_text(info, with_comments)
                 speech_dict['discussion_title'] = tagesordnungspunkt
         
             jsondict[f"{top.attrib['top-id']} {date}"]['speeches'].append(speech_dict)
@@ -86,7 +112,7 @@ def parse_top(top, date, mdbs):
     return jsondict                    
 
 
-def parse_file(file, parser, mdbs):
+def parse_file(file, parser, mdbs, with_comments):
     root = etree.parse(file, parser).getroot()
 
     date = root.attrib.get('sitzung-datum')
@@ -94,7 +120,7 @@ def parse_file(file, parser, mdbs):
 
     tops = root.findall('.//sitzungsverlauf/tagesordnungspunkt')
 
-    speeches = [parse_top(top, date, mdbs) for top in tops]
+    speeches = [parse_top(top, date, mdbs, with_comments) for top in tops]
 
     return speeches
 
@@ -110,16 +136,15 @@ def flatten_speeches(files):
     return speeches
 
 
-def main():
-    # read mdbs
+def parse(legislature_period, with_comments):
+    print(f'start parsing with parameters given: {legislature_period} & {with_comments}')
     mdbs = read_mdbs_from_json()
-    active_mdbs = filter_active_mdbs(mdbs)
+    active_mdbs = filter_active_mdbs(mdbs, legislature_period)
 
-    # read xmls
-    xmls = read_speeches_xml()
+    xmls = read_speeches_xml(legislature_period)
 
     parser = etree.XMLParser(dtd_validation=False)
-    parsed_files = [parse_file(file, parser, active_mdbs) for file in xmls]
+    parsed_files = [parse_file(file, parser, active_mdbs, with_comments=with_comments) for file in xmls]
 
     print(f'got {len(parsed_files)} files')
 
@@ -127,9 +152,22 @@ def main():
 
     print(f'got {len(speeches)} speeches')
 
-    # save it
+    # TODO: depending on cmd-parameter parse with or without comments
+    # save it, depending on comment parameter modify output-file name (e.g speeches_20_with_comments.json or speeches_20_without_comments.json
+
+    write_speeches(speeches, legislature_period)
+
     return
 
 
+def parse_speeches():
+    lp = input('Select legislative period (19 or 20): ')
+    with_comments = input('Shall comments be included? (y or n): ')
+
+    parse(lp, with_comments == 'y')
+
+
 if __name__ == '__main__':
-    main()
+    parse_speeches()
+
+
