@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 
-import sys
-from src.parser import parser
+# from src.parser import parser
+from src.speech_parser_with_mdbs import parse_speeches
 
-if len(sys.argv) != 2:
-    raise ValueError("Enter number of legislative Period as integer. E.g.: 19")
-
-parser(sys.argv[1])
+parse_speeches()

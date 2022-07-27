@@ -1,0 +1,33 @@
+<head>
+        <style>
+            body {margin: 0;}
+            h3 {text-align: center;}
+            .center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+        </style>
+        <script src="https://unpkg.com/force-graph"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <img src="Logo.png" height="150" width="300" class="center">
+    <h3>DebSearch ist eine statistische Website, welche die aktuelle Legislaturperiode</h3>
+    <h3>in verschiedenen Kategorieren auswertet und visualisiert.</h3>
+    <div id="graph"></div>
+    <script>
+        var data = {'nodes': [{'id': 1, 'name': 'BÜNDNIS 90/DIE GRÜNEN'}, {'id': 2, 'name': 'CDU/CSU'}, {'id': 3, 'name': 'Fraktionslos'}, {'id': 4, 'name': 'AfD'}, {'id': 5, 'name': 'SPD'}, {'id': 6, 'name': 'FDP'}, {'id': 7, 'name': 'DIE LINKE'}], 'links': [{'source': 1, 'target': 1, 'weight': 2446.0}, {'source': 1, 'target': 2, 'weight': 276.0}, {'source': 1, 'target': 3, 'weight': 1.0}, {'source': 1, 'target': 4, 'weight': 89.0}, {'source': 1, 'target': 5, 'weight': 2137.0}, {'source': 1, 'target': 6, 'weight': 1866.0}, {'source': 1, 'target': 7, 'weight': 87.0}, {'source': 2, 'target': 1, 'weight': 679.0}, {'source': 2, 'target': 2, 'weight': 2884.0}, {'source': 2, 'target': 3, 'weight': 0.0}, {'source': 2, 'target': 4, 'weight': 290.0}, {'source': 2, 'target': 5, 'weight': 686.0}, {'source': 2, 'target': 6, 'weight': 665.0}, {'source': 2, 'target': 7, 'weight': 30.0}, {'source': 3, 'target': 1, 'weight': 34.0}, {'source': 3, 'target': 2, 'weight': 9.0}, {'source': 3, 'target': 3, 'weight': 0.0}, {'source': 3, 'target': 4, 'weight': 35.0}, {'source': 3, 'target': 5, 'weight': 36.0}, {'source': 3, 'target': 6, 'weight': 26.0}, {'source': 3, 'target': 7, 'weight': 3.0}, {'source': 4, 'target': 1, 'weight': 221.0}, {'source': 4, 'target': 2, 'weight': 37.0}, {'source': 4, 'target': 3, 'weight': 43.0}, {'source': 4, 'target': 4, 'weight': 1464.0}, {'source': 4, 'target': 5, 'weight': 227.0}, {'source': 4, 'target': 6, 'weight': 230.0}, {'source': 4, 'target': 7, 'weight': 2.0}, {'source': 5, 'target': 1, 'weight': 3286.0}, {'source': 5, 'target': 2, 'weight': 537.0}, {'source': 5, 'target': 3, 'weight': 4.0}, {'source': 5, 'target': 4, 'weight': 161.0}, {'source': 5, 'target': 5, 'weight': 3725.0}, {'source': 5, 'target': 6, 'weight': 2767.0}, {'source': 5, 'target': 7, 'weight': 118.0}, {'source': 6, 'target': 1, 'weight': 1457.0}, {'source': 6, 'target': 2, 'weight': 366.0}, {'source': 6, 'target': 3, 'weight': 0.0}, {'source': 6, 'target': 4, 'weight': 66.0}, {'source': 6, 'target': 5, 'weight': 1436.0}, {'source': 6, 'target': 6, 'weight': 1829.0}, {'source': 6, 'target': 7, 'weight': 38.0}, {'source': 7, 'target': 1, 'weight': 308.0}, {'source': 7, 'target': 2, 'weight': 73.0}, {'source': 7, 'target': 3, 'weight': 0.0}, {'source': 7, 'target': 4, 'weight': 62.0}, {'source': 7, 'target': 5, 'weight': 330.0}, {'source': 7, 'target': 6, 'weight': 212.0}, {'source': 7, 'target': 7, 'weight': 11.0}]};
+        const elem = document.getElementById('graph');
+        const Graph = ForceGraph()(elem)
+            .graphData(data)
+            .nodeLabel(name)
+            .nodeRelSize(1)
+            .onNodeRightClick(node => {
+                // Center/zoom on node
+                Graph.centerAt(node.x, node.y, 1000);
+                Graph.zoom(4, 2000);
+            });
+    </script>
+    </body>
+    

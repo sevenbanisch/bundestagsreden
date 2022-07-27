@@ -1,13 +1,16 @@
 import json
 from lxml import etree
 
+
 JSON_FILE_NAME = 'parsed_mdbs.json'
-PREPROCESSED_DATA_DIRECTORY = '../../data/'
+# If running this file directly via python you have to change the path to '../../data'
+PREPROCESSED_DATA_DIRECTORY = '../data/'
+
 
 def parseNames(names):
     name_dict = {}
     
-    # Use last added name from names. The lateron relation between mdb and speech is done via the id and not the name!
+    # Use last added name from names. The later on relation between mdb and speech is done via the id and not the name!
     name = names.getchildren()[-1].getchildren()
     
     name_dict['surname'] = name[0].text
@@ -94,6 +97,7 @@ def main():
     print(f'got {len(mdbs)} mdbs from json')
     print('This is the first mdb entry:')
     print(mdbs[0])
+
 
 if __name__ == '__main__':
     main()
