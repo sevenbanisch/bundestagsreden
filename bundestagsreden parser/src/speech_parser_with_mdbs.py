@@ -49,10 +49,6 @@ def parse_text(info, with_comments):
             text = info.text
             text += ' '
 
-            # remove encoding errors
-            text = text.replace(u'\xa0', u' ')
-            text = text.replace(u'\xad', u'')
-
     if with_comments:
         if (info.tag == 'kommentar') and (type(info.text) is str):
             text += f"{{{str(info.text)}}} "
@@ -60,20 +56,30 @@ def parse_text(info, with_comments):
     return text
 
 
+def clean_speech_dict_string_fragments(speech_dict):
+    updated_dict = {}
+
+    for key in speech_dict.keys():
+        if type(speech_dict) == str:
+            updated_dict[key] = speech_dict[key].replace(u'\xa0', u' ').replace(u'\xad', u'')
+        else:
+            updated_dict[key] = speech_dict[key]
+
+    return updated_dict
+
+
 def parse_top(top, date, mdbs, with_comments):
     jsondict = {}
     tagesordnungspunkt = ''
     if top.tag == 'tagesordnungspunkt':
         tagesordnungspunkt = f"{top.attrib['top-id']} {date}"
-        # jsondict[f"{top.attrib['top-id']} {date}"] = {}
         jsondict[tagesordnungspunkt] = {}
 
-    # jsondict[f"{top.attrib['top-id']} {date}"]['speeches'] = []
     jsondict[tagesordnungspunkt]['speeches'] = []
 
     for child in top.getchildren():
         if child.tag == 'rede':
-            speech_dict = { 'text': ''}
+            speech_dict = {'text': ''}
 
             for info in child.getchildren():
                 if info.attrib == {'klasse': 'redner'}:
@@ -106,8 +112,10 @@ def parse_top(top, date, mdbs, with_comments):
 
                 speech_dict['text'] += parse_text(info, with_comments)
                 speech_dict['discussion_title'] = tagesordnungspunkt
+
+                cleaned_dict = clean_speech_dict_string_fragments(speech_dict)
         
-            jsondict[f"{top.attrib['top-id']} {date}"]['speeches'].append(speech_dict)
+            jsondict[f"{top.attrib['top-id']} {date}"]['speeches'].append(cleaned_dict)
     
     return jsondict                    
 
