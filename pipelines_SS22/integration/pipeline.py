@@ -1,13 +1,13 @@
 from matplotlib import pyplot as plt
 
-from pipelines_SS22.pipeline_functions import get_speeches, get_corpus, corpus_by_POS, get_matrix_and_feature_names, \
-    create_model, get_topic_word_lists, get_topic2_topic, create_topic2topic_graph, get_graph_template, write_html_file
-from utilities.BTTools import groupSpeechesByDiscussionTitle
+from util_functions import get_speeches, get_corpus, corpus_by_POS, get_matrix_and_feature_names, \
+    create_model, get_topic_word_lists, get_topic2_topic, create_topic2topic_graph, get_graph_template, \
+    write_html_file, group_speeches_by_discussion_title
 
 
 def main():
     original_speeches = get_speeches()
-    grouped_speeches_by_tops = groupSpeechesByDiscussionTitle(original_speeches)
+    grouped_speeches_by_tops = group_speeches_by_discussion_title(original_speeches)
     corpus = get_corpus(grouped_speeches_by_tops)
 
     consider = ['NOUN']
@@ -17,8 +17,8 @@ def main():
     model = create_model(tfidf_matrix)
     tl, etl, tw = get_topic_word_lists(model, feature_names)
 
-    topic2word = model.components_
-    doc2topic = (tf_matrix * topic2word.T)
+    # topic2word = model.components_
+    # doc2topic = (tf_matrix * topic2word.T)
 
     topic2topic = get_topic2_topic(model)
 

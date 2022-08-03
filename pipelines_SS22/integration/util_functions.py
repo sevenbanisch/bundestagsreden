@@ -10,8 +10,20 @@ from sklearn.preprocessing import normalize
 
 
 def get_speeches():
-    with open('../bundestagsreden parser/speeches_20.jsonl', 'r', encoding='utf8') as fp:
+    with open('../../bundestagsreden parser/speeches_20.jsonl', 'r', encoding='utf8') as fp:
         return [json.loads(line) for line in list(fp)]
+
+
+def group_speeches_by_discussion_title(speeches):
+    grouped_speeches = {}
+    for speech in speeches:
+        tpo = speech['discussion_title']
+        if tpo in grouped_speeches:
+            grouped_speeches[tpo].append(speech)
+        else:
+            grouped_speeches[tpo] = [speech]
+
+    return grouped_speeches
 
 
 def get_corpus(tops):
@@ -33,7 +45,7 @@ def corpus_by_POS(corpus, consider):
         # TODO: use filter(lambda...) here
         for token in doc:
             if token.pos_ in consider:
-                new_row.append(token.lemmma_)
+                new_row.append(token.lemma_)
         groups.append(' '.join(new_row))
 
     return groups
@@ -67,12 +79,12 @@ def get_topic_word_lists(topic_model, feature_names):
     topic_words = []
 
     for idx, topic in enumerate(topic_model.components_):
-        top_n = [feature_names[i] for i in topic.argsort()[-n_words]][::-1]
+        top_n = [feature_names[i] for i in topic.argsort()[-n_words:]][::-1]
         topic_list.append(f"topic_{'_'.join(top_n[:3])}")
         top_features = ' '.join(top_n)
         extended_topic_list.append(top_features)
 
-        top_n = [feature_names[i] for i in topic.argsort()[-n_words_features]][::-1]
+        top_n = [feature_names[i] for i in topic.argsort()[-n_words_features:]][::-1]
         topic_words.append(top_n)
 
         print(f'Topic {idx}: {top_features}')
@@ -155,7 +167,7 @@ def get_graph_template(graph, properties):
         <meta charset="UTF-8">
     </head>
     <body>
-    <img src="Logo.png" height="150" width="300" class="center">
+    <img src="imgs/Logo.png" height="150" width="300" class="center">
     <h3>DebSearch ist eine statistische Website, welche die aktuelle Legislaturperiode</h3>
     <h3>in verschiedenen Kategorieren auswertet und visualisiert.</h3>
     <div id="graph"></div>
