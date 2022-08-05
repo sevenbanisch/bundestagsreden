@@ -196,7 +196,7 @@ def get_graph_template(graph, properties):
     </body>
     """
 
-    return { 'graph': htmlcode }
+    return {'graph': htmlcode}
 
 
 def write_html_file(html):

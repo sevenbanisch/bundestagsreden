@@ -1,11 +1,12 @@
 from matplotlib import pyplot as plt
 
-from util_functions import get_speeches, get_corpus, corpus_by_POS, get_matrix_and_feature_names, \
+from word_cloud_functions import topics_to_word_clouds
+from topic_network_functions import get_speeches, get_corpus, corpus_by_POS, get_matrix_and_feature_names, \
     create_model, get_topic_word_lists, get_topic2_topic, create_topic2topic_graph, get_graph_template, \
     write_html_file, group_speeches_by_discussion_title
 
 
-def main():
+def create_topic_network_page():
     original_speeches = get_speeches()
     grouped_speeches_by_tops = group_speeches_by_discussion_title(original_speeches)
     corpus = get_corpus(grouped_speeches_by_tops)
@@ -37,6 +38,14 @@ def main():
 
     html_graph = get_graph_template(t2t_graph, properties)
     write_html_file(html_graph)
+
+    return tw
+
+
+def main():
+    tw = create_topic_network_page()
+
+    topics_to_word_clouds(tw)
 
     return
 
