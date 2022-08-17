@@ -1,9 +1,10 @@
 import json
+import os
+
 from lxml import etree
 
 
 JSON_FILE_NAME = 'parsed_mdbs.json'
-# If running this file directly via python you have to change the path to '../../data'
 PREPROCESSED_DATA_DIRECTORY = '../data/'
 
 
@@ -66,7 +67,7 @@ def parseMdb(mdb):
         
 
 def getMdbCoredata():
-    mdb_core_data_path = '../MdB-Stammdaten-data/MDB_STAMMDATEN.XML'
+    mdb_core_data_path = os.path.join(PREPROCESSED_DATA_DIRECTORY, 'MdB-Stammdaten-data/MDB_STAMMDATEN.XML')
     root = etree.parse(mdb_core_data_path)
     
     mdbs = root.findall('.//MDB')
@@ -75,20 +76,25 @@ def getMdbCoredata():
 
 
 def write_dict_to_json_file(dictionary):
-    with open(f'{PREPROCESSED_DATA_DIRECTORY}{JSON_FILE_NAME}', 'w') as outfile:
+    path = f'{PREPROCESSED_DATA_DIRECTORY}{JSON_FILE_NAME}'
+    with open(path, 'w') as outfile:
         json.dump(dictionary, outfile, indent=2)
-    
+
+
+def parse_mdb_data():
+    print('parsing mdb data from xml')
+    mdb_data = getMdbCoredata()
+
+    print('writing parsed mdb data to json')
+    write_dict_to_json_file(mdb_data)
+
 
 def read_mdbs_from_json():
     return json.loads(open(f'{PREPROCESSED_DATA_DIRECTORY}{JSON_FILE_NAME}').read())
 
 
 def main():
-    print('parsing mdb data from xml')
-    mdb_data = getMdbCoredata()
-
-    print('writing parsed mdb data to json')
-    write_dict_to_json_file(mdb_data)
+    parse_mdb_data()
 
     # The following lines demonstrate how to read the generated data.
     print('reading mdb data from json')
