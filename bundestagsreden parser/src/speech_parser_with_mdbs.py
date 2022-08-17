@@ -33,7 +33,7 @@ def read_speeches_xml(lp):
 
 
 def write_speeches(speeches_list, lp):
-    path = f'./speeches_{lp}.jsonl'
+    path = os.path.join(DATA_DIRECTORY, f'speeches_{lp}.jsonl')
     with open(path, 'w', encoding='utf-8') as f:
         for line in speeches_list:
             json.dump(line, f, ensure_ascii=False)
