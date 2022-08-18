@@ -74,7 +74,7 @@ def parseMdb(mdb):
     mdb_dict['name'] = parseNames(children[1])
     mdb_dict['biography'] = parseBiography(children[2])
     mdb_dict['legislative_periods'] = [parseLegislativePeriod(period) for period in children[3].getchildren()]
-    
+
     return mdb_dict
         
 

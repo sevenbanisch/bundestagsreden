@@ -68,6 +68,26 @@ def clean_speech_dict_string_fragments(speech_dict):
     return updated_dict
 
 
+def get_mdb_from_speech_xml(redner_tag, period):
+    name_tag = redner_tag.getchildren()[0].getchildren()[0]
+
+    fn = name_tag.getchildren()[0].text
+    sn = name_tag.getchildren()[1].text
+
+    mdb = {
+        'biography': {
+            'party': 'unknown'
+        },
+        'name': {
+            'forename': fn,
+            'surname': sn
+        },
+        'legislative_periods': [{'period_number': period}]
+    }
+
+    return mdb
+
+
 def parse_top(top, date, mdbs, with_comments):
     jsondict = {}
     tagesordnungspunkt = ''
@@ -82,19 +102,11 @@ def parse_top(top, date, mdbs, with_comments):
             speech_dict = {'text': ''}
 
             for info in child.getchildren():
+                period = next(iter(mdbs.values()))['legislative_periods'][-1]['period_number']
                 if info.attrib == {'klasse': 'redner'}:
                     redner_id = info.getchildren()[0].attrib['id']
                     if redner_id not in mdbs.keys():
-                        mdb = {
-                            'biography': {
-                                'party': 'unknown'
-                            },
-                            'name': {
-                                'forename': 'unknown',
-                                'surname': 'unknown'
-                            },
-                            'legislative_periods': [{'period_number': 0}]
-                        }
+                        mdb = get_mdb_from_speech_xml(info, period)
                     else:
                         mdb = mdbs[redner_id]
 
@@ -104,7 +116,7 @@ def parse_top(top, date, mdbs, with_comments):
                     surname = whole_name['surname']
                 
                 speech_dict['id'] = child.attrib['id']
-                speech_dict['period'] = mdb['legislative_periods'][-1]['period_number']
+                speech_dict['period'] = period
                 speech_dict['date'] = date
                 speech_dict['name'] = f'{name} {surname}'
                 speech_dict['party'] = party
