@@ -34,9 +34,21 @@ def parseBiography(biography):
     bio_dict['civil_status'] = bio[5].text
     bio_dict['religion'] = bio[6].text
     bio_dict['profession'] = bio[7].text
-    bio_dict['party'] = bio[8].text
+    bio_dict['party'] = determine_party(bio[8].text)
     
     return bio_dict
+
+
+def determine_party(text):
+    without_party = 'Fraktionslos'
+    valid_parties = ['BÜNDNIS 90/DIE GRÜNEN', 'CDU/CSU', 'AfD', 'SPD', 'FDP', 'DIE LINKE']
+
+    party_text = without_party if text is None else text
+    party_text = party_text.replace('.', '')
+    party_text = 'CDU/CSU' if party_text in ['CDU', 'CSU'] else party_text
+    party_text = party_text if party_text in valid_parties else without_party
+
+    return party_text
 
 
 def parseLegislativePeriod(period_elem):
