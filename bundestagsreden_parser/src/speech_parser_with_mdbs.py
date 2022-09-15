@@ -1,5 +1,3 @@
-# TODO: julian hohenöcker: Implement parser according to ./parser.py but retrieve speaker core data (surename, forename, party, etc.) from parsed mdb-data file.
-
 import os
 from datetime import datetime
 import json
