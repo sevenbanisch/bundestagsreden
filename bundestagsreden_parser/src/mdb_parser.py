@@ -8,7 +8,7 @@ JSON_FILE_NAME = 'parsed_mdbs.json'
 PREPROCESSED_DATA_DIRECTORY = '../data/'
 
 
-def parseNames(names):
+def parse_names(names):
     name_dict = {}
     
     # Use last added name from names. The later on relation between mdb and speech is done via the id and not the name!
@@ -22,7 +22,7 @@ def parseNames(names):
     return name_dict
 
 
-def parseBiography(biography):
+def parse_biography(biography):
     bio_dict = {}
     
     bio = biography.getchildren()
@@ -51,7 +51,7 @@ def determine_party(text):
     return party_text
 
 
-def parseLegislativePeriod(period_elem):
+def parse_legislative_period(period_elem):
     period_dict = {}
     
     period = period_elem.getchildren()    
@@ -65,26 +65,26 @@ def parseLegislativePeriod(period_elem):
     return period_dict
     
 
-def parseMdb(mdb):
+def parse_mdb(mdb):
     children = mdb.getchildren()
     
     mdb_dict = {}
     
     mdb_dict['id'] = children[0].text
-    mdb_dict['name'] = parseNames(children[1])
-    mdb_dict['biography'] = parseBiography(children[2])
-    mdb_dict['legislative_periods'] = [parseLegislativePeriod(period) for period in children[3].getchildren()]
+    mdb_dict['name'] = parse_names(children[1])
+    mdb_dict['biography'] = parse_biography(children[2])
+    mdb_dict['legislative_periods'] = [parse_legislative_period(period) for period in children[3].getchildren()]
 
     return mdb_dict
         
 
-def getMdbCoredata():
+def get_mdb_rawdata():
     mdb_core_data_path = 'MdB-Stammdaten-data/MDB_STAMMDATEN.XML'
     root = etree.parse(mdb_core_data_path)
     
     mdbs = root.findall('.//MDB')
     
-    return [parseMdb(mdb) for mdb in mdbs]
+    return [parse_mdb(mdb) for mdb in mdbs]
 
 
 def write_dict_to_json_file(dictionary):
@@ -95,7 +95,7 @@ def write_dict_to_json_file(dictionary):
 
 def parse_mdb_data():
     print('parsing mdb data from xml')
-    mdb_data = getMdbCoredata()
+    mdb_data = get_mdb_rawdata()
 
     print('writing parsed mdb data to json')
     write_dict_to_json_file(mdb_data)
