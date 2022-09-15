@@ -79,7 +79,7 @@ def parseMdb(mdb):
         
 
 def getMdbCoredata():
-    mdb_core_data_path = os.path.join(PREPROCESSED_DATA_DIRECTORY, 'MdB-Stammdaten-data/MDB_STAMMDATEN.XML')
+    mdb_core_data_path = 'MdB-Stammdaten-data/MDB_STAMMDATEN.XML'
     root = etree.parse(mdb_core_data_path)
     
     mdbs = root.findall('.//MDB')
@@ -88,7 +88,7 @@ def getMdbCoredata():
 
 
 def write_dict_to_json_file(dictionary):
-    path = f'{PREPROCESSED_DATA_DIRECTORY}{JSON_FILE_NAME}'
+    path = os.path.join(PREPROCESSED_DATA_DIRECTORY, JSON_FILE_NAME)
     with open(path, 'w') as outfile:
         json.dump(dictionary, outfile, indent=2)
 
@@ -102,7 +102,7 @@ def parse_mdb_data():
 
 
 def read_mdbs_from_json():
-    return json.loads(open(f'{PREPROCESSED_DATA_DIRECTORY}{JSON_FILE_NAME}').read())
+    return json.loads(open(os.path.join(PREPROCESSED_DATA_DIRECTORY, JSON_FILE_NAME)).read())
 
 
 def main():

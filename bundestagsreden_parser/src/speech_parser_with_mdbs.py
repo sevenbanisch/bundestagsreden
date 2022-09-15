@@ -4,11 +4,11 @@ import os
 from datetime import datetime
 import json
 from lxml import etree
-from .mdb_parser import read_mdbs_from_json
+from src.mdb_parser import read_mdbs_from_json
 
-MDB_JSON_FILE = 'parsed_mdbs.json'
+
 DATA_DIRECTORY = '../data/'
-SPEECHES_DIRECTORY = 'data_20/speeches'
+SPEECHES_DIRECTORY = 'data_20'
 
 
 def filter_active_mdbs(mdbs, lp):
@@ -23,7 +23,7 @@ def filter_active_mdbs(mdbs, lp):
 
 def read_speeches_xml(lp):
     speeches = []
-    path = os.path.join(DATA_DIRECTORY, f'data_{lp}/speeches')
+    path = f'data_{lp}'
 
     for file in os.listdir(path):
         speeches.append(os.path.join(path, file))
@@ -32,8 +32,11 @@ def read_speeches_xml(lp):
     return speeches
 
 
-def write_speeches(speeches_list, lp):
-    path = os.path.join(DATA_DIRECTORY, f'speeches_{lp}.jsonl')
+def write_speeches(speeches_list, lp, with_comments):
+    file_name = f'speeches_{lp}'
+    file_name += '_with_comments' if with_comments else ''
+    file_name += '.jsonl'
+    path = os.path.join(DATA_DIRECTORY, file_name)
     with open(path, 'w', encoding='utf-8') as f:
         for line in speeches_list:
             json.dump(line, f, ensure_ascii=False)
@@ -156,7 +159,7 @@ def flatten_speeches(files):
     return speeches
 
 
-def parse(legislature_period, with_comments):
+def parse(legislature_period: int, with_comments: bool) -> None:
     print(f'start parsing with parameters given: {legislature_period} & {with_comments}')
     mdbs = read_mdbs_from_json()
     active_mdbs = filter_active_mdbs(mdbs, legislature_period)
@@ -172,10 +175,7 @@ def parse(legislature_period, with_comments):
 
     print(f'got {len(speeches)} speeches')
 
-    # TODO: depending on cmd-parameter parse with or without comments
-    # save it, depending on comment parameter modify output-file name (e.g speeches_20_with_comments.json or speeches_20_without_comments.json
-
-    write_speeches(speeches, legislature_period)
+    write_speeches(speeches, legislature_period, with_comments)
 
     return
 
