@@ -54,7 +54,7 @@ def determine_party(text):
 def parse_legislative_period(period_elem):
     period_dict = {}
     
-    period = period_elem.getchildren()    
+    period = period_elem.getchildren()
     
     period_dict['period_number'] = period[0].text
     period_dict['wkr_number'] = period[3].text

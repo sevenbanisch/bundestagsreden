@@ -10,7 +10,7 @@ from sklearn.preprocessing import normalize
 
 
 def get_speeches():
-    with open('../../bundestagsreden parser/speeches_20.jsonl', 'r', encoding='utf8') as fp:
+    with open('../../data/speeches_20.jsonl', 'r', encoding='utf8') as fp:
         return [json.loads(line) for line in list(fp)]
 
 
