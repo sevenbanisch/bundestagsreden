@@ -61,7 +61,7 @@ def clean_speech_dict_string_fragments(speech_dict):
     updated_dict = {}
 
     for key in speech_dict.keys():
-        if type(speech_dict) == str:
+        if type(speech_dict[key]) == str:
             updated_dict[key] = speech_dict[key].replace(u'\xa0', u' ').replace(u'\xad', u'')
         else:
             updated_dict[key] = speech_dict[key]
