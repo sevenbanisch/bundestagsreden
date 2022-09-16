@@ -1,5 +1,6 @@
 # look up in Sven/kommentare.ipynb, Sven/xTopicModel.ipynb & Julians notebook
 import json
+from typing import List, Any
 
 import spacy
 import tqdm
@@ -51,7 +52,7 @@ def corpus_by_POS(corpus, consider):
     return groups
 
 
-def get_matrix_and_feature_names(noun_groups):
+def get_matrix_and_feature_names(noun_groups: List[str]) -> (Any, Any, Any):
     tfidf_vectorizer = TfidfVectorizer(max_df=0.8, min_df=0.01, lowercase=False)
     tfidf_matrix = tfidf_vectorizer.fit_transform(noun_groups)
     feature_names = tfidf_vectorizer.get_feature_names_out()
