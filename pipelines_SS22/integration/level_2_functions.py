@@ -1,10 +1,10 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-def create_graph(i, groupedby_discussion, topic_names, similarity_topic):
+def create_graph(groupedby_discussion, topic_names, similarity_topic):
     nodes = []
     count = 1
-    for j, top_ix in enumerate(i):
+    for j, top_ix in enumerate(topic_names):
         node_dict = {
             'id': count,
             'top': top_ix,
@@ -108,7 +108,7 @@ def generate_networks_for_topics(topics_len, corpus, top_topic_num, gropuedby_di
 
             print(similarity_topic.shape)
 
-            graph = create_graph(i, gropuedby_discussion, topic_names, similarity_topic)
+            graph = create_graph(gropuedby_discussion, topic_names, similarity_topic)
             html = embed_graph_in_html(graph)
             safe_html_graph(i, html)
 
