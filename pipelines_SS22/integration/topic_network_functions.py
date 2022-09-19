@@ -186,7 +186,11 @@ def get_graph_template(graph, properties):
             {lv}.linkVisibility('false')
             {parts}.linkDirectionalParticles(2)
             {parts}.linkDirectionalParticleWidth(1.4)
-            .onNodeClick (node => {{window.open(`wordnet.html`, '_blank')}})
+            //.onNodeClick (node => {{window.open(`wordnet.html`, '_blank')}})
+            .onNodeClick (node => {{
+                const path = 'TOPnets/TOPnet4topic' + node.id + '.html';
+                window.open(path, '_blank');
+            }})
             //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
             .onNodeRightClick(node => {{
                 // Center/zoom on node
