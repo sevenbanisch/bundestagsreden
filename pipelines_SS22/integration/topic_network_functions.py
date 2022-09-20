@@ -1,5 +1,7 @@
 # look up in Sven/kommentare.ipynb, Sven/xTopicModel.ipynb & Julians notebook
 import json
+import os.path
+import pickle
 from typing import List, Any
 
 import spacy
@@ -37,17 +39,26 @@ def get_corpus(tops):
     return corpus
 
 
-def corpus_by_POS(corpus, consider):
+def corpus_by_POS(corpus, consider) -> List[str]:
     nlp = spacy.load('de_core_news_sm')
     groups = []
-    for row in tqdm.tqdm(corpus):
-        doc = nlp(row)
-        new_row = []
-        # TODO: use filter(lambda...) here
-        for token in doc:
-            if token.pos_ in consider:
-                new_row.append(token.lemma_)
-        groups.append(' '.join(new_row))
+
+    groups_file_name = 'groups.pickle'
+    if os.path.exists(groups_file_name):
+        with open(groups_file_name, 'rb') as f:
+            groups = pickle.load(f)
+            print(f'found "{groups_file_name}" containing the groups')
+    else:
+        print(f"didn't find '{groups_file_name}' file. Generating groups now.")
+        for row in tqdm.tqdm(corpus):
+            doc = nlp(row)
+            new_row = []
+            for token in doc:
+                if token.pos_ in consider:
+                    new_row.append(token.lemma_)
+            groups.append(' '.join(new_row))
+        with open(groups_file_name, 'wb') as f:
+            pickle.dump(groups, f)
 
     return groups
 
