@@ -18,5 +18,8 @@ Die Ergebnisse dieser Vorverarbeitung werden unter `data/` je nach Option `speec
 Dieser Ordner (`data/`) wird nicht unter `git` verwaltet.
 
 ## Report Erstellung
-<!-- TODO: Julian: Add documentation here -->
-Wie die .html Datei(en) erstellt wird/werden.
+Unter `pipelines_SS22/integration/` befinden sich python-scripte zur Generierung von `.html`-Dateien, welche die Analyse-Ergebnisse zu den Bundestagsreden grafisch darstellen.
+Die Datei `main.py` integriert dabei sämtliche Funktionen zur Generierung des Reports.
+Dafür muss man das Script via `python main.py` im Verzeichnis `pipelines_SS22/integration/` ausführen.
+Nach erfolgreicher Ausführung findet man die Datei `topic_network.html` als Einstiegspunkt, sowie unter `/TOPnets/` entsprechende "Unterseiten" zur Navigation.
+Des Weiteren liegen in `/imgs/wordclouds/` noch generierte Wordcloud-Bilder, welche aber noch keine Verwendung in den `.html`-Dateien finden.
