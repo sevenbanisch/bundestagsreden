@@ -46,7 +46,7 @@ def create_topic_network_page() -> (List[list], List[str], List[str], Tuple[Any,
     return tw, corpus, grouped_speeches_by_tops, (doc2topic, feature_names, topic2word)
 
 
-def get_top_topic_num(grouped_speeches_by_tops, doc2topic, n_topics):
+def get_top_topic_num(grouped_speeches_by_tops, doc2topic, n_topics: int) -> List[int]:
     top_topic_num = []
     for tx, top in enumerate(grouped_speeches_by_tops):
         if doc2topic[tx].max() > 0:

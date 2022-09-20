@@ -1,7 +1,9 @@
+from typing import List
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-def create_graph(groupedby_discussion, topic_names, similarity_topic):
+def create_graph(groupedby_discussion: dict, topic_names: List[str], similarity_topic) -> dict:
     nodes = []
     count = 1
     for j, top_ix in enumerate(topic_names):
@@ -43,7 +45,7 @@ def create_graph(groupedby_discussion, topic_names, similarity_topic):
     return graph
 
 
-def embed_graph_in_html(graph):
+def embed_graph_in_html(graph: dict) -> str:
     d3graph = {"nodes": graph["nodes"], "links": graph["links"]}
 
     return f"""<head>
@@ -74,14 +76,16 @@ def embed_graph_in_html(graph):
             """
 
 
-def safe_html_graph(i, html):
+def safe_html_graph(i: int, html: str) -> None:
     with open(f'./TOPnets/TOPnet4topic{i}.html', 'w') as f:
         f.write(html)
 
 
-def generate_networks_for_topics(topics_len, corpus, top_topic_num, gropuedby_discussion, feature_names, feature_topic_num):
+def generate_networks_for_topics(
+        topics_len: int, corpus, top_topic_num: list, gropuedby_discussion: dict, feature_names: List[str],
+        feature_topic_num):
     # TODO: Look it up in Sven/xTopicModel.ipynb beginning at section "Level II"
-    print('start generate_networks_for_topics')
+    print(f'start generate_networks_for_topics, iterating over {topics_len} elements.')
     for i in range(topics_len):
         topic_selection = []
         topic_indices = []

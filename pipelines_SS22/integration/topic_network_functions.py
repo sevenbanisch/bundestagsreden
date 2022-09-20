@@ -68,7 +68,7 @@ def get_matrix_and_feature_names(noun_groups: List[str]) -> (Any, Any, Any):
     tfidf_matrix = tfidf_vectorizer.fit_transform(noun_groups)
     feature_names = tfidf_vectorizer.get_feature_names_out()
 
-    tf_vectorizer = TfidfVectorizer(vocabulary=feature_names, use_idf=False, norm='l1')
+    tf_vectorizer = TfidfVectorizer(vocabulary=feature_names, use_idf=False, norm='l1', lowercase=False)
     tf_matrix = tf_vectorizer.fit_transform(noun_groups)
 
     return tfidf_matrix, feature_names, tf_matrix
@@ -199,7 +199,8 @@ def get_graph_template(graph, properties):
             {parts}.linkDirectionalParticleWidth(1.4)
             //.onNodeClick (node => {{window.open(`wordnet.html`, '_blank')}})
             .onNodeClick (node => {{
-                const path = 'TOPnets/TOPnet4topic' + node.id + '.html';
+                const nodeid = node.id - 1;
+                const path = 'TOPnets/TOPnet4topic' + nodeid + '.html';
                 window.open(path, '_blank');
             }})
             //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
