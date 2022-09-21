@@ -201,6 +201,8 @@ def get_graph_template(graph, properties):
             .onNodeClick (node => {{
                 const nodeid = node.id - 1;
                 const path = 'TOPnets/TOPnet4topic' + nodeid + '.html';
+                // const path = 'imgs/wordclouds/wordcloud_' + nodeid + '.png';
+                // TODO: Link to path to graphs with "Beifall"-Reaction
                 window.open(path, '_blank');
             }})
             //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)

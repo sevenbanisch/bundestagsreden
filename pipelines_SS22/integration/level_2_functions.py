@@ -84,7 +84,6 @@ def safe_html_graph(i: int, html: str) -> None:
 def generate_networks_for_topics(
         topics_len: int, corpus, top_topic_num: list, gropuedby_discussion: dict, feature_names: List[str],
         feature_topic_num):
-    # TODO: Look it up in Sven/xTopicModel.ipynb beginning at section "Level II"
     print(f'start generate_networks_for_topics, iterating over {topics_len} elements.')
     for i in range(topics_len):
         topic_selection = []

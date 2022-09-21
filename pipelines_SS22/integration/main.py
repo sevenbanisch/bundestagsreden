@@ -75,17 +75,7 @@ def get_feature_topic_num(feature_names, topic2word, n_topics: int) -> List[int]
 def main() -> None:
     tw, corpus, grouped_speeches_by_tops, later_use = create_topic_network_page()
 
-    word_clouds = topics_to_word_clouds(tw)
-
-    # topics: list<dict>[11], dict {'name': str, 'words': [str], 'tops': [str] } => topics_len
-    # corpus: list<str>[208]
-    # top_topic_num: list<int>[208]
-    # gropuedby_dicussion: dict{'topxy': [speeches]}
-    # feature_names: list<str>[7548]
-    # feature_topic_num: list<int>[7548]
-
-    # TODO: Hier weitermachen! :-(
-    # in combination with `level_2_functions.py` and `Sven/xTopicModel.ipynb`
+    topic_word_clouds = topics_to_word_clouds(tw)
 
     doc2topic, feature_names, topic2word = later_use
     top_topic_num = get_top_topic_num(grouped_speeches_by_tops, doc2topic, len(tw))
