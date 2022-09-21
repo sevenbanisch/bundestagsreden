@@ -109,6 +109,14 @@ def generate_networks_for_topics(
             pairwise_similarity_topic = tf_idf_matrix_topic * tf_idf_matrix_topic.T
             similarity_topic = pairwise_similarity_topic.toarray()
 
+            # TODO
+            # filter_for_topics_top. Für jedes Topic, die Liste der Tagesordnungspunkte filtern.
+            # Aus Sven/xTopicModel.ipynb 'topics'-Variable
+            # Für jeden dieser selektierten Tagesordnungspunkte die Reden selektieren.
+            # Für alle diese Reden ein Balkendiagramm mit der "Beifall"-Reaktion erstlellen.
+            # reaction-bars bekommen wir aus Marcel/Report_comments_parties.ipynb
+            # print(next(gropuedby_discussion.items()))
+
             print(similarity_topic.shape)
 
             graph = create_graph(gropuedby_discussion, topic_names, similarity_topic)
