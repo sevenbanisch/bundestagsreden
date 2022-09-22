@@ -1,5 +1,8 @@
 # look up in Sven/kommentare.ipynb, Sven/xTopicModel.ipynb & Julians notebook
 import json
+import os.path
+import pickle
+from typing import List, Any
 
 import spacy
 import tqdm
@@ -36,27 +39,36 @@ def get_corpus(tops):
     return corpus
 
 
-def corpus_by_POS(corpus, consider):
+def corpus_by_POS(corpus, consider) -> List[str]:
     nlp = spacy.load('de_core_news_sm')
     groups = []
-    for row in tqdm.tqdm(corpus):
-        doc = nlp(row)
-        new_row = []
-        # TODO: use filter(lambda...) here
-        for token in doc:
-            if token.pos_ in consider:
-                new_row.append(token.lemma_)
-        groups.append(' '.join(new_row))
+
+    groups_file_name = 'groups.pickle'
+    if os.path.exists(groups_file_name):
+        with open(groups_file_name, 'rb') as f:
+            groups = pickle.load(f)
+            print(f'found "{groups_file_name}" containing the groups')
+    else:
+        print(f"didn't find '{groups_file_name}' file. Generating groups now.")
+        for row in tqdm.tqdm(corpus):
+            doc = nlp(row)
+            new_row = []
+            for token in doc:
+                if token.pos_ in consider:
+                    new_row.append(token.lemma_)
+            groups.append(' '.join(new_row))
+        with open(groups_file_name, 'wb') as f:
+            pickle.dump(groups, f)
 
     return groups
 
 
-def get_matrix_and_feature_names(noun_groups):
+def get_matrix_and_feature_names(noun_groups: List[str]) -> (Any, Any, Any):
     tfidf_vectorizer = TfidfVectorizer(max_df=0.8, min_df=0.01, lowercase=False)
     tfidf_matrix = tfidf_vectorizer.fit_transform(noun_groups)
     feature_names = tfidf_vectorizer.get_feature_names_out()
 
-    tf_vectorizer = TfidfVectorizer(vocabulary=feature_names, use_idf=False, norm='l1')
+    tf_vectorizer = TfidfVectorizer(vocabulary=feature_names, use_idf=False, norm='l1', lowercase=False)
     tf_matrix = tf_vectorizer.fit_transform(noun_groups)
 
     return tfidf_matrix, feature_names, tf_matrix
@@ -185,7 +197,14 @@ def get_graph_template(graph, properties):
             {lv}.linkVisibility('false')
             {parts}.linkDirectionalParticles(2)
             {parts}.linkDirectionalParticleWidth(1.4)
-            .onNodeClick (node => {{window.open(`wordnet.html`, '_blank')}})
+            //.onNodeClick (node => {{window.open(`wordnet.html`, '_blank')}})
+            .onNodeClick (node => {{
+                const nodeid = node.id - 1;
+                // const path = 'TOPnets/TOPnet4topic' + nodeid + '.html';
+                const path = 'imgs/wordclouds/wordcloud_' + nodeid + '.png';
+                // TODO: Link to path to graphs with "Beifall"-Reaction
+                window.open(path, '_blank');
+            }})
             //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
             .onNodeRightClick(node => {{
                 // Center/zoom on node
