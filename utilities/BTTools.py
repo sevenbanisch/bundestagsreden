@@ -1,5 +1,27 @@
 
 
+def load_speeches(period,comments):
+
+    if comments:
+        filename = f'../../data/speeches_{period}_with_comments.jsonl'
+    else:
+        filename = f'../data/speeches_{period}.jsonl'
+
+    with open(filename, 'r', encoding = 'utf8') as fp:
+        data = list(fp)
+    speeches = []
+    for line in data:
+        speeches.append(json.loads(line))
+
+    return speeches
+
+
+
+
+
+
+
+
 def filter_for(what, search_terms, speeches):
     filtered_speeches = []
     if what == 'text':
