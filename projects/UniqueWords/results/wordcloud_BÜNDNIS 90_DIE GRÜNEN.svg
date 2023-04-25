@@ -1,0 +1,505 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+<style>@font-face{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;src:url("data:application/font-woff;charset=utf-8;base64,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")format("woff");}</style>
+<style>text{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;}</style>
+<rect width="100%" height="100%" style="fill:rgba(255, 255, 255, 0)"></rect>
+<text transform="translate(52,594)" font-size="95" style="fill:rgb(240, 196, 108)">Merkel-Regierung</text>
+<text transform="translate(62,693)" font-size="85" style="fill:rgb(61, 234, 213)">TV-Geräten</text>
+<text transform="translate(286,419)" font-size="83" style="fill:rgb(34, 214, 224)">Krampf</text>
+<text transform="translate(68,311)" font-size="72" style="fill:rgb(118, 16, 255)">Windindustrieanlagen</text>
+<text transform="translate(360,896)" font-size="68" style="fill:rgb(255, 50, 25)">0,000653</text>
+<text transform="translate(118,762)" font-size="66" style="fill:rgb(110, 28, 255)">Ökosozialismus</text>
+<text transform="translate(394,214)" font-size="66" style="fill:rgb(246, 190, 104)">Grüninnen</text>
+<text transform="translate(439,496)" font-size="66" style="fill:rgb(255, 152, 80)">EU-Bürokratie</text>
+<text transform="translate(232,822)" font-size="66" style="fill:rgb(246, 190, 104)">Altfraktionen</text>
+<text transform="translate(442,131)" font-size="64" style="fill:rgb(84, 246, 203)">EU-ropa</text>
+<text transform="translate(755,425)" font-size="62" style="fill:rgb(93, 249, 199)">Kahane</text>
+<text transform="translate(135,229)" font-size="62" style="fill:rgb(128, 255, 180)">Birma</text>
+<text transform="translate(22,496)" font-size="60" style="fill:rgb(255, 53, 27)">Linksgrünen</text>
+<text transform="translate(587,687)" font-size="57" style="fill:rgb(255, 112, 58)">Links-Grün</text>
+<text transform="translate(328,940)" font-size="49" style="fill:rgb(255, 132, 68)">Zensurgesetz</text>
+<text transform="translate(434,52)" font-size="49" style="fill:rgb(28, 147, 243)">Servus</text>
+<text transform="translate(113,349)" font-size="49" style="fill:rgb(78, 77, 252)">orientalisch</text>
+<text transform="translate(403,240)" font-size="33" style="fill:rgb(222, 213, 121)">Weltuntergangspropheten</text>
+<text transform="translate(372,235) rotate(-90)" font-size="33" style="fill:rgb(104, 252, 193)">Eurokraten</text>
+<text transform="translate(19,430)" font-size="31" style="fill:rgb(112, 25, 255)">Zappelstrom</text>
+<text transform="translate(726,535)" font-size="31" style="fill:rgb(168, 247, 156)">Männerarbeit</text>
+<text transform="translate(601,336)" font-size="31" style="fill:rgb(102, 41, 254)">Klimasekte</text>
+<text transform="translate(19,619)" font-size="31" style="fill:rgb(30, 145, 243)">ökosozialistischen</text>
+<text transform="translate(583,362)" font-size="31" style="fill:rgb(220, 214, 122)">Coronamaßnahmenkrise</text>
+<text transform="translate(638,624)" font-size="31" style="fill:rgb(23, 203, 228)">Coronahysterie</text>
+<text transform="translate(702,775)" font-size="29" style="fill:rgb(63, 235, 213)">verschandeln</text>
+<text transform="translate(38,384)" font-size="29" style="fill:rgb(255, 89, 45)">wertschöpfende</text>
+<text transform="translate(638,711)" font-size="29" style="fill:rgb(130, 255, 179)">Euro-Südländer</text>
+<text transform="translate(671,734)" font-size="28" style="fill:rgb(49, 118, 248)">Genderideologen</text>
+<text transform="translate(393,72)" font-size="26" style="fill:rgb(255, 38, 19)">Ideologieprojekte</text>
+<text transform="translate(374,150)" font-size="24" style="fill:rgb(203, 228, 134)">Merkel-Regierungen</text>
+<text transform="translate(374,614)" font-size="24" style="fill:rgb(57, 107, 249)">linksgrünen</text>
+<text transform="translate(779,867) rotate(-90)" font-size="24" style="fill:rgb(122, 255, 183)">Ndiaga</text>
+<text transform="translate(372,514)" font-size="22" style="fill:rgb(255, 112, 58)">Nachhaltigkeitslücke</text>
+<text transform="translate(252,434)" font-size="21" style="fill:rgb(255, 123, 64)">Armutsrente</text>
+<text transform="translate(623,172)" font-size="21" style="fill:rgb(255, 83, 42)">Frauenschutzzonen</text>
+<text transform="translate(8,517)" font-size="21" style="fill:rgb(255, 176, 95)">steuerzahlenden</text>
+<text transform="translate(334,211) rotate(-90)" font-size="21" style="fill:rgb(255, 95, 48)">links-grüner</text>
+<text transform="translate(778,441)" font-size="21" style="fill:rgb(24, 152, 242)">ALARM</text>
+<text transform="translate(428,969)" font-size="21" style="fill:rgb(255, 160, 85)">Bildungsideal</text>
+<text transform="translate(573,401)" font-size="21" style="fill:rgb(4, 176, 237)">Drangsalierung</text>
+<text transform="translate(502,435)" font-size="20" style="fill:rgb(90, 248, 200)">Kompetenzorientierung</text>
+<text transform="translate(876,265)" font-size="20" style="fill:rgb(236, 200, 111)">01</text>
+<text transform="translate(162,854)" font-size="20" style="fill:rgb(255, 129, 67)">Klimaideologie</text>
+<text transform="translate(487,639)" font-size="20" style="fill:rgb(64, 98, 250)">CDU-Genossen</text>
+<text transform="translate(976,601) rotate(-90)" font-size="20" style="fill:rgb(174, 244, 152)">EU-ropäische</text>
+<text transform="translate(171,172)" font-size="20" style="fill:rgb(15, 196, 231)">Durchwinken</text>
+<text transform="translate(783,639)" font-size="20" style="fill:rgb(88, 62, 253)">Gewaltverbrecher</text>
+<text transform="translate(83,245)" font-size="20" style="fill:rgb(153, 252, 166)">Drangsalierungen</text>
+<text transform="translate(343,364)" font-size="20" style="fill:rgb(28, 147, 243)">0,000284</text>
+<text transform="translate(176,710)" font-size="20" style="fill:rgb(255, 56, 28)">Fegefeuer</text>
+<text transform="translate(192,880)" font-size="19" style="fill:rgb(255, 62, 31)">globalistischen</text>
+<text transform="translate(715,150)" font-size="19" style="fill:rgb(116, 254, 186)">Laridschani</text>
+<text transform="translate(520,531)" font-size="19" style="fill:rgb(252, 183, 99)">PRP-System</text>
+<text transform="translate(94,779)" font-size="19" style="fill:rgb(132, 255, 178)">Zinsdiktat</text>
+<text transform="translate(850,441)" font-size="18" style="fill:rgb(47, 224, 219)">Abdel-Samad</text>
+<text transform="translate(372,837)" font-size="18" style="fill:rgb(155, 251, 165)">Interventionistische</text>
+<text transform="translate(192,124)" font-size="18" style="fill:rgb(4, 185, 234)">Ehrenmorden</text>
+<text transform="translate(594,841)" font-size="18" style="fill:rgb(188, 237, 143)">Kreditrisiken</text>
+<text transform="translate(590,379)" font-size="18" style="fill:rgb(255, 56, 28)">Lissabon-Urteil</text>
+<text transform="translate(674,748)" font-size="18" style="fill:rgb(42, 221, 221)">kulturmarxistische</text>
+<text transform="translate(112,793)" font-size="18" style="fill:rgb(125, 255, 182)">Sitzende</text>
+<text transform="translate(303,454)" font-size="18" style="fill:rgb(255, 134, 70)">Selbsthass</text>
+<text transform="translate(597,86)" font-size="18" style="fill:rgb(106, 34, 254)">Vollversorgung</text>
+<text transform="translate(213,895)" font-size="18" style="fill:rgb(34, 214, 224)">Staatsschuld</text>
+<text transform="translate(169,148)" font-size="17" style="fill:rgb(255, 145, 76)">Konsensparteien</text>
+<text transform="translate(392,705)" font-size="14" style="fill:rgb(196, 232, 138)">Selbstentwicklungspolitik</text>
+<text transform="translate(394,290) rotate(-90)" font-size="14" style="fill:rgb(166, 248, 157)">Messertoten</text>
+<text transform="translate(393,576) rotate(-90)" font-size="14" style="fill:rgb(40, 219, 222)">Pack</text>
+<text transform="translate(664,639)" font-size="14" style="fill:rgb(54, 112, 248)">Narrenschiff</text>
+<text transform="translate(592,780)" font-size="14" style="fill:rgb(128, 255, 180)">Wohnraummisere</text>
+<text transform="translate(677,905)" font-size="14" style="fill:rgb(166, 248, 157)">Intensivtäter</text>
+<text transform="translate(678,508)" font-size="14" style="fill:rgb(120, 13, 255)">Milliardentransfers</text>
+<text transform="translate(486,328)" font-size="14" style="fill:rgb(172, 245, 154)">Weltbeglückung</text>
+<text transform="translate(541,716)" font-size="14" style="fill:rgb(255, 41, 20)">Münzunion</text>
+<text transform="translate(15,401)" font-size="14" style="fill:rgb(24, 205, 228)">Allmachtsfantasien</text>
+<text transform="translate(710,120)" font-size="14" style="fill:rgb(148, 253, 168)">unterwürfig</text>
+<text transform="translate(705,927)" font-size="14" style="fill:rgb(70, 239, 209)">90a</text>
+<text transform="translate(245,515)" font-size="14" style="fill:rgb(180, 242, 149)">Genting</text>
+<text transform="translate(147,454)" font-size="14" style="fill:rgb(36, 137, 245)">Linksfraktionen</text>
+<text transform="translate(846,810)" font-size="14" style="fill:rgb(114, 254, 187)">LA</text>
+<text transform="translate(414,256)" font-size="13" style="fill:rgb(86, 65, 253)">Meilensteinen</text>
+<text transform="translate(577,260)" font-size="13" style="fill:rgb(200, 230, 136)">Euro-Dauerrettung</text>
+<text transform="translate(748,263)" font-size="13" style="fill:rgb(158, 250, 162)">Euro-Südländern</text>
+<text transform="translate(761,203)" font-size="13" style="fill:rgb(118, 255, 185)">supranationaler</text>
+<text transform="translate(738,454)" font-size="13" style="fill:rgb(174, 244, 152)">1,3-Fachen</text>
+<text transform="translate(443,984)" font-size="13" style="fill:rgb(114, 254, 187)">Haushaltsvermögen</text>
+<text transform="translate(801,825)" font-size="13" style="fill:rgb(155, 251, 165)">surft</text>
+<text transform="translate(801,788)" font-size="13" style="fill:rgb(124, 6, 255)">AfD-Bashing</text>
+<text transform="translate(174,403)" font-size="13" style="fill:rgb(255, 16, 8)">Asylindustrie</text>
+<text transform="translate(840,380)" font-size="13" style="fill:rgb(41, 129, 246)">Genderprofessuren</text>
+<text transform="translate(472,344)" font-size="13" style="fill:rgb(255, 31, 16)">Köterrasse</text>
+<text transform="translate(254,531)" font-size="13" style="fill:rgb(78, 77, 252)">Bahnbetrieb</text>
+<text transform="translate(287,243)" font-size="13" style="fill:rgb(68, 92, 251)">Notenpresse</text>
+<text transform="translate(262,635)" font-size="13" style="fill:rgb(132, 255, 178)">Ostrentner</text>
+<text transform="translate(258,925)" font-size="13" style="fill:rgb(255, 155, 82)">Birmanen</text>
+<text transform="translate(231,96)" font-size="13" style="fill:rgb(42, 221, 221)">Grausen</text>
+<text transform="translate(117,530)" font-size="13" style="fill:rgb(255, 118, 61)">Kollektivklage</text>
+<text transform="translate(850,322)" font-size="13" style="fill:rgb(255, 134, 70)">Verspargelung</text>
+<text transform="translate(940,450)" font-size="13" style="fill:rgb(252, 183, 99)">Anetta</text>
+<text transform="translate(204,184)" font-size="13" style="fill:rgb(106, 253, 192)">Welttemperatur</text>
+<text transform="translate(688,882)" font-size="12" style="fill:rgb(82, 245, 203)">Probenahmestellen</text>
+<text transform="translate(384,128) rotate(-90)" font-size="12" style="fill:rgb(63, 235, 213)">Neuansiedlung</text>
+<text transform="translate(292,719)" font-size="12" style="fill:rgb(48, 121, 247)">EU-Kosten</text>
+<text transform="translate(876,710)" font-size="12" style="fill:rgb(62, 101, 250)">Eigene</text>
+<text transform="translate(525,908)" font-size="12" style="fill:rgb(77, 243, 206)">Billionenhöhe</text>
+<text transform="translate(150,831)" font-size="12" style="fill:rgb(128, 0, 255)">Wirkungslosigkeit</text>
+<text transform="translate(106,713) rotate(-90)" font-size="12" style="fill:rgb(168, 247, 156)">Abgelehnte</text>
+<text transform="translate(750,186)" font-size="12" style="fill:rgb(146, 253, 169)">Klimaübereinkommen</text>
+<text transform="translate(438,363)" font-size="12" style="fill:rgb(36, 137, 245)">Temperaturwert</text>
+<text transform="translate(413,118) rotate(-90)" font-size="12" style="fill:rgb(62, 101, 250)">Ablass</text>
+<text transform="translate(226,904)" font-size="12" style="fill:rgb(255, 95, 48)">reformunfähig</text>
+<text transform="translate(341,952)" font-size="12" style="fill:rgb(255, 167, 89)">Ausgangswert</text>
+<text transform="translate(46,344)" font-size="12" style="fill:rgb(236, 200, 111)">Victoria</text>
+<text transform="translate(17,502) rotate(-90)" font-size="12" style="fill:rgb(150, 252, 167)">Flugdienst</text>
+<text transform="translate(161,687)" font-size="12" style="fill:rgb(255, 172, 92)">Populist</text>
+<text transform="translate(373,527)" font-size="12" style="fill:rgb(31, 211, 225)">maoistischen</text>
+<text transform="translate(712,864)" font-size="12" style="fill:rgb(255, 65, 33)">Baader</text>
+<text transform="translate(390,715)" font-size="12" style="fill:rgb(242, 194, 107)">Gensoja</text>
+<text transform="translate(613,413)" font-size="10" style="fill:rgb(146, 253, 169)">Auslandsfinanzierung</text>
+<text transform="translate(136,537)" font-size="10" style="fill:rgb(30, 145, 243)">Selbstzensur</text>
+<text transform="translate(498,18)" font-size="10" style="fill:rgb(240, 196, 108)">Regierungslinie</text>
+<text transform="translate(405,428)" font-size="10" style="fill:rgb(88, 62, 253)">Hauptschulen</text>
+<text transform="translate(795,867) rotate(-90)" font-size="10" style="fill:rgb(8, 172, 238)">Ausländeranteil</text>
+<text transform="translate(831,504)" font-size="10" style="fill:rgb(23, 203, 228)">Gegengesellschaften</text>
+<text transform="translate(232,363)" font-size="10" style="fill:rgb(174, 244, 152)">Med</text>
+<text transform="translate(607,961)" font-size="10" style="fill:rgb(212, 221, 128)">Oberhoheit</text>
+<text transform="translate(640,947)" font-size="10" style="fill:rgb(132, 255, 178)">Baberowski</text>
+<text transform="translate(332,962)" font-size="10" style="fill:rgb(98, 47, 254)">Herumsitzenden</text>
+<text transform="translate(503,772)" font-size="10" style="fill:rgb(255, 118, 61)">Irrenhaus</text>
+<text transform="translate(115,809)" font-size="10" style="fill:rgb(142, 254, 172)">Vertrauenslösung</text>
+<text transform="translate(75,627)" font-size="10" style="fill:rgb(255, 13, 6)">Armutszuwanderer</text>
+<text transform="translate(38,353)" font-size="10" style="fill:rgb(68, 92, 251)">Kreditgeld</text>
+<text transform="translate(862,235)" font-size="10" style="fill:rgb(44, 126, 247)">Clanchef</text>
+<text transform="translate(374,158)" font-size="10" style="fill:rgb(16, 198, 230)">Lohndruck</text>
+<text transform="translate(284,704)" font-size="9" style="fill:rgb(255, 107, 55)">Redispatch-Maßnahmen</text>
+<text transform="translate(270,831)" font-size="9" style="fill:rgb(48, 225, 218)">Magenta-Sozialisten</text>
+<text transform="translate(804,841)" font-size="9" style="fill:rgb(64, 236, 212)">Entourage</text>
+<text transform="translate(89,438)" font-size="9" style="fill:rgb(60, 104, 249)">Asyltäuscher</text>
+<text transform="translate(798,211)" font-size="9" style="fill:rgb(255, 34, 17)">Haltungsjournalismus</text>
+<text transform="translate(633,446)" font-size="9" style="fill:rgb(82, 245, 203)">Steuergegenstand</text>
+<text transform="translate(215,104)" font-size="9" style="fill:rgb(208, 224, 130)">Gefährdergewahrsam</text>
+<text transform="translate(418,542)" font-size="9" style="fill:rgb(172, 245, 154)">Stromer</text>
+<text transform="translate(119,356)" font-size="9" style="fill:rgb(255, 44, 22)">Grundrechteentzug</text>
+<text transform="translate(178,131)" font-size="8" style="fill:rgb(142, 254, 172)">Strukturentwicklungsgebieten</text>
+<text transform="translate(55,318)" font-size="8" style="fill:rgb(57, 107, 249)">Nichtigkeitsklage</text>
+<text transform="translate(362,970)" font-size="8" style="fill:rgb(255, 134, 70)">EU-Umlage</text>
+<text transform="translate(175,861)" font-size="8" style="fill:rgb(38, 134, 245)">Weltenrettung</text>
+<text transform="translate(669,153)" font-size="8" style="fill:rgb(108, 31, 255)">Re-Tweet</text>
+<text transform="translate(640,517)" font-size="8" style="fill:rgb(150, 252, 167)">kapitalmarktfähig</text>
+<text transform="translate(404,440)" font-size="8" style="fill:rgb(142, 254, 172)">Clankriminelle</text>
+<text transform="translate(425,126) rotate(-90)" font-size="8" style="fill:rgb(140, 254, 173)">KI-Campus</text>
+<text transform="translate(114,224)" font-size="8" style="fill:rgb(96, 50, 254)">UAVs</text>
+<text transform="translate(394,552)" font-size="8" style="fill:rgb(255, 92, 47)">Hoheitsmacht</text>
+<text transform="translate(225,911)" font-size="8" style="fill:rgb(102, 252, 194)">Abkömmlinge</text>
+<text transform="translate(270,257)" font-size="8" style="fill:rgb(255, 107, 55)">Mauermörderpartei</text>
+<text transform="translate(764,247)" font-size="8" style="fill:rgb(255, 134, 70)">Krankenhausabrechnungssystem</text>
+<text transform="translate(634,455)" font-size="8" style="fill:rgb(16, 198, 230)">Coronaproblematik</text>
+<text transform="translate(935,651)" font-size="8" style="fill:rgb(8, 172, 238)">Party-</text>
+<text transform="translate(70,731) rotate(-90)" font-size="8" style="fill:rgb(64, 236, 212)">Rastermanagement</text>
+<text transform="translate(709,648)" font-size="8" style="fill:rgb(255, 83, 42)">Corona-Lockdowns</text>
+<text transform="translate(264,932)" font-size="8" style="fill:rgb(155, 251, 165)">Märzhälfte</text>
+<text transform="translate(872,333)" font-size="8" style="fill:rgb(255, 126, 65)">Magentasozialisten</text>
+<text transform="translate(438,991)" font-size="8" style="fill:rgb(255, 118, 61)">wohlstandsvernichtende</text>
+<text transform="translate(665,533)" font-size="8" style="fill:rgb(139, 254, 174)">Borjans</text>
+<text transform="translate(677,914)" font-size="8" style="fill:rgb(235, 202, 112)">Klimaübereinkunft</text>
+<text transform="translate(150,258)" font-size="8" style="fill:rgb(110, 254, 190)">Hetzegesetz</text>
+<text transform="translate(712,889)" font-size="8" style="fill:rgb(255, 167, 89)">Pflichtkontrollen</text>
+<text transform="translate(515,96)" font-size="8" style="fill:rgb(16, 162, 240)">Dana</text>
+<text transform="translate(284,71)" font-size="8" style="fill:rgb(192, 235, 141)">Scully</text>
+<text transform="translate(582,267)" font-size="8" style="fill:rgb(255, 167, 89)">einkommenswirksamen</text>
+<text transform="translate(770,598)" font-size="8" style="fill:rgb(74, 83, 251)">DRV</text>
+<text transform="translate(464,622)" font-size="8" style="fill:rgb(29, 209, 226)">Untersterblichkeit</text>
+<text transform="translate(530,949)" font-size="8" style="fill:rgb(255, 112, 58)">ernährungspolitischen</text>
+<text transform="translate(686,755)" font-size="8" style="fill:rgb(255, 80, 41)">Pandemiemanagements</text>
+<text transform="translate(776,515)" font-size="8" style="fill:rgb(255, 112, 58)">Ausfallsicherheit</text>
+<text transform="translate(253,539)" font-size="8" style="fill:rgb(255, 160, 85)">Müller-Schmidt</text>
+<text transform="translate(368,685) rotate(-90)" font-size="8" style="fill:rgb(255, 95, 48)">EU-Verschuldung</text>
+<text transform="translate(933,721) rotate(-90)" font-size="8" style="fill:rgb(78, 77, 252)">Koregulierung</text>
+<text transform="translate(165,436)" font-size="7" style="fill:rgb(255, 174, 94)">Einsatzziele</text>
+<text transform="translate(517,84)" font-size="7" style="fill:rgb(214, 219, 126)">Massenimmigration</text>
+<text transform="translate(491,843)" font-size="7" style="fill:rgb(98, 251, 196)">Machbarkeitsillusion</text>
+<text transform="translate(163,661)" font-size="7" style="fill:rgb(116, 19, 255)">OMT</text>
+<text transform="translate(594,698)" font-size="7" style="fill:rgb(118, 255, 185)">Innerafrika</text>
+<text transform="translate(57,332)" font-size="7" style="fill:rgb(236, 200, 111)">SPD-Chef</text>
+<text transform="translate(40,408)" font-size="7" style="fill:rgb(255, 118, 61)">Vermögenssubstanz</text>
+<text transform="translate(378,228) rotate(-90)" font-size="7" style="fill:rgb(255, 16, 8)">frauenfeindlicher</text>
+<text transform="translate(443,909)" font-size="7" style="fill:rgb(32, 213, 225)">Abgabenlasten</text>
+<text transform="translate(625,622) rotate(-90)" font-size="7" style="fill:rgb(54, 112, 248)">De-facto-Abschaffung</text>
+<text transform="translate(379,583)" font-size="7" style="fill:rgb(255, 9, 5)">EU-topia</text>
+<text transform="translate(403,902) rotate(-90)" font-size="7" style="fill:rgb(68, 238, 210)">Hohlmeier</text>
+<text transform="translate(510,173)" font-size="7" style="fill:rgb(112, 25, 255)">Letzthafter</text>
+<text transform="translate(611,43)" font-size="7" style="fill:rgb(255, 167, 89)">Ost-Ausschuss</text>
+<text transform="translate(395,778)" font-size="7" style="fill:rgb(80, 74, 252)">Mindestlohnempfänger</text>
+<text transform="translate(141,817)" font-size="7" style="fill:rgb(52, 115, 248)">Postkolonialismus</text>
+<text transform="translate(233,442)" font-size="7" style="fill:rgb(255, 101, 51)">pathologisch</text>
+<text transform="translate(672,935)" font-size="7" style="fill:rgb(30, 145, 243)">obskure</text>
+<text transform="translate(925,386)" font-size="7" style="fill:rgb(206, 225, 132)">Realitätsbezug</text>
+<text transform="translate(625,49)" font-size="7" style="fill:rgb(255, 129, 67)">Tatbestands</text>
+<text transform="translate(421,630)" font-size="7" style="fill:rgb(84, 68, 253)">borgen</text>
+<text transform="translate(733,105)" font-size="7" style="fill:rgb(17, 160, 241)">vobiscum</text>
+<text transform="translate(661,603)" font-size="7" style="fill:rgb(60, 104, 249)">gesinnungsethische</text>
+<text transform="translate(315,579)" font-size="7" style="fill:rgb(128, 0, 255)">wanken</text>
+<text transform="translate(164,636)" font-size="7" style="fill:rgb(255, 53, 27)">lauwarm</text>
+<text transform="translate(756,371)" font-size="7" style="fill:rgb(162, 249, 160)">Konkursverschleppung</text>
+<text transform="translate(703,132)" font-size="7" style="fill:rgb(100, 44, 254)">Erstzutrittsstaat</text>
+<text transform="translate(793,597) rotate(-90)" font-size="7" style="fill:rgb(64, 98, 250)">Terrorverfahren</text>
+<text transform="translate(215,770)" font-size="7" style="fill:rgb(23, 203, 228)">Mädchenschulen</text>
+<text transform="translate(265,641)" font-size="7" style="fill:rgb(72, 86, 251)">Luxussanierung</text>
+<text transform="translate(355,769)" font-size="7" style="fill:rgb(14, 165, 239)">bleierne</text>
+<text transform="translate(698,250)" font-size="7" style="fill:rgb(30, 145, 243)">birmanische</text>
+<text transform="translate(249,83)" font-size="7" style="fill:rgb(114, 254, 187)">EU-ropäischen</text>
+<text transform="translate(363,30)" font-size="7" style="fill:rgb(228, 207, 116)">Drangsalieren</text>
+<text transform="translate(330,843)" font-size="7" style="fill:rgb(255, 38, 19)">Judenfeindschaft</text>
+<text transform="translate(645,139)" font-size="7" style="fill:rgb(80, 244, 204)">ökopopulistische</text>
+<text transform="translate(643,92)" font-size="7" style="fill:rgb(196, 232, 138)">Funktionseliten</text>
+<text transform="translate(269,267)" font-size="7" style="fill:rgb(142, 254, 172)">Bevölkerungsmehrheit</text>
+<text transform="translate(395,559)" font-size="7" style="fill:rgb(110, 254, 190)">Osteuropäern</text>
+<text transform="translate(316,518)" font-size="7" style="fill:rgb(120, 13, 255)">Gebälk</text>
+<text transform="translate(65,446)" font-size="7" style="fill:rgb(208, 224, 130)">Nothilfemaßnahmen</text>
+<text transform="translate(497,351)" font-size="7" style="fill:rgb(220, 214, 122)">Überstundenbelastung</text>
+<text transform="translate(678,70)" font-size="7" style="fill:rgb(126, 3, 255)">saarländische</text>
+<text transform="translate(871,219)" font-size="7" style="fill:rgb(174, 244, 152)">Freimuth</text>
+<text transform="translate(182,721)" font-size="7" style="fill:rgb(203, 228, 134)">versicherungsfremder</text>
+<text transform="translate(522,156)" font-size="7" style="fill:rgb(136, 255, 175)">SPD-Chefin</text>
+<text transform="translate(395,591)" font-size="7" style="fill:rgb(84, 68, 253)">Verschleudern</text>
+<text transform="translate(204,780)" font-size="7" style="fill:rgb(155, 251, 165)">S&amp;K</text>
+<text transform="translate(341,223) rotate(-90)" font-size="7" style="fill:rgb(162, 249, 160)">Haftungsgemeinschaften</text>
+<text transform="translate(365,319)" font-size="7" style="fill:rgb(56, 231, 215)">Rotorblätter</text>
+<text transform="translate(683,849)" font-size="7" style="fill:rgb(4, 176, 237)">Werktätigen</text>
+<text transform="translate(544,93)" font-size="7" style="fill:rgb(255, 155, 82)">Kernkraftwerksbetreiber</text>
+<text transform="translate(223,111)" font-size="7" style="fill:rgb(20, 157, 241)">husch</text>
+<text transform="translate(456,767)" font-size="7" style="fill:rgb(130, 255, 179)">Potter</text>
+<text transform="translate(211,626)" font-size="7" style="fill:rgb(4, 185, 234)">judiziert</text>
+<text transform="translate(437,162)" font-size="7" style="fill:rgb(126, 3, 255)">Nitratkonzentration</text>
+<text transform="translate(251,357)" font-size="7" style="fill:rgb(48, 225, 218)">nukleartechnischen</text>
+<text transform="translate(763,156)" font-size="7" style="fill:rgb(74, 242, 207)">Marxismus-Leninismus</text>
+<text transform="translate(73,723)" font-size="7" style="fill:rgb(56, 109, 249)">Überstaat</text>
+<text transform="translate(72,253)" font-size="7" style="fill:rgb(2, 183, 235)">Genderaspekten</text>
+<text transform="translate(10,533)" font-size="7" style="fill:rgb(255, 74, 38)">Betonpoller</text>
+<text transform="translate(804,796)" font-size="7" style="fill:rgb(255, 162, 86)">Multikulturalismus</text>
+<text transform="translate(18,447)" font-size="7" style="fill:rgb(139, 254, 174)">Wasserköpfe</text>
+<text transform="translate(485,262)" font-size="7" style="fill:rgb(255, 134, 70)">Pseudoopposition</text>
+<text transform="translate(531,468)" font-size="7" style="fill:rgb(255, 31, 16)">45,7</text>
+<text transform="translate(426,370)" font-size="7" style="fill:rgb(78, 243, 205)">Atatürk</text>
+<text transform="translate(438,949)" font-size="7" style="fill:rgb(244, 192, 105)">Spezialexperten</text>
+<text transform="translate(585,978)" font-size="7" style="fill:rgb(80, 244, 204)">Jasagern</text>
+<text transform="translate(58,689) rotate(-90)" font-size="7" style="fill:rgb(60, 104, 249)">Ankündigungsfrist</text>
+<text transform="translate(410,263)" font-size="7" style="fill:rgb(66, 95, 250)">Steuergier</text>
+<text transform="translate(681,59)" font-size="7" style="fill:rgb(12, 167, 239)">Neubürger</text>
+<text transform="translate(460,485)" font-size="7" style="fill:rgb(100, 44, 254)">Ammar</text>
+<text transform="translate(528,723)" font-size="7" style="fill:rgb(116, 254, 186)">Hexenhammer</text>
+<text transform="translate(149,266)" font-size="7" style="fill:rgb(78, 243, 205)">Fahrradspuren</text>
+<text transform="translate(67,523)" font-size="7" style="fill:rgb(90, 248, 200)">Ostrentnern</text>
+<text transform="translate(543,442)" font-size="7" style="fill:rgb(255, 6, 3)">Spezialdemokraten</text>
+<text transform="translate(204,409)" font-size="7" style="fill:rgb(255, 160, 85)">Stromabschaltungen</text>
+<text transform="translate(148,799)" font-size="7" style="fill:rgb(240, 196, 108)">selbstverantwortliche</text>
+<text transform="translate(574,722)" font-size="7" style="fill:rgb(194, 234, 140)">Gruppenvergewaltigungen</text>
+<text transform="translate(528,247)" font-size="7" style="fill:rgb(94, 53, 254)">Stromabnehmer</text>
+<text transform="translate(416,480)" font-size="7" style="fill:rgb(130, 255, 179)">brave</text>
+<text transform="translate(30,502)" font-size="7" style="fill:rgb(64, 236, 212)">Millisekundenbereich</text>
+<text transform="translate(396,854)" font-size="7" style="fill:rgb(158, 250, 162)">Großscheich</text>
+<text transform="translate(590,192) rotate(-90)" font-size="7" style="fill:rgb(31, 211, 225)">6424</text>
+<text transform="translate(792,756)" font-size="7" style="fill:rgb(255, 59, 30)">Hinterhalte</text>
+<text transform="translate(127,577)" font-size="7" style="fill:rgb(16, 198, 230)">Blendwerk</text>
+<text transform="translate(46,364)" font-size="7" style="fill:rgb(217, 218, 125)">Herrscht</text>
+<text transform="translate(389,980)" font-size="7" style="fill:rgb(57, 107, 249)">kulturfremder</text>
+<text transform="translate(189,460)" font-size="7" style="fill:rgb(172, 245, 154)">Stammesstrukturen</text>
+<text transform="translate(905,696)" font-size="7" style="fill:rgb(114, 22, 255)">Alain</text>
+<text transform="translate(305,507)" font-size="7" style="fill:rgb(118, 255, 185)">Fair-Use-Prinzip</text>
+<text transform="translate(464,116)" font-size="7" style="fill:rgb(68, 238, 210)">BASt</text>
+<text transform="translate(266,190)" font-size="7" style="fill:rgb(255, 160, 85)">Linientreue</text>
+<text transform="translate(413,875)" font-size="7" style="fill:rgb(102, 252, 194)">Rufmord</text>
+<text transform="translate(322,625)" font-size="7" style="fill:rgb(255, 142, 74)">Goldkäufe</text>
+<text transform="translate(587,539)" font-size="7" style="fill:rgb(122, 9, 255)">Sozialunternehmertum</text>
+<text transform="translate(330,858)" font-size="7" style="fill:rgb(187, 238, 145)">Menasse</text>
+<text transform="translate(799,850)" font-size="7" style="fill:rgb(66, 237, 211)">Flatterstrom</text>
+<text transform="translate(432,174)" font-size="7" style="fill:rgb(80, 244, 204)">Grenzpolitik</text>
+<text transform="translate(427,14)" font-size="7" style="fill:rgb(64, 98, 250)">Terrorakten</text>
+<text transform="translate(5,523)" font-size="7" style="fill:rgb(84, 68, 253)">Immigration</text>
+<text transform="translate(216,390)" font-size="7" style="fill:rgb(208, 224, 130)">Halbmondes</text>
+<text transform="translate(274,317)" font-size="7" style="fill:rgb(255, 77, 39)">Al-Zein</text>
+<text transform="translate(596,386)" font-size="7" style="fill:rgb(187, 238, 145)">Änderungsentwurf</text>
+<text transform="translate(565,611) rotate(-90)" font-size="7" style="fill:rgb(255, 83, 42)">grundgesetzlicher</text>
+<text transform="translate(763,818) rotate(-90)" font-size="7" style="fill:rgb(42, 221, 221)">Schirmbeck</text>
+<text transform="translate(806,338)" font-size="7" style="fill:rgb(72, 241, 208)">Klimahysteriker</text>
+<text transform="translate(482,22) rotate(-90)" font-size="7" style="fill:rgb(187, 238, 145)">Mame</text>
+<text transform="translate(476,369)" font-size="7" style="fill:rgb(155, 251, 165)">Westjerusalem</text>
+<text transform="translate(445,446)" font-size="7" style="fill:rgb(255, 123, 64)">Schäuble-Kommission</text>
+<text transform="translate(587,167)" font-size="7" style="fill:rgb(8, 172, 238)">Magentas</text>
+<text transform="translate(279,769)" font-size="7" style="fill:rgb(255, 167, 89)">Traumkonditionen</text>
+<text transform="translate(989,538) rotate(-90)" font-size="7" style="fill:rgb(78, 77, 252)">Haltungsjournalisten</text>
+<text transform="translate(332,460)" font-size="7" style="fill:rgb(46, 123, 247)">Wohlstandsverlust</text>
+<text transform="translate(922,368)" font-size="7" style="fill:rgb(0, 181, 235)">Impfschäden</text>
+<text transform="translate(643,342)" font-size="7" style="fill:rgb(94, 53, 254)">wirtschaftsfeindlichen</text>
+<text transform="translate(537,162)" font-size="7" style="fill:rgb(74, 242, 207)">Pyrolyse</text>
+<text transform="translate(719,297) rotate(-90)" font-size="7" style="fill:rgb(80, 74, 252)">chaotisches</text>
+<text transform="translate(393,620)" font-size="7" style="fill:rgb(150, 252, 167)">missratenen</text>
+<text transform="translate(743,599) rotate(-90)" font-size="7" style="fill:rgb(156, 251, 164)">milliardenhoher</text>
+<text transform="translate(418,843)" font-size="7" style="fill:rgb(255, 50, 25)">Schuldenmacherei</text>
+<text transform="translate(81,453)" font-size="7" style="fill:rgb(34, 214, 224)">gesetzestreue</text>
+<text transform="translate(132,178)" font-size="7" style="fill:rgb(188, 237, 143)">Muttertiere</text>
+<text transform="translate(227,593) rotate(-90)" font-size="7" style="fill:rgb(52, 115, 248)">Zwangsheiraten</text>
+<text transform="translate(819,448)" font-size="7" style="fill:rgb(254, 181, 98)">Schuldknechtschaft</text>
+<text transform="translate(390,126) rotate(-90)" font-size="7" style="fill:rgb(84, 68, 253)">pandemiekrisensicher</text>
+<text transform="translate(282,940)" font-size="7" style="fill:rgb(92, 56, 253)">Coronapanik</text>
+<text transform="translate(702,870)" font-size="7" style="fill:rgb(255, 83, 42)">BVerfG</text>
+<text transform="translate(521,490)" font-size="7" style="fill:rgb(25, 150, 243)">EU-Kredite</text>
+<text transform="translate(189,318)" font-size="7" style="fill:rgb(255, 95, 48)">Impfstoffentwickler</text>
+<text transform="translate(285,677)" font-size="7" style="fill:rgb(204, 227, 133)">Eventszene</text>
+<text transform="translate(500,537)" font-size="7" style="fill:rgb(92, 56, 253)">Coronakreditgelder</text>
+<text transform="translate(914,457)" font-size="7" style="fill:rgb(104, 38, 254)">krisenfremde</text>
+<text transform="translate(340,110) rotate(-90)" font-size="7" style="fill:rgb(86, 247, 202)">Schonfristzahlung</text>
+<text transform="translate(530,608)" font-size="7" style="fill:rgb(122, 255, 183)">Color</text>
+<text transform="translate(800,812)" font-size="7" style="fill:rgb(255, 142, 74)">antideutsch</text>
+<text transform="translate(754,841) rotate(-90)" font-size="7" style="fill:rgb(240, 196, 108)">Covidioten</text>
+<text transform="translate(740,267)" font-size="5" style="fill:rgb(187, 238, 145)">Ministerpräsidentenstammtisch</text>
+<text transform="translate(162,643)" font-size="5" style="fill:rgb(134, 255, 176)">Co-Regulierung</text>
+<text transform="translate(703,385)" font-size="5" style="fill:rgb(4, 176, 237)">Genderquatsch</text>
+<text transform="translate(144,182)" font-size="5" style="fill:rgb(255, 160, 85)">Dauerlockdown</text>
+<text transform="translate(154,152)" font-size="5" style="fill:rgb(120, 13, 255)">Föderalismusprinzip</text>
+<text transform="translate(465,343) rotate(-90)" font-size="5" style="fill:rgb(255, 34, 17)">steuerbegünstigter</text>
+<text transform="translate(704,575)" font-size="5" style="fill:rgb(8, 190, 233)">Dieselöl</text>
+<text transform="translate(813,661)" font-size="5" style="fill:rgb(255, 115, 59)">FIEGE</text>
+<text transform="translate(880,486)" font-size="5" style="fill:rgb(122, 255, 183)">FIB</text>
+<text transform="translate(324,723)" font-size="5" style="fill:rgb(212, 221, 128)">Rechtsdienstleistungen</text>
+<text transform="translate(498,677)" font-size="4" style="fill:rgb(106, 253, 192)">Kräfteansatz</text>
+<text transform="translate(845,388)" font-size="4" style="fill:rgb(255, 62, 31)">Zentralkomitees</text>
+<text transform="translate(298,156)" font-size="4" style="fill:rgb(214, 219, 126)">befriedete</text>
+<text transform="translate(282,61)" font-size="4" style="fill:rgb(255, 147, 77)">Opiumproduktion</text>
+<text transform="translate(621,967)" font-size="4" style="fill:rgb(74, 83, 251)">Meinungsverbreitung</text>
+<text transform="translate(900,539)" font-size="4" style="fill:rgb(255, 28, 14)">staatsdirigistische</text>
+<text transform="translate(753,652)" font-size="4" style="fill:rgb(255, 162, 86)">tunesischer</text>
+<text transform="translate(481,642)" font-size="4" style="fill:rgb(255, 56, 28)">Staatsversagens</text>
+<text transform="translate(369,910)" font-size="4" style="fill:rgb(98, 47, 254)">Erhöhungsschraube</text>
+<text transform="translate(204,640)" font-size="4" style="fill:rgb(82, 245, 203)">Dunkelrot</text>
+<text transform="translate(583,644)" font-size="4" style="fill:rgb(255, 115, 59)">Gesunder</text>
+<text transform="translate(299,915)" font-size="4" style="fill:rgb(38, 134, 245)">Erstzutrittsland</text>
+<text transform="translate(535,268)" font-size="4" style="fill:rgb(255, 172, 92)">Bleigießen</text>
+<text transform="translate(168,648)" font-size="4" style="fill:rgb(82, 245, 203)">Außenstände</text>
+<text transform="translate(327,902)" font-size="4" style="fill:rgb(255, 169, 91)">degenerieren</text>
+<text transform="translate(251,652)" font-size="4" style="fill:rgb(255, 47, 24)">Bauernstand</text>
+<text transform="translate(928,285) rotate(-90)" font-size="4" style="fill:rgb(100, 44, 254)">CSU-FDP-Koalition</text>
+<text transform="translate(743,871)" font-size="4" style="fill:rgb(255, 89, 45)">ökopopulistisches</text>
+<text transform="translate(435,900)" font-size="4" style="fill:rgb(255, 62, 31)">Armlänge</text>
+<text transform="translate(862,458)" font-size="4" style="fill:rgb(70, 89, 251)">patriarchalische</text>
+<text transform="translate(389,643)" font-size="4" style="fill:rgb(122, 9, 255)">Zweitehefrau</text>
+<text transform="translate(770,376)" font-size="4" style="fill:rgb(190, 236, 142)">ESM-Finanzierungsgesetz</text>
+<text transform="translate(854,693)" font-size="4" style="fill:rgb(255, 80, 41)">Wolkenkuckucksheime</text>
+<text transform="translate(394,130)" font-size="4" style="fill:rgb(196, 232, 138)">Ehestartkredite</text>
+<text transform="translate(389,41)" font-size="4" style="fill:rgb(240, 196, 108)">Beschäftigungsmodelle</text>
+<text transform="translate(914,643)" font-size="4" style="fill:rgb(203, 228, 134)">Elektronikmarkt</text>
+<text transform="translate(723,97)" font-size="4" style="fill:rgb(255, 89, 45)">Parteisoldaten</text>
+<text transform="translate(840,820)" font-size="4" style="fill:rgb(255, 89, 45)">Genanalyse</text>
+<text transform="translate(462,752)" font-size="4" style="fill:rgb(128, 255, 180)">Verdammung</text>
+<text transform="translate(162,423)" font-size="4" style="fill:rgb(255, 38, 19)">Barbe</text>
+<text transform="translate(394,533)" font-size="4" style="fill:rgb(70, 239, 209)">Straßenterroristen</text>
+<text transform="translate(574,336)" font-size="4" style="fill:rgb(13, 194, 232)">EU-Apparat</text>
+<text transform="translate(569,415)" font-size="4" style="fill:rgb(16, 198, 230)">Sozialmigranten</text>
+<text transform="translate(117,799)" font-size="4" style="fill:rgb(114, 254, 187)">inflationäre</text>
+<text transform="translate(347,805)" font-size="4" style="fill:rgb(196, 232, 138)">gackern</text>
+<text transform="translate(283,438)" font-size="4" style="fill:rgb(255, 174, 94)">Industriestaats</text>
+<text transform="translate(867,588)" font-size="4" style="fill:rgb(150, 252, 167)">grün-linke</text>
+<text transform="translate(625,713)" font-size="4" style="fill:rgb(66, 95, 250)">Milton</text>
+<text transform="translate(655,219)" font-size="4" style="fill:rgb(82, 245, 203)">Linkspresse</text>
+<text transform="translate(613,244)" font-size="4" style="fill:rgb(32, 142, 244)">Drogenszene</text>
+<text transform="translate(29,559)" font-size="4" style="fill:rgb(66, 95, 250)">Amtsschimmel</text>
+<text transform="translate(716,419)" font-size="4" style="fill:rgb(118, 16, 255)">Strike</text>
+<text transform="translate(829,600)" font-size="4" style="fill:rgb(32, 213, 225)">Deutschlandhass</text>
+<text transform="translate(807,863)" font-size="4" style="fill:rgb(36, 137, 245)">Kultivierung</text>
+<text transform="translate(576,24)" font-size="4" style="fill:rgb(126, 255, 181)">kollektivistischen</text>
+<text transform="translate(414,447)" font-size="4" style="fill:rgb(255, 167, 89)">kultursensibel</text>
+<text transform="translate(298,50)" font-size="4" style="fill:rgb(255, 167, 89)">Rassismusvorwurf</text>
+<text transform="translate(256,861)" font-size="4" style="fill:rgb(255, 56, 28)">Observation</text>
+<text transform="translate(811,830)" font-size="4" style="fill:rgb(36, 137, 245)">Abschreibungsvorschrift</text>
+<text transform="translate(319,391)" font-size="4" style="fill:rgb(125, 255, 182)">Datenflut</text>
+<text transform="translate(278,623)" font-size="4" style="fill:rgb(23, 203, 228)">Datenkommunikation</text>
+<text transform="translate(22,551)" font-size="4" style="fill:rgb(33, 140, 244)">Lizenzkosten</text>
+<text transform="translate(288,416) rotate(-90)" font-size="4" style="fill:rgb(90, 248, 200)">BAföG-Bezieher</text>
+<text transform="translate(196,135)" font-size="4" style="fill:rgb(192, 235, 141)">Feudalwirtschaft</text>
+<text transform="translate(211,600)" font-size="4" style="fill:rgb(23, 203, 228)">Groteske</text>
+<text transform="translate(244,417)" font-size="4" style="fill:rgb(255, 65, 33)">Privat-Pkws</text>
+<text transform="translate(489,267)" font-size="4" style="fill:rgb(26, 207, 227)">zerbrochen</text>
+<text transform="translate(25,571)" font-size="4" style="fill:rgb(178, 243, 150)">inthronisieren</text>
+<text transform="translate(463,736)" font-size="4" style="fill:rgb(31, 211, 225)">Erklärt</text>
+<text transform="translate(345,631)" font-size="4" style="fill:rgb(28, 147, 243)">17,45</text>
+<text transform="translate(193,598) rotate(-90)" font-size="4" style="fill:rgb(255, 86, 44)">sagenumwobenen</text>
+<text transform="translate(216,519)" font-size="4" style="fill:rgb(206, 225, 132)">Verbraucherstreitigkeiten</text>
+<text transform="translate(273,724)" font-size="4" style="fill:rgb(142, 254, 172)">Missionszielen</text>
+<text transform="translate(85,746)" font-size="4" style="fill:rgb(255, 89, 45)">alternativloser</text>
+<text transform="translate(413,451)" font-size="4" style="fill:rgb(203, 228, 134)">Missgriff</text>
+<text transform="translate(910,648)" font-size="4" style="fill:rgb(18, 200, 230)">Einsteins</text>
+<text transform="translate(59,388)" font-size="4" style="fill:rgb(140, 254, 173)">Messerstecherei</text>
+<text transform="translate(795,382)" font-size="4" style="fill:rgb(255, 86, 44)">Führungsschwäche</text>
+<text transform="translate(430,723)" font-size="4" style="fill:rgb(232, 203, 114)">hauseigene</text>
+<text transform="translate(513,494)" font-size="4" style="fill:rgb(180, 242, 149)">Zero-Day-Exploits</text>
+<text transform="translate(531,781)" font-size="4" style="fill:rgb(94, 53, 254)">Sicherheitsmarge</text>
+<text transform="translate(404,770)" font-size="4" style="fill:rgb(156, 251, 164)">Mehrverbrauch</text>
+<text transform="translate(424,597)" font-size="4" style="fill:rgb(217, 218, 125)">Begehrlichkeit</text>
+<text transform="translate(375,369)" font-size="4" style="fill:rgb(12, 167, 239)">Rechtsbewusstsein</text>
+<text transform="translate(336,692)" font-size="4" style="fill:rgb(255, 65, 33)">Haftungsketten</text>
+<text transform="translate(656,573)" font-size="4" style="fill:rgb(230, 205, 115)">Staatsbeamte</text>
+<text transform="translate(848,252)" font-size="4" style="fill:rgb(57, 107, 249)">Klimairrsinn</text>
+<text transform="translate(678,417)" font-size="4" style="fill:rgb(255, 13, 6)">anthropogene</text>
+<text transform="translate(461,193)" font-size="4" style="fill:rgb(168, 247, 156)">Warmzeit</text>
+<text transform="translate(773,130)" font-size="4" style="fill:rgb(219, 216, 123)">Thermodynamik</text>
+<text transform="translate(360,944)" font-size="4" style="fill:rgb(62, 101, 250)">Herzenslust</text>
+<text transform="translate(72,599)" font-size="4" style="fill:rgb(124, 6, 255)">Hamas-Terroristen</text>
+<text transform="translate(913,739)" font-size="4" style="fill:rgb(58, 232, 214)">Pflichtige</text>
+<text transform="translate(300,780)" font-size="4" style="fill:rgb(9, 169, 238)">gutgläubig</text>
+<text transform="translate(81,756)" font-size="4" style="fill:rgb(255, 34, 17)">Studienabbrechern</text>
+<text transform="translate(462,717)" font-size="4" style="fill:rgb(255, 3, 2)">kultursensibles</text>
+<text transform="translate(649,679) rotate(-90)" font-size="4" style="fill:rgb(96, 250, 197)">Mummenschanz</text>
+<text transform="translate(463,741)" font-size="4" style="fill:rgb(84, 246, 203)">Armutsbegriff</text>
+<text transform="translate(101,230)" font-size="4" style="fill:rgb(94, 250, 198)">schwarz-rot</text>
+<text transform="translate(327,599)" font-size="4" style="fill:rgb(41, 129, 246)">Beihilfeverfahren</text>
+<text transform="translate(553,625)" font-size="4" style="fill:rgb(106, 34, 254)">Schwangerenkonfliktberatung</text>
+<text transform="translate(681,538)" font-size="4" style="fill:rgb(255, 3, 2)">Wehrsouveränität</text>
+<text transform="translate(518,451)" font-size="4" style="fill:rgb(153, 252, 166)">Euro-Rettungskosten</text>
+<text transform="translate(144,692)" font-size="4" style="fill:rgb(255, 118, 61)">Nettozahlungen</text>
+<text transform="translate(8,538)" font-size="4" style="fill:rgb(255, 68, 34)">Klimaideologen</text>
+<text transform="translate(111,699)" font-size="4" style="fill:rgb(255, 115, 59)">Zeman</text>
+<text transform="translate(931,338)" font-size="4" style="fill:rgb(255, 152, 80)">Bundesbanane</text>
+<text transform="translate(466,82)" font-size="4" style="fill:rgb(255, 160, 85)">vermischungsfähig</text>
+<text transform="translate(783,193)" font-size="4" style="fill:rgb(8, 190, 233)">Wanderungsdruck</text>
+<text transform="translate(608,417)" font-size="4" style="fill:rgb(47, 224, 219)">Entwicklungshilfemittel</text>
+<text transform="translate(441,166)" font-size="4" style="fill:rgb(82, 71, 252)">Selbsteintritt</text>
+<text transform="translate(465,725)" font-size="4" style="fill:rgb(156, 251, 164)">Hundertschaft</text>
+<text transform="translate(806,124)" font-size="4" style="fill:rgb(80, 74, 252)">25-mal</text>
+<text transform="translate(970,370) rotate(-90)" font-size="4" style="fill:rgb(139, 254, 174)">Ziehvater</text>
+<text transform="translate(335,777)" font-size="4" style="fill:rgb(255, 3, 2)">Zensurgesetzes</text>
+<text transform="translate(607,971)" font-size="4" style="fill:rgb(68, 92, 251)">Grenznutzen</text>
+<text transform="translate(156,440)" font-size="4" style="fill:rgb(255, 176, 95)">-Gebäudesanierungsprogramms</text>
+<text transform="translate(554,338)" font-size="4" style="fill:rgb(203, 228, 134)">Lehren</text>
+<text transform="translate(678,219)" font-size="4" style="fill:rgb(190, 236, 142)">Differenzialgleichungssysteme</text>
+<text transform="translate(334,708)" font-size="4" style="fill:rgb(4, 176, 237)">Pflichtbeitrag</text>
+<text transform="translate(814,854)" font-size="4" style="fill:rgb(16, 162, 240)">Menschenmassen</text>
+<text transform="translate(262,717)" font-size="4" style="fill:rgb(72, 241, 208)">bescheuerte</text>
+<text transform="translate(514,314)" font-size="4" style="fill:rgb(62, 101, 250)">Zuwiderhandlung</text>
+<text transform="translate(201,788)" font-size="4" style="fill:rgb(114, 254, 187)">Bürgerpartei</text>
+<text transform="translate(859,268)" font-size="4" style="fill:rgb(76, 80, 252)">Edathy</text>
+<text transform="translate(413,178)" font-size="4" style="fill:rgb(255, 3, 2)">Enklaven</text>
+<text transform="translate(293,108)" font-size="4" style="fill:rgb(255, 140, 73)">Schicksals-</text>
+<text transform="translate(282,599) rotate(-90)" font-size="4" style="fill:rgb(255, 104, 53)">Einheitswährung</text>
+<text transform="translate(354,437)" font-size="4" style="fill:rgb(80, 244, 204)">EU-Monster</text>
+<text transform="translate(519,643)" font-size="4" style="fill:rgb(155, 251, 165)">Entwicklungshilfeindustrie</text>
+<text transform="translate(569,421)" font-size="4" style="fill:rgb(120, 255, 184)">Veränderungsrate</text>
+<text transform="translate(634,860)" font-size="4" style="fill:rgb(102, 252, 194)">Energiesozialismus</text>
+<text transform="translate(570,134)" font-size="4" style="fill:rgb(30, 145, 243)">Individualklagen</text>
+<text transform="translate(819,539)" font-size="4" style="fill:rgb(48, 225, 218)">abgefeiert</text>
+<text transform="translate(657,579)" font-size="4" style="fill:rgb(139, 254, 174)">Immigrant</text>
+<text transform="translate(645,911)" font-size="4" style="fill:rgb(188, 237, 143)">EU-Markt</text>
+<text transform="translate(10,575)" font-size="4" style="fill:rgb(66, 95, 250)">strafbewehrten</text>
+<text transform="translate(457,521)" font-size="4" style="fill:rgb(70, 239, 209)">Armutsmigranten</text>
+<text transform="translate(513,737)" font-size="4" style="fill:rgb(220, 214, 122)">942</text>
+<text transform="translate(118,364)" font-size="4" style="fill:rgb(33, 140, 244)">firmieren</text>
+<text transform="translate(607,784)" font-size="4" style="fill:rgb(20, 202, 229)">Euro-Millionen</text>
+<text transform="translate(251,837)" font-size="4" style="fill:rgb(102, 252, 194)">Arbeitsmarktstatistik</text>
+<text transform="translate(533,303)" font-size="4" style="fill:rgb(255, 65, 33)">Astra</text>
+<text transform="translate(640,951)" font-size="4" style="fill:rgb(226, 209, 118)">Stromerzeugungssektor</text>
+<text transform="translate(586,691) rotate(-90)" font-size="4" style="fill:rgb(25, 150, 243)">Asylantragstellern</text>
+<text transform="translate(499,905)" font-size="4" style="fill:rgb(255, 13, 6)">Sozialkredit</text>
+<text transform="translate(387,163)" font-size="4" style="fill:rgb(64, 98, 250)">Kartellparteien</text>
+<text transform="translate(600,764) rotate(-90)" font-size="4" style="fill:rgb(8, 190, 233)">Kostenrechnung</text>
+<text transform="translate(811,801)" font-size="4" style="fill:rgb(232, 203, 114)">Genderlehrstühle</text>
+<text transform="translate(400,21)" font-size="4" style="fill:rgb(255, 142, 74)">Solschenizyn</text>
+<text transform="translate(216,191)" font-size="4" style="fill:rgb(32, 142, 244)">EZB-Nullzinspolitik</text>
+<text transform="translate(969,605)" font-size="4" style="fill:rgb(33, 140, 244)">mess-</text>
+<text transform="translate(369,341) rotate(-90)" font-size="4" style="fill:rgb(192, 235, 141)">Boutros</text>
+<text transform="translate(80,459)" font-size="4" style="fill:rgb(240, 196, 108)">Massenvorfälle</text>
+<text transform="translate(86,727)" font-size="4" style="fill:rgb(128, 0, 255)">Fernstraßenbau</text>
+<text transform="translate(421,577)" font-size="4" style="fill:rgb(94, 250, 198)">Ladezeiten</text>
+<text transform="translate(442,710)" font-size="4" style="fill:rgb(6, 174, 237)">Zulaufstrecke</text>
+<text transform="translate(677,523)" font-size="4" style="fill:rgb(224, 211, 119)">Nutznießern</text>
+<text transform="translate(865,367)" font-size="4" style="fill:rgb(46, 123, 247)">Haushaltsprozess</text>
+<text transform="translate(762,560)" font-size="4" style="fill:rgb(255, 126, 65)">Cultural</text>
+<text transform="translate(662,691)" font-size="4" style="fill:rgb(255, 160, 85)">CDU-Verteidigungsminister</text>
+<text transform="translate(794,461)" font-size="4" style="fill:rgb(60, 104, 249)">AVA</text>
+<text transform="translate(537,405) rotate(-90)" font-size="4" style="fill:rgb(4, 176, 237)">Visionär</text>
+<text transform="translate(480,333)" font-size="4" style="fill:rgb(255, 16, 8)">Deutschland-Abschaffer</text>
+<text transform="translate(626,153)" font-size="4" style="fill:rgb(76, 80, 252)">Bildungstraditionen</text>
+<text transform="translate(428,244)" font-size="4" style="fill:rgb(58, 232, 214)">berichterstattenden</text>
+<text transform="translate(144,503)" font-size="4" style="fill:rgb(255, 126, 65)">Altanleihen</text>
+<text transform="translate(179,304) rotate(-90)" font-size="4" style="fill:rgb(33, 140, 244)">SPD-nahen</text>
+<text transform="translate(448,641)" font-size="4" style="fill:rgb(12, 167, 239)">Dumpfbacken</text>
+<text transform="translate(377,783)" font-size="4" style="fill:rgb(112, 254, 188)">Klimawandelfolgen-Anpassungsfonds</text>
+<text transform="translate(598,458)" font-size="4" style="fill:rgb(214, 219, 126)">Klimazuständen</text>
+<text transform="translate(606,672)" font-size="4" style="fill:rgb(106, 253, 192)">Futtermangel</text>
+<text transform="translate(826,453)" font-size="4" style="fill:rgb(57, 107, 249)">Volksfront</text>
+<text transform="translate(147,461)" font-size="4" style="fill:rgb(86, 65, 253)">Scheckbuch</text>
+<text transform="translate(62,323)" font-size="4" style="fill:rgb(255, 109, 56)">Fremdenfeind</text>
+<text transform="translate(648,893) rotate(-90)" font-size="4" style="fill:rgb(31, 211, 225)">Kollisionskurs</text>
+<text transform="translate(612,34)" font-size="4" style="fill:rgb(7, 187, 234)">Spendierhosen</text>
+<text transform="translate(642,649)" font-size="4" style="fill:rgb(40, 132, 246)">Sonderwirtschaftsgebiete</text>
+<text transform="translate(187,249)" font-size="4" style="fill:rgb(28, 147, 243)">Inländerdiskriminierung</text>
+<text transform="translate(574,286) rotate(-90)" font-size="4" style="fill:rgb(255, 160, 85)">Verhaltenslenkung</text>
+<text transform="translate(633,502)" font-size="4" style="fill:rgb(220, 214, 122)">Know-how-Abflusses</text>
+<text transform="translate(563,219)" font-size="4" style="fill:rgb(88, 248, 201)">Bildlich</text>
+<text transform="translate(483,219)" font-size="4" style="fill:rgb(112, 25, 255)">Euro-Rettungsvehikel</text>
+<text transform="translate(755,253)" font-size="4" style="fill:rgb(220, 214, 122)">prolongierten</text>
+</svg>
