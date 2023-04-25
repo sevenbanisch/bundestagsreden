@@ -72,8 +72,12 @@ def clean_speech_dict_string_fragments(speech_dict):
 def get_mdb_from_speech_xml(redner_tag, period):
     name_tag = redner_tag.getchildren()[0].getchildren()[0]
 
-    fn = name_tag.getchildren()[0].text
-    sn = name_tag.getchildren()[1].text
+    if name_tag.getchildren()[0].text == 'Dr.':
+        fn = name_tag.getchildren()[0].text + ' ' + name_tag.getchildren()[1].text
+        sn = name_tag.getchildren()[2].text
+    else:
+        fn = name_tag.getchildren()[0].text
+        sn = name_tag.getchildren()[1].text
 
     mdb = {
         'biography': {
@@ -115,7 +119,8 @@ def parse_top(top, date, mdbs, with_comments):
                     whole_name = mdb['name']
                     name = whole_name['forename']
                     surname = whole_name['surname']
-                
+                print(name)
+
                 speech_dict['id'] = child.attrib['id']
                 speech_dict['period'] = period
                 speech_dict['date'] = date
