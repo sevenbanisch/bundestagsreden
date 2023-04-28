@@ -119,7 +119,6 @@ def parse_top(top, date, mdbs, with_comments):
                     whole_name = mdb['name']
                     name = whole_name['forename']
                     surname = whole_name['surname']
-                print(name)
 
                 speech_dict['id'] = child.attrib['id']
                 speech_dict['period'] = period
