@@ -8,6 +8,8 @@ Benötigte python-packages können via `pip install <package-name>` installiert 
 
 ## Parser (`parser/`)
 
+Der parser ist eine Weiterentwicklung von https://github.com/pournaki/bundestag-parser. 
+
 ### Rohdaten
 
 Die Rohdaten, die als Grundlage für die weiteren Auswertungen dienen liegen jeweils unter `parser/data_19/`, `parser/data_20/` und `parser/MdB-Stammdaten-data/`.
