@@ -177,6 +177,10 @@ def parse(legislature_period: int, with_comments: bool) -> None:
 
     print(f'got {len(speeches)} speeches')
 
+    speeches = clean_speeches_names(speeches)
+
+    print(f'cleaned names')
+
     write_speeches(speeches, legislature_period, with_comments)
 
     return
@@ -192,4 +196,88 @@ def parse_speeches():
 if __name__ == '__main__':
     parse_speeches()
 
+
+
+def clean_speeches_names(reden):
+
+    for rede in reden:
+        rede['party']=rede['party'].replace(u'\xa0', u' ')
+        if rede['party']=='Bündnis 90/Die Grünen':
+            rede['party']='BÜNDNIS 90/DIE GRÜNEN'
+        if rede['party']=='Fraktionslos':
+            rede['party']='fraktionslos'
+
+        if rede['name'] == 'Anne Spiegel':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Christine Lambrecht':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Svenja Schulze':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Klara Geywitz':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Wolfgang Schmidt':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Nancy Faeser':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Clara Bünger':
+            rede['party'] = "DIE LINKE"
+        if rede['name'] == 'Dr. Joachim Pfeiffer':
+            rede['party'] = "CDU/CSU"
+        if rede['name'] == 'Dr. Dietmar Bartsch':
+            rede['party'] = "DIE LINKE"
+        if rede['name'] == 'Dr. Eva Högl':
+            rede['party'] = "DIE LINKE"
+        if rede['name'] == 'Boris Pistorius':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Sven Schulze':
+            rede['party'] = "CDU/CSU"
+        if rede['name'] == 'Dr. Reiner':
+            rede['party'] = "AfD"
+        if rede['name'] == 'Peter Beuth':
+            rede['party'] = "CDU/CSU"
+        if rede['name'] == 'Klaus Holetschek':
+            rede['party'] = "CDU/CSU"
+        if rede['name'] == 'Daniel Rinkert':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Anke Rehlinger':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Bettina Jarasch':
+            rede['party'] = 'BÜNDNIS 90/DIE GRÜNEN'
+        if rede['name'] == 'Emily Vontz':
+            rede['party'] = "SPD"
+        if rede['name'] == 'Dr. Dieter Romann':
+            rede['party'] = "CDU/CSU"
+        if rede['name'] == 'Alexander Bartz':
+            rede['party'] = "SPD"
+            
+        # manche Namen werden von Zeit zu Zeit unterschiedlich geschrieben. Diese Fälle können hier (leider auch manuell)
+        # behandelt werden.
+        if rede['name']=='Albert H. Weiler':
+            rede['name']='Albert Weiler'
+        if rede['name']=='Eva-Maria Elisabeth Schreiber':
+            rede['name']='Eva-Maria Schreiber'
+        if rede['name']=='Heidrun Bluhm-Förster':
+            rede['name']='Heidrun Bluhm'
+        if rede['name']==' in der Beek':
+            rede['name']='Olaf in der Beek'
+        if rede['name']==' ':
+            rede['name']='Unbekannt'
+        if rede['name']=='Eberhardt Alexander Gauland':
+            rede['name']='Alexander Gauland'
+        if rede['name']=='Joana Eleonora Cotar':
+            rede['name']='Joana Cotar'
+        if rede['name']=='Wolfgang Schäuble':
+            rede['name']='Dr. Wolfgang Schäuble'
+        if rede['name']=='Thomas de Maizière':
+            rede['name']='Thomas Maizière'
+        if rede['name']=='Alterspräsident Dr. Hermann Otto Solms':
+            rede['name']='Hermann Otto Solms'
+        if rede['name']=='Konstantin Elias Kuhle':
+            rede['name']='Konstantin Kuhle'
+        if rede['name']=='Konstantin Elias Kuhle':
+            rede['name']='Konstantin Kuhle'
+        if rede['name']=='Elvan Korkmaz':
+            rede['name']='Elvan Korkmaz-Emre'
+
+    return reden        
 
