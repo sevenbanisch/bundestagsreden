@@ -123,6 +123,8 @@ def parse_top(top, date, mdbs, with_comments):
                 speech_dict['id'] = child.attrib['id']
                 speech_dict['period'] = period
                 speech_dict['date'] = date
+                surname = surname.replace("\n","")
+                surname = " ".join(surname.split())
                 speech_dict['name'] = f'{name} {surname}'
                 speech_dict['party'] = party
                 speech_dict['redner_id'] = redner_id
@@ -131,7 +133,7 @@ def parse_top(top, date, mdbs, with_comments):
                 speech_dict['discussion_title'] = tagesordnungspunkt
 
                 cleaned_dict = clean_speech_dict_string_fragments(speech_dict)
-        
+
             jsondict[f"{top.attrib['top-id']} {date}"]['speeches'].append(cleaned_dict)
     
     return jsondict                    
