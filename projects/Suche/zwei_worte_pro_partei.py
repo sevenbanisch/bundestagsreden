@@ -1,7 +1,7 @@
 
 import jsonlines                    # zum Laden der Daten
 import nltk                         # natural language toolkit
-nltk.download('punkt')              # das brauchen wir nurr beim ersten Mal
+nltk.download('punkt')              # das brauchen wir nur beim ersten Mal
 
 from collections import Counter     # um worte zu zählen
 import matplotlib.pyplot as plt     # Für Visualisierung
