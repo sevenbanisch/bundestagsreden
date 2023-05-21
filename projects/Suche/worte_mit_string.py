@@ -1,7 +1,8 @@
 
 import jsonlines                    # zum Laden der Daten
 import nltk                         # natural language toolkit
-nltk.download('punkt')              # das brauchen wir nur beim ersten Mal
+nltk.download('punkt')     
+nltk.download('stopwords')         # das brauchen wir nur beim ersten Mal
 german_stop_words = nltk.corpus.stopwords.words('german')
 
 from collections import Counter     # um worte zu zählen
@@ -24,6 +25,10 @@ with jsonlines.open(f'../../data/speeches_{legislatur}.jsonl') as f:
 
 # Wir sortieren nach Datum:
 alleReden.sort(key = lambda x :x['date'])
+
+
+print("ALLE Reden", alleReden)
+
 
 ################# FUNKTIONEN #####################
 
