@@ -67,7 +67,7 @@ def filter_speeches_for(what, search_term, speeches):
     filtered_speeches.sort(key=lambda x: x['date'])
     return filtered_speeches
 
-# Zusätzlche Funktion.
+# Zusätzliche Funktion.
 # Nun möchte ich alle Worte, die einen bestimmten String enthalten ausgeben.
 
 def find_words_which_contain(string,satz_liste):
