@@ -65,6 +65,13 @@ def filter_speeches_for(what, search_term, speeches):
     filtered_speeches.sort(key=lambda x: x['date'])
     return filtered_speeches
 
+# Akzeptiert Liste mit Suchwörtern z.B. ['Klimawandel', 'Letzte Generation']
+# AND Condition
+def find_speeches_with_several_words_and(words, lst):
+    return [d for d in lst if all(word in d['text'] for word in words)]
+# OR Condition
+def find_speeches_with_several_words_or(words, lst):
+    return [d for d in lst if any(word in d['text'] for word in words)]
 
 
 ################ Anwendung ################
@@ -88,6 +95,16 @@ for party in parties:
     untermenge = filter_speeches_for('party', party, untermenge)
     print(f'Die {party} hat {len(untermenge)} Reden mit "{such_wort2}" gehalten.')
     frequencies2.append(len(untermenge))
+
+print('\n')
+frequencies3 = []
+for party in parties:
+    untermenge = find_speeches_with_several_words_and([such_wort1, such_wort2], alleReden)
+    untermenge = filter_speeches_for('party', party, untermenge)
+    print(f'Die {party} hat {len(untermenge)} Reden mit "{such_wort1}" und "{such_wort2}" gehalten.')
+    frequencies3.append(len(untermenge))
+  
+
 
 # Wir wollen das Ergebnis natürlich auch visualisieren
 # Das machen wir mit matplotlib.pyplot (ganz oben als plt importiert)
