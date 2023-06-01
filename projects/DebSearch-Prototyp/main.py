@@ -75,7 +75,7 @@ def get_feature_topic_num(feature_names, topic2word, n_topics: int) -> List[int]
 def main() -> None:
     tw, corpus, grouped_speeches_by_tops, later_use = create_topic_network_page()
 
-    topic_word_clouds = topics_to_word_clouds(tw)
+    #topic_word_clouds = topics_to_word_clouds(tw)
 
     doc2topic, feature_names, topic2word = later_use
     top_topic_num = get_top_topic_num(grouped_speeches_by_tops, doc2topic, len(tw))

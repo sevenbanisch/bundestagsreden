@@ -1,0 +1,52 @@
+<head>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial;
+            }
+            h3 {text-align: center;}
+            .center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+        </style>
+        <script src="https://unpkg.com/force-graph"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <img src="imgs/Logo.png" height="150" width="300" class="center">
+    <h3>DebSearch ist eine statistische Website, welche die aktuelle Legislaturperiode</h3>
+    <h3>in verschiedenen Kategorieren auswertet und visualisiert.</h3>
+    <div id="graph"></div>
+    <script>
+        var data = {'nodes': [{'id': 1, 'topicname': 'Kommune Wohnung Mieter Antrag Wohnraum wohnen Mieterinn bauen Wohnungsbau Stadt'}, {'id': 2, 'topicname': 'Krieg Russland Bundeskanzler Putin Waffe Frieden Antrag Partner Präsident Welt'}, {'id': 3, 'topicname': 'Energie Gas Strom Winter Kernkraftwerk Unternehmen Atomkraftwerk Ausbau Energieversorgung Erneuerbar'}, {'id': 4, 'topicname': 'Euro Haushalt Milliarde Sondervermögen Bundeswehr Einzelplan Geld Mittel Krise Schuldenbremse'}, {'id': 5, 'topicname': 'Soldat Mandat Bundeswehr Mission Einsatz Soldatin Soldatinn Region Sicherheit Engagement'}, {'id': 6, 'topicname': 'Landwirtschaft Landwirt Lebensmittel Ernährung Tierhaltung Antrag Bauer Verbraucher Tier Betrieb'}, {'id': 7, 'topicname': 'Kind Bildung Schule jugendliche Familie Kommune Programm Bund Eltern Hochschule'}, {'id': 8, 'topicname': 'Impfpflicht Impfung Pandemie Pflege Krankenhaus Impfstoff Patient Gesundheitswesen Gesundheitssystem Maßnahme'}, {'id': 9, 'topicname': 'Euro Inflation Entlastung Einkommen Rentner Preis Antrag Progression Milliarde Maßnahme'}, {'id': 10, 'topicname': 'Gesetz Gesetzentwurf Unternehmen Verfahren Richtlinie Änderung Digitalisierung Regelung Rechtsstaat EU'}], 'links': [{'source': 1, 'target': 2, 'weight': 0.1686691591820122}, {'source': 1, 'target': 3, 'weight': 0.19793334464953716}, {'source': 1, 'target': 4, 'weight': 0.21078359159694615}, {'source': 1, 'target': 6, 'weight': 0.15815185919286523}, {'source': 1, 'target': 7, 'weight': 0.2307039589084062}, {'source': 1, 'target': 9, 'weight': 0.23092806318566275}, {'source': 1, 'target': 10, 'weight': 0.2182019106045545}, {'source': 2, 'target': 3, 'weight': 0.2166749346907272}, {'source': 2, 'target': 4, 'weight': 0.19416681823715837}, {'source': 2, 'target': 5, 'weight': 0.27411493502305423}, {'source': 2, 'target': 7, 'weight': 0.18944847147308183}, {'source': 2, 'target': 8, 'weight': 0.1616055898666055}, {'source': 2, 'target': 9, 'weight': 0.180304671978704}, {'source': 2, 'target': 10, 'weight': 0.27330277035104833}, {'source': 3, 'target': 4, 'weight': 0.175792370652876}, {'source': 3, 'target': 6, 'weight': 0.15935773779825368}, {'source': 3, 'target': 9, 'weight': 0.27578338817682463}, {'source': 3, 'target': 10, 'weight': 0.259569710847792}, {'source': 4, 'target': 7, 'weight': 0.19504095267118413}, {'source': 4, 'target': 9, 'weight': 0.4108533071188537}, {'source': 4, 'target': 10, 'weight': 0.1775058638337322}, {'source': 6, 'target': 9, 'weight': 0.1597028352427148}, {'source': 6, 'target': 10, 'weight': 0.1581883199536831}, {'source': 7, 'target': 8, 'weight': 0.19456028288559715}, {'source': 7, 'target': 9, 'weight': 0.20418553444655232}, {'source': 7, 'target': 10, 'weight': 0.1856255213573072}, {'source': 8, 'target': 9, 'weight': 0.16141619917418656}, {'source': 8, 'target': 10, 'weight': 0.24750810854081112}, {'source': 9, 'target': 10, 'weight': 0.25915673187892385}]};
+        const elem = document.getElementById('graph');
+        const Graph = ForceGraph()(elem)
+            .graphData(data)
+            .nodeLabel('topicname')
+            .nodeRelSize(3)
+            .nodeVal('nReden')
+            .nodeAutoColorBy('topicname')
+            //.backgroundColor('#000000')
+            //.linkColor(() => 'rgba(255,255,255,0.2)')
+            //.linkVisibility('false')
+            //.linkDirectionalParticles(2)
+            //.linkDirectionalParticleWidth(1.4)
+            //.onNodeClick (node => {window.open(`wordnet.html`, '_blank')})
+            .onNodeClick (node => {
+                const nodeid = node.id - 1;
+                // const path = 'TOPnets/TOPnet4topic' + nodeid + '.html';
+                const path = 'imgs/wordclouds/wordcloud_' + nodeid + '.png';
+                // TODO: Link to path to graphs with "Beifall"-Reaction
+                window.open(path, '_blank');
+            })
+            //.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+            .onNodeRightClick(node => {
+                // Center/zoom on node
+                Graph.centerAt(node.x, node.y, 1000);
+                Graph.zoom(4, 2000);
+            });
+    </script>
+    </body>
+    
