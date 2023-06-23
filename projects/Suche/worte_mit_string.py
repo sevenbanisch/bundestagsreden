@@ -26,7 +26,6 @@ with jsonlines.open(f'../../data/speeches_{legislatur}.jsonl') as f:
 # Wir sortieren nach Datum:
 alleReden.sort(key = lambda x :x['date'])
 
-
 print("ALLE Reden", alleReden)
 
 
