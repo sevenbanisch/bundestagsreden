@@ -70,7 +70,12 @@ def clean_speech_dict_string_fragments(speech_dict):
 
 
 def get_mdb_from_speech_xml(redner_tag, period):
-    name_tag = redner_tag.getchildren()[0].getchildren()[0]
+
+    # at some point they added another subelement infront of the speaker info, so simply taking the first element from
+    # the list is no longer sufficient. This searches for the position of the element with the name "redner"
+    tags = [subele.tag for subele in redner_tag.getchildren()]
+    index = tags.index("redner")
+    name_tag = redner_tag.getchildren()[index].getchildren()[0]
 
     if name_tag.getchildren()[0].text == 'Dr.':
         fn = name_tag.getchildren()[0].text + ' ' + name_tag.getchildren()[1].text
@@ -109,6 +114,7 @@ def parse_top(top, date, mdbs, with_comments):
             for info in child.getchildren():
                 period = next(iter(mdbs.values()))['legislative_periods'][-1]['period_number']
                 if info.attrib == {'klasse': 'redner'}:
+
                     redner_id = info.getchildren()[0].attrib['id']
                     if redner_id not in mdbs.keys():
                         mdb = get_mdb_from_speech_xml(info, period)
@@ -120,14 +126,15 @@ def parse_top(top, date, mdbs, with_comments):
                     name = whole_name['forename']
                     surname = whole_name['surname']
 
+                    surname = surname.replace("\n","")
+                    surname = " ".join(surname.split())
+                    speech_dict['name'] = f'{name} {surname}'
+                    speech_dict['party'] = party
+                    speech_dict['redner_id'] = redner_id
+
                 speech_dict['id'] = child.attrib['id']
                 speech_dict['period'] = period
                 speech_dict['date'] = date
-                surname = surname.replace("\n","")
-                surname = " ".join(surname.split())
-                speech_dict['name'] = f'{name} {surname}'
-                speech_dict['party'] = party
-                speech_dict['redner_id'] = redner_id
 
                 speech_dict['text'] += parse_text(info, with_comments)
                 speech_dict['discussion_title'] = tagesordnungspunkt
