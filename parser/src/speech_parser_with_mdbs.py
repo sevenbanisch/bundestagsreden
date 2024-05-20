@@ -114,8 +114,7 @@ def parse_top(top, date, mdbs, with_comments):
             for info in child.getchildren():
                 period = next(iter(mdbs.values()))['legislative_periods'][-1]['period_number']
                 if info.attrib == {'klasse': 'redner'}:
-
-                    redner_id = info.getchildren()[0].attrib['id']
+                    redner_id = info.getchildren()[-1].attrib['id']
                     if redner_id not in mdbs.keys():
                         mdb = get_mdb_from_speech_xml(info, period)
                     else:
@@ -125,7 +124,6 @@ def parse_top(top, date, mdbs, with_comments):
                     whole_name = mdb['name']
                     name = whole_name['forename']
                     surname = whole_name['surname']
-
                     surname = surname.replace("\n","")
                     surname = " ".join(surname.split())
                     speech_dict['name'] = f'{name} {surname}'
