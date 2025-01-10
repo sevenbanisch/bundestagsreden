@@ -6,3 +6,5 @@ from src.speech_parser_with_mdbs import parse_speeches
 
 parse_mdb_data()
 parse_speeches()
+
+#%%
