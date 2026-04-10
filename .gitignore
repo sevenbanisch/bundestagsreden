@@ -140,3 +140,4 @@ private/*
 
 # Pickle files
 *.pickle
+.DS_Store
