@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "black"}, "id": "Demokratie und Partizipation", "label": "Demokratie und Partizipation", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Geschlechtergerechtigkeit", "label": "Geschlechtergerechtigkeit", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Familienpolitik", "label": "Familienpolitik", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Rechtsextremismus", "label": "Rechtsextremismus", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Sicherheit und Terrorismus", "label": "Sicherheit und Terrorismus", "shape": "dot", "size": 32}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Energiepolitik und Energiemanagement", "label": "Energiepolitik und Energiemanagement", "shape": "dot", "size": 14}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Finanzpolitik", "label": "Finanzpolitik", "shape": "dot", "size": 42}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Verteidigung", "label": "Verteidigung", "shape": "dot", "size": 16}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Soziale Ungleichheit", "label": "Soziale Ungleichheit", "shape": "dot", "size": 14}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Kultur und Kunst", "label": "Kultur und Kunst", "shape": "dot", "size": 34}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Verkehr und Mobilit\u00e4t", "label": "Verkehr und Mobilit\u00e4t", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Gesundheitswesen", "label": "Gesundheitswesen", "shape": "dot", "size": 38}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Wohnen und Mieten", "label": "Wohnen und Mieten", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Bildung", "label": "Bildung", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Forschung und Innovation", "label": "Forschung und Innovation", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Infrastrukturprojekte", "label": "Infrastrukturprojekte", "shape": "dot", "size": 38}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Europ\u00e4ische Union", "label": "Europ\u00e4ische Union", "shape": "dot", "size": 14}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Krise und Katastrophenmanagement", "label": "Krise und Katastrophenmanagement", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Wirtschaftslage", "label": "Wirtschaftslage", "shape": "dot", "size": 44}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Kommunalpolitik", "label": "Kommunalpolitik", "shape": "dot", "size": 52}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Inflation", "label": "Inflation", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Klimaschutz", "label": "Klimaschutz", "shape": "dot", "size": 22}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Arbeitsmarkt", "label": "Arbeitsmarkt", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Au\u00dfenpolitik", "label": "Au\u00dfenpolitik", "shape": "dot", "size": 14}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Digitalisierung", "label": "Digitalisierung", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Bildungsgerechtigkeit", "label": "Bildungsgerechtigkeit", "shape": "dot", "size": 46}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Zuwanderung und Flucht", "label": "Zuwanderung und Flucht", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Globalisierung", "label": "Globalisierung", "shape": "dot", "size": 14}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Friedenspolitik", "label": "Friedenspolitik", "shape": "dot", "size": 50}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Landwirtschaft", "label": "Landwirtschaft", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Konsumverhalten", "label": "Konsumverhalten", "shape": "dot", "size": 52}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Integration", "label": "Integration", "shape": "dot", "size": 22}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Jugendpolitik", "label": "Jugendpolitik", "shape": "dot", "size": 56}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Tierschutz", "label": "Tierschutz", "shape": "dot", "size": 50}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Cybersicherheit", "label": "Cybersicherheit", "shape": "dot", "size": 50}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Medien und Kommunikation", "label": "Medien und Kommunikation", "shape": "dot", "size": 42}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Mittelstand und KMU", "label": "Mittelstand und KMU", "shape": "dot", "size": 60}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Tourismus", "label": "Tourismus", "shape": "dot", "size": 52}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Sport und Freizeit", "label": "Sport und Freizeit", "shape": "dot", "size": 42}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Ehrenamt und Zivilgesellschaft", "label": "Ehrenamt und Zivilgesellschaft", "shape": "dot", "size": 54}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "K\u00fcnstliche Intelligenz", "label": "K\u00fcnstliche Intelligenz", "shape": "dot", "size": 50}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Rente und Altersvorsorge", "label": "Rente und Altersvorsorge", "shape": "dot", "size": 36}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "St\u00e4dteentwicklung", "label": "St\u00e4dteentwicklung", "shape": "dot", "size": 56}, {"color": "#97c2fc", "font": {"color": "black"}, "id": "Sonstige Themen", "label": "Sonstige Themen", "shape": "dot", "size": 60}]);
+                  edges = new vis.DataSet([{"from": "Demokratie und Partizipation", "to": "Rechtsextremismus", "value": 0.7346009745674519}, {"from": "Geschlechtergerechtigkeit", "to": "Familienpolitik", "value": 0.37446793094901076}, {"from": "Sicherheit und Terrorismus", "to": "Europ\u00e4ische Union", "value": 0.399320533385881}, {"from": "Sicherheit und Terrorismus", "to": "Kommunalpolitik", "value": -0.3758740426450559}, {"from": "Sicherheit und Terrorismus", "to": "Au\u00dfenpolitik", "value": 0.5914862599235061}, {"from": "Sicherheit und Terrorismus", "to": "Bildungsgerechtigkeit", "value": -0.4420371398180303}, {"from": "Sicherheit und Terrorismus", "to": "Konsumverhalten", "value": -0.42570328297781457}, {"from": "Sicherheit und Terrorismus", "to": "Jugendpolitik", "value": -0.375986728373363}, {"from": "Sicherheit und Terrorismus", "to": "Mittelstand und KMU", "value": -0.4180037163767071}, {"from": "Sicherheit und Terrorismus", "to": "Tourismus", "value": -0.38406930673551676}, {"from": "Sicherheit und Terrorismus", "to": "Ehrenamt und Zivilgesellschaft", "value": -0.3864194383390726}, {"from": "Sicherheit und Terrorismus", "to": "St\u00e4dteentwicklung", "value": -0.4125008575800731}, {"from": "Sicherheit und Terrorismus", "to": "Sonstige Themen", "value": -0.4272206203739598}, {"from": "Energiepolitik und Energiemanagement", "to": "Wirtschaftslage", "value": 0.43985831946669773}, {"from": "Energiepolitik und Energiemanagement", "to": "Klimaschutz", "value": 0.6728966086197482}, {"from": "Finanzpolitik", "to": "Wirtschaftslage", "value": 0.5474265808802719}, {"from": "Finanzpolitik", "to": "Kommunalpolitik", "value": -0.4054955380090066}, {"from": "Finanzpolitik", "to": "Friedenspolitik", "value": -0.4737518980605179}, {"from": "Finanzpolitik", "to": "Konsumverhalten", "value": -0.4865192383769446}, {"from": "Finanzpolitik", "to": "Integration", "value": -0.36356931955355143}, {"from": "Finanzpolitik", "to": "Jugendpolitik", "value": -0.5138236878096023}, {"from": "Finanzpolitik", "to": "Tierschutz", "value": -0.41724493800286816}, {"from": "Finanzpolitik", "to": "Cybersicherheit", "value": -0.4586109067212444}, {"from": "Finanzpolitik", "to": "Medien und Kommunikation", "value": -0.3579966777473537}, {"from": "Finanzpolitik", "to": "Mittelstand und KMU", "value": -0.5021723610963834}, {"from": "Finanzpolitik", "to": "Tourismus", "value": -0.4621061218327353}, {"from": "Finanzpolitik", "to": "Sport und Freizeit", "value": -0.36451899410587435}, {"from": "Finanzpolitik", "to": "Ehrenamt und Zivilgesellschaft", "value": -0.47832382510210253}, {"from": "Finanzpolitik", "to": "K\u00fcnstliche Intelligenz", "value": -0.46037733165221806}, {"from": "Finanzpolitik", "to": "St\u00e4dteentwicklung", "value": -0.49618726268141083}, {"from": "Finanzpolitik", "to": "Sonstige Themen", "value": -0.5290749361330948}, {"from": "Verteidigung", "to": "Friedenspolitik", "value": 0.37143462992797627}, {"from": "Verteidigung", "to": "Mittelstand und KMU", "value": 0.37903934312794535}, {"from": "Verteidigung", "to": "Sonstige Themen", "value": 0.39064526504750446}, {"from": "Soziale Ungleichheit", "to": "Gesundheitswesen", "value": 0.5907367015775747}, {"from": "Soziale Ungleichheit", "to": "Friedenspolitik", "value": -0.35985244684429557}, {"from": "Kultur und Kunst", "to": "Kommunalpolitik", "value": 0.4168705330415304}, {"from": "Kultur und Kunst", "to": "Konsumverhalten", "value": 0.44932110978612916}, {"from": "Kultur und Kunst", "to": "Jugendpolitik", "value": 0.43703964458733896}, {"from": "Kultur und Kunst", "to": "Cybersicherheit", "value": 0.3630019544993436}, {"from": "Kultur und Kunst", "to": "Medien und Kommunikation", "value": 0.4515056523614227}, {"from": "Kultur und Kunst", "to": "Mittelstand und KMU", "value": 0.4423688170739606}, {"from": "Kultur und Kunst", "to": "Tourismus", "value": 0.40673246626463244}, {"from": "Kultur und Kunst", "to": "Sport und Freizeit", "value": 0.4705047612349386}, {"from": "Kultur und Kunst", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.42431376532520704}, {"from": "Kultur und Kunst", "to": "K\u00fcnstliche Intelligenz", "value": 0.36526496234896316}, {"from": "Kultur und Kunst", "to": "St\u00e4dteentwicklung", "value": 0.42622077458649527}, {"from": "Kultur und Kunst", "to": "Sonstige Themen", "value": 0.4610415091034023}, {"from": "Verkehr und Mobilit\u00e4t", "to": "Infrastrukturprojekte", "value": 0.4395816240883081}, {"from": "Gesundheitswesen", "to": "Infrastrukturprojekte", "value": -0.37384895888915337}, {"from": "Gesundheitswesen", "to": "Kommunalpolitik", "value": -0.41541835945298455}, {"from": "Gesundheitswesen", "to": "Friedenspolitik", "value": -0.4823442064710503}, {"from": "Gesundheitswesen", "to": "Konsumverhalten", "value": -0.4763915745470932}, {"from": "Gesundheitswesen", "to": "Jugendpolitik", "value": -0.44707208600765314}, {"from": "Gesundheitswesen", "to": "Tierschutz", "value": -0.3992250740205622}, {"from": "Gesundheitswesen", "to": "Cybersicherheit", "value": -0.4504376011404161}, {"from": "Gesundheitswesen", "to": "Mittelstand und KMU", "value": -0.5099372802693459}, {"from": "Gesundheitswesen", "to": "Tourismus", "value": -0.45240126593156166}, {"from": "Gesundheitswesen", "to": "Ehrenamt und Zivilgesellschaft", "value": -0.45607405822611197}, {"from": "Gesundheitswesen", "to": "K\u00fcnstliche Intelligenz", "value": -0.4348830785827506}, {"from": "Gesundheitswesen", "to": "St\u00e4dteentwicklung", "value": -0.489850356150689}, {"from": "Gesundheitswesen", "to": "Sonstige Themen", "value": -0.5180542488639256}, {"from": "Infrastrukturprojekte", "to": "Kommunalpolitik", "value": 0.4500143332849057}, {"from": "Infrastrukturprojekte", "to": "Bildungsgerechtigkeit", "value": 0.41991191878903766}, {"from": "Infrastrukturprojekte", "to": "Konsumverhalten", "value": 0.4997018151250117}, {"from": "Infrastrukturprojekte", "to": "Jugendpolitik", "value": 0.4579060171947395}, {"from": "Infrastrukturprojekte", "to": "Tierschutz", "value": 0.4029716309765895}, {"from": "Infrastrukturprojekte", "to": "Cybersicherheit", "value": 0.44761369079817953}, {"from": "Infrastrukturprojekte", "to": "Mittelstand und KMU", "value": 0.5065531050557192}, {"from": "Infrastrukturprojekte", "to": "Tourismus", "value": 0.4871693263997844}, {"from": "Infrastrukturprojekte", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.45018265265968893}, {"from": "Infrastrukturprojekte", "to": "K\u00fcnstliche Intelligenz", "value": 0.4195523463758239}, {"from": "Infrastrukturprojekte", "to": "St\u00e4dteentwicklung", "value": 0.5225298073567894}, {"from": "Infrastrukturprojekte", "to": "Sonstige Themen", "value": 0.5244172682667891}, {"from": "Europ\u00e4ische Union", "to": "Au\u00dfenpolitik", "value": 0.5151674727273505}, {"from": "Wirtschaftslage", "to": "Kommunalpolitik", "value": -0.4404024141724339}, {"from": "Wirtschaftslage", "to": "Inflation", "value": 0.40975251393927403}, {"from": "Wirtschaftslage", "to": "Arbeitsmarkt", "value": 0.4797272419451304}, {"from": "Wirtschaftslage", "to": "Bildungsgerechtigkeit", "value": -0.4144120303705123}, {"from": "Wirtschaftslage", "to": "Friedenspolitik", "value": -0.45503064703088325}, {"from": "Wirtschaftslage", "to": "Konsumverhalten", "value": -0.44646086913860955}, {"from": "Wirtschaftslage", "to": "Jugendpolitik", "value": -0.4796673681652186}, {"from": "Wirtschaftslage", "to": "Tierschutz", "value": -0.40748649081106175}, {"from": "Wirtschaftslage", "to": "Cybersicherheit", "value": -0.44962164777837393}, {"from": "Wirtschaftslage", "to": "Mittelstand und KMU", "value": -0.4479567707960854}, {"from": "Wirtschaftslage", "to": "Tourismus", "value": -0.39447360822673017}, {"from": "Wirtschaftslage", "to": "Ehrenamt und Zivilgesellschaft", "value": -0.45387640802408635}, {"from": "Wirtschaftslage", "to": "K\u00fcnstliche Intelligenz", "value": -0.42600581166310103}, {"from": "Wirtschaftslage", "to": "St\u00e4dteentwicklung", "value": -0.4735948220482484}, {"from": "Wirtschaftslage", "to": "Sonstige Themen", "value": -0.4932203547746969}, {"from": "Kommunalpolitik", "to": "Bildungsgerechtigkeit", "value": 0.6226730141359779}, {"from": "Kommunalpolitik", "to": "Friedenspolitik", "value": 0.5346613208712794}, {"from": "Kommunalpolitik", "to": "Konsumverhalten", "value": 0.7458369943760185}, {"from": "Kommunalpolitik", "to": "Jugendpolitik", "value": 0.698444215364969}, {"from": "Kommunalpolitik", "to": "Tierschutz", "value": 0.5777265090848085}, {"from": "Kommunalpolitik", "to": "Cybersicherheit", "value": 0.6247572335435522}, {"from": "Kommunalpolitik", "to": "Medien und Kommunikation", "value": 0.5103372221524936}, {"from": "Kommunalpolitik", "to": "Mittelstand und KMU", "value": 0.7509728077860716}, {"from": "Kommunalpolitik", "to": "Tourismus", "value": 0.6651951827403048}, {"from": "Kommunalpolitik", "to": "Sport und Freizeit", "value": 0.5361833334926569}, {"from": "Kommunalpolitik", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.7238787331801761}, {"from": "Kommunalpolitik", "to": "K\u00fcnstliche Intelligenz", "value": 0.6257830009160305}, {"from": "Kommunalpolitik", "to": "Rente und Altersvorsorge", "value": 0.42931467108499016}, {"from": "Kommunalpolitik", "to": "St\u00e4dteentwicklung", "value": 0.7530926206488631}, {"from": "Kommunalpolitik", "to": "Sonstige Themen", "value": 0.7766657620774393}, {"from": "Klimaschutz", "to": "Jugendpolitik", "value": -0.38730757446020997}, {"from": "Klimaschutz", "to": "Mittelstand und KMU", "value": -0.3897390937635627}, {"from": "Klimaschutz", "to": "Ehrenamt und Zivilgesellschaft", "value": -0.36747725429592504}, {"from": "Klimaschutz", "to": "St\u00e4dteentwicklung", "value": -0.35907340872647914}, {"from": "Klimaschutz", "to": "Sonstige Themen", "value": -0.39757666509215633}, {"from": "Bildungsgerechtigkeit", "to": "Friedenspolitik", "value": 0.49211392190798375}, {"from": "Bildungsgerechtigkeit", "to": "Konsumverhalten", "value": 0.718401447976787}, {"from": "Bildungsgerechtigkeit", "to": "Jugendpolitik", "value": 0.6895012262963074}, {"from": "Bildungsgerechtigkeit", "to": "Tierschutz", "value": 0.5815000184431679}, {"from": "Bildungsgerechtigkeit", "to": "Cybersicherheit", "value": 0.5943606109113855}, {"from": "Bildungsgerechtigkeit", "to": "Medien und Kommunikation", "value": 0.45038556167292376}, {"from": "Bildungsgerechtigkeit", "to": "Mittelstand und KMU", "value": 0.732467092832658}, {"from": "Bildungsgerechtigkeit", "to": "Tourismus", "value": 0.6757911748388032}, {"from": "Bildungsgerechtigkeit", "to": "Sport und Freizeit", "value": 0.5080180833843025}, {"from": "Bildungsgerechtigkeit", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.696288037696122}, {"from": "Bildungsgerechtigkeit", "to": "K\u00fcnstliche Intelligenz", "value": 0.6033071550817766}, {"from": "Bildungsgerechtigkeit", "to": "Rente und Altersvorsorge", "value": 0.4608425846892705}, {"from": "Bildungsgerechtigkeit", "to": "St\u00e4dteentwicklung", "value": 0.7302427624748712}, {"from": "Bildungsgerechtigkeit", "to": "Sonstige Themen", "value": 0.7568740890550243}, {"from": "Zuwanderung und Flucht", "to": "Integration", "value": 0.4950296389354136}, {"from": "Globalisierung", "to": "Mittelstand und KMU", "value": 0.3594913819145757}, {"from": "Globalisierung", "to": "Sonstige Themen", "value": 0.37471887685273936}, {"from": "Friedenspolitik", "to": "Konsumverhalten", "value": 0.6597689348549717}, {"from": "Friedenspolitik", "to": "Jugendpolitik", "value": 0.6343628446060258}, {"from": "Friedenspolitik", "to": "Tierschutz", "value": 0.5232491079760084}, {"from": "Friedenspolitik", "to": "Cybersicherheit", "value": 0.57319018576196}, {"from": "Friedenspolitik", "to": "Medien und Kommunikation", "value": 0.42632550225507754}, {"from": "Friedenspolitik", "to": "Mittelstand und KMU", "value": 0.694124307378131}, {"from": "Friedenspolitik", "to": "Tourismus", "value": 0.6044422525975759}, {"from": "Friedenspolitik", "to": "Sport und Freizeit", "value": 0.4357610118732799}, {"from": "Friedenspolitik", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.6196572511099016}, {"from": "Friedenspolitik", "to": "K\u00fcnstliche Intelligenz", "value": 0.5776683631603778}, {"from": "Friedenspolitik", "to": "Rente und Altersvorsorge", "value": 0.39048674265415506}, {"from": "Friedenspolitik", "to": "St\u00e4dteentwicklung", "value": 0.6590961653435945}, {"from": "Friedenspolitik", "to": "Sonstige Themen", "value": 0.7159718402329205}, {"from": "Landwirtschaft", "to": "Tierschutz", "value": 0.48493473945661436}, {"from": "Konsumverhalten", "to": "Jugendpolitik", "value": 0.8349851528438772}, {"from": "Konsumverhalten", "to": "Tierschutz", "value": 0.7178514855910336}, {"from": "Konsumverhalten", "to": "Cybersicherheit", "value": 0.7485104918070492}, {"from": "Konsumverhalten", "to": "Medien und Kommunikation", "value": 0.5994556567398923}, {"from": "Konsumverhalten", "to": "Mittelstand und KMU", "value": 0.9002320844802035}, {"from": "Konsumverhalten", "to": "Tourismus", "value": 0.7956641863994458}, {"from": "Konsumverhalten", "to": "Sport und Freizeit", "value": 0.5841877185773146}, {"from": "Konsumverhalten", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.8099714110233333}, {"from": "Konsumverhalten", "to": "K\u00fcnstliche Intelligenz", "value": 0.751030489684078}, {"from": "Konsumverhalten", "to": "Rente und Altersvorsorge", "value": 0.5248012758450937}, {"from": "Konsumverhalten", "to": "St\u00e4dteentwicklung", "value": 0.8621810020633954}, {"from": "Konsumverhalten", "to": "Sonstige Themen", "value": 0.9275592043153863}, {"from": "Integration", "to": "Jugendpolitik", "value": 0.3669564978526384}, {"from": "Integration", "to": "Mittelstand und KMU", "value": 0.3775084078255458}, {"from": "Integration", "to": "St\u00e4dteentwicklung", "value": 0.36280341628317003}, {"from": "Integration", "to": "Sonstige Themen", "value": 0.39175546419516866}, {"from": "Jugendpolitik", "to": "Tierschutz", "value": 0.6775908850100698}, {"from": "Jugendpolitik", "to": "Cybersicherheit", "value": 0.7219910023991514}, {"from": "Jugendpolitik", "to": "Medien und Kommunikation", "value": 0.5525489844000578}, {"from": "Jugendpolitik", "to": "Mittelstand und KMU", "value": 0.8640992008862316}, {"from": "Jugendpolitik", "to": "Tourismus", "value": 0.7598171721282347}, {"from": "Jugendpolitik", "to": "Sport und Freizeit", "value": 0.591382572011263}, {"from": "Jugendpolitik", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.7961654240196231}, {"from": "Jugendpolitik", "to": "K\u00fcnstliche Intelligenz", "value": 0.7243224404252945}, {"from": "Jugendpolitik", "to": "Rente und Altersvorsorge", "value": 0.5051215884967007}, {"from": "Jugendpolitik", "to": "St\u00e4dteentwicklung", "value": 0.8272373585460376}, {"from": "Jugendpolitik", "to": "Sonstige Themen", "value": 0.8931686638518075}, {"from": "Tierschutz", "to": "Cybersicherheit", "value": 0.5981733790724633}, {"from": "Tierschutz", "to": "Medien und Kommunikation", "value": 0.45359395450764317}, {"from": "Tierschutz", "to": "Mittelstand und KMU", "value": 0.7185415765405829}, {"from": "Tierschutz", "to": "Tourismus", "value": 0.6359614917337706}, {"from": "Tierschutz", "to": "Sport und Freizeit", "value": 0.4617821540330789}, {"from": "Tierschutz", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.6457798724626896}, {"from": "Tierschutz", "to": "K\u00fcnstliche Intelligenz", "value": 0.5999783478900449}, {"from": "Tierschutz", "to": "Rente und Altersvorsorge", "value": 0.41826796547745115}, {"from": "Tierschutz", "to": "St\u00e4dteentwicklung", "value": 0.6880977859726561}, {"from": "Tierschutz", "to": "Sonstige Themen", "value": 0.7431163575447357}, {"from": "Cybersicherheit", "to": "Medien und Kommunikation", "value": 0.5046857920921284}, {"from": "Cybersicherheit", "to": "Mittelstand und KMU", "value": 0.7803458688084205}, {"from": "Cybersicherheit", "to": "Tourismus", "value": 0.6855416953248001}, {"from": "Cybersicherheit", "to": "Sport und Freizeit", "value": 0.5140843599498479}, {"from": "Cybersicherheit", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.7034952927386054}, {"from": "Cybersicherheit", "to": "K\u00fcnstliche Intelligenz", "value": 0.6965906028685209}, {"from": "Cybersicherheit", "to": "Rente und Altersvorsorge", "value": 0.4566566699457791}, {"from": "Cybersicherheit", "to": "St\u00e4dteentwicklung", "value": 0.7466610552136039}, {"from": "Cybersicherheit", "to": "Sonstige Themen", "value": 0.8074422489739245}, {"from": "Medien und Kommunikation", "to": "Mittelstand und KMU", "value": 0.5949305506886311}, {"from": "Medien und Kommunikation", "to": "Tourismus", "value": 0.522665709365039}, {"from": "Medien und Kommunikation", "to": "Sport und Freizeit", "value": 0.3876650523632448}, {"from": "Medien und Kommunikation", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.5371513348525694}, {"from": "Medien und Kommunikation", "to": "K\u00fcnstliche Intelligenz", "value": 0.5104587586720685}, {"from": "Medien und Kommunikation", "to": "St\u00e4dteentwicklung", "value": 0.5683992117620426}, {"from": "Medien und Kommunikation", "to": "Sonstige Themen", "value": 0.6171909966586064}, {"from": "Mittelstand und KMU", "to": "Tourismus", "value": 0.8217103419347298}, {"from": "Mittelstand und KMU", "to": "Sport und Freizeit", "value": 0.6040976886200758}, {"from": "Mittelstand und KMU", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.8393141295625411}, {"from": "Mittelstand und KMU", "to": "K\u00fcnstliche Intelligenz", "value": 0.7813900714797343}, {"from": "Mittelstand und KMU", "to": "Rente und Altersvorsorge", "value": 0.5494495661033096}, {"from": "Mittelstand und KMU", "to": "St\u00e4dteentwicklung", "value": 0.8928000890307738}, {"from": "Mittelstand und KMU", "to": "Sonstige Themen", "value": 0.9621047451947624}, {"from": "Tourismus", "to": "Sport und Freizeit", "value": 0.5539053051094783}, {"from": "Tourismus", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.7382189080803202}, {"from": "Tourismus", "to": "K\u00fcnstliche Intelligenz", "value": 0.6862761039604145}, {"from": "Tourismus", "to": "Rente und Altersvorsorge", "value": 0.4812338202144554}, {"from": "Tourismus", "to": "St\u00e4dteentwicklung", "value": 0.7862131502997752}, {"from": "Tourismus", "to": "Sonstige Themen", "value": 0.847669966194965}, {"from": "Sport und Freizeit", "to": "Ehrenamt und Zivilgesellschaft", "value": 0.5520264663724772}, {"from": "Sport und Freizeit", "to": "K\u00fcnstliche Intelligenz", "value": 0.5029832801225189}, {"from": "Sport und Freizeit", "to": "St\u00e4dteentwicklung", "value": 0.5794326859960853}, {"from": "Sport und Freizeit", "to": "Sonstige Themen", "value": 0.624566005571844}, {"from": "Ehrenamt und Zivilgesellschaft", "to": "K\u00fcnstliche Intelligenz", "value": 0.7032040737759229}, {"from": "Ehrenamt und Zivilgesellschaft", "to": "Rente und Altersvorsorge", "value": 0.4921708718169595}, {"from": "Ehrenamt und Zivilgesellschaft", "to": "St\u00e4dteentwicklung", "value": 0.8044804260500799}, {"from": "Ehrenamt und Zivilgesellschaft", "to": "Sonstige Themen", "value": 0.8678000881696318}, {"from": "K\u00fcnstliche Intelligenz", "to": "Rente und Altersvorsorge", "value": 0.45954096594086336}, {"from": "K\u00fcnstliche Intelligenz", "to": "St\u00e4dteentwicklung", "value": 0.7471755774204675}, {"from": "K\u00fcnstliche Intelligenz", "to": "Sonstige Themen", "value": 0.8066260299581276}, {"from": "Rente und Altersvorsorge", "to": "St\u00e4dteentwicklung", "value": 0.5250051291524531}, {"from": "Rente und Altersvorsorge", "to": "Sonstige Themen", "value": 0.5695155142400297}, {"from": "St\u00e4dteentwicklung", "to": "Sonstige Themen", "value": 0.9227680454159103}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
