@@ -1,0 +1,3151 @@
+{
+  "ID19405800": [
+    {
+      "source_concept": "Netzwerkdurchsetzungsgesetz",
+      "target_concept": "Meinungsfreiheit",
+      "source_valence": 0.2,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "grundlegend",
+        "schutzwürdig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Das Netzwerkdurchsetzungsgesetz ändert überhaupt nichts an dem materiellen Recht, welche freie Meinung noch geschützt ist..."
+      ],
+      "justification": "Das Gesetz beeinflusst die Meinungsfreiheit nicht direkt, sondern regelt Plattformpflichten."
+    },
+    {
+      "source_concept": "große Plattformen (Facebook, Twitter, Google)",
+      "target_concept": "Haftung",
+      "source_valence": 0.0,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "verantwortungslos"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Die großen Plattformen ... sollen sich an die demokratisch beschlossenen Gesetze halten."
+      ],
+      "justification": "Ausdruck der Forderung, dass Plattformen Rechtsnormen einhalten müssen."
+    },
+    {
+      "source_concept": "Pflichten der Plattformen",
+      "target_concept": "Beschwerdemanagement",
+      "source_valence": 0.0,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "effektiv",
+        "notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es verpflichtet sie zu einem effektiven Beschwerdemanagement mit qualifizierten Mitarbeitern."
+      ],
+      "justification": "Regelung zur effizienten Bearbeitung von Beschwerden."
+    },
+    {
+      "source_concept": "kontaktdaten / Kontaktperson",
+      "target_concept": "Identifikation rechtswidriger Inhalte",
+      "source_valence": 0.0,
+      "target_valence": -0.4,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Es muss eine Kontaktadresse öffentlich gemacht werden, damit man überhaupt weiß, wohin man sich wenden kann."
+      ],
+      "justification": "Erleichterung der Kontaktaufnahme bei rechtswidrigen Inhalten."
+    },
+    {
+      "source_concept": "Rechte im Internet",
+      "target_concept": "Gesetze / gesetzliche Regelungen",
+      "source_valence": 0.0,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "fundamental",
+        "notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es geht hier um die Grundsatzfrage – das ist auch eine Machtfrage – wer die Regeln im Netz bestimmt."
+      ],
+      "justification": "Betonung der Bedeutung gesetzlicher Regelung und Souveränität."
+    },
+    {
+      "source_concept": "Unternehmen (Facebook, Google)",
+      "target_concept": "Selbstregulierung / Standards",
+      "source_valence": 0.0,
+      "target_valence": -0.5,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "problematisch"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Sie könnten ihre selbstdefinierten Gemeinschaftsstandards an die Stelle unserer demokratisch legitimierten Gesetze stellen."
+      ],
+      "justification": "Kritik an Selbstregulierung der Plattformen."
+    },
+    {
+      "source_concept": "Gesetzesdurchsetzung",
+      "target_concept": "Effektivität",
+      "source_valence": 0.0,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "effizient"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Das Gesetz verpflichtet Plattformen zu objektiv messbaren Pflichten und Kontrollmechanismen."
+      ],
+      "justification": "Verbesserung der Einhaltung rechtsstaatlicher Standards durch gesetzliche Maßstäbe."
+    }
+  ],
+  "ID194213400": [
+    {
+      "source_concept": "Tagesordnungspunkt",
+      "target_concept": "Falscher Titel",
+      "source_valence": 0.2,
+      "target_valence": -0.3,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "falsch"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Sie haben diesen Tagesordnungspunkt letzte Woche ja unter einem falschen Titel eingebracht."
+      ],
+      "justification": "Der Redner kritisiert die Irreführung durch den falschen Titel."
+    },
+    {
+      "source_concept": "Antrag",
+      "target_concept": "Neuer Name",
+      "source_valence": 0.4,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "klar"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Einen Tag vor der Debatte, also gestern, haben Sie den Namen geändert und erstmals Ihren Antrag veröffentlicht."
+      ],
+      "justification": "Der Redner betont die Wichtigkeit der Namensänderung für Transparenz."
+    },
+    {
+      "source_concept": "Koalition",
+      "target_concept": "Erfolgreiche Arbeit",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "erfolgreich"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Dass wir gestern beim Thema Baukindergeld eine Einigung ohne Wohnraumbegrenzung hinbekommen haben, ist ein Erfolg für junge Familien."
+      ],
+      "justification": "Der Redner hebt den Erfolg der Koalition hervor."
+    },
+    {
+      "source_concept": "Familienförderung",
+      "target_concept": "Kindergeldsteigerung",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "stark"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wir erhöhen das Kindergeld um 10 Euro pro Kind und pro Monat ab dem nächsten Jahr."
+      ],
+      "justification": "Der Redner erklärt eine konkrete Maßnahme für Familienförderung."
+    },
+    {
+      "source_concept": "Facebook-Post",
+      "target_concept": "Vorurteile",
+      "source_valence": -0.6,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "falsch",
+        "gezielt"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Sie insinuieren dadurch der Bevölkerung, dass alle in Deutschland lebenden Ausländer ein Anrecht auf Kindergeld hätten."
+      ],
+      "justification": "Der Redner kritisiert die verzerrte Darstellung auf Social Media."
+    },
+    {
+      "source_concept": "EU-Bürger",
+      "target_concept": "Kindergeld",
+      "source_valence": 0.0,
+      "target_valence": 0.3,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "richtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Es geht bei der diskutierten Kindergeldregelung um EU-Bürger."
+      ],
+      "justification": "Der Redner klärt den Fokus der Regelung."
+    },
+    {
+      "source_concept": "Indexierung",
+      "target_concept": "Rechtskonforme Lösung",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "richtig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Ich halte dieses Anliegen der Bundesregierung der Indexierung für richtig."
+      ],
+      "justification": "Der Redner unterstützt die gesetzeskonforme Umsetzung."
+    }
+  ],
+  "ID195513300": [
+    {
+      "source_concept": "Ehe",
+      "target_concept": "Familie",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Schutz"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Ehe und Familie stehen unter dem besonderen Schutze der staatlichen Ordnung."
+      ],
+      "justification": "Der Sprecher betont, dass Ehe und Familie unter Schutz des Grundgesetzes stehen."
+    },
+    {
+      "source_concept": "Ehe",
+      "target_concept": "offener Begriff",
+      "source_valence": 0.7,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "offen"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Der Ehebegriff ist offen."
+      ],
+      "justification": "Der Redner führt an, dass der Begriff der Ehe im Gesetz offen ist."
+    },
+    {
+      "source_concept": "Verfassungsrecht",
+      "target_concept": "Entwicklung",
+      "source_valence": 0.6,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "entwickelt"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Verfassungsrecht und Verfassungswirklichkeit entwickeln sich."
+      ],
+      "justification": "Die Entwicklung des Verfassungsrechts wird als fortlaufend dargestellt."
+    },
+    {
+      "source_concept": "Grundgesetz Artikel 1",
+      "target_concept": "Menschenwürde",
+      "source_valence": 1.0,
+      "target_valence": 1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unantastbar"
+      ],
+      "certainty_score": 1.0,
+      "evidence": [
+        "Artikel 1 des Grundgesetzes... besagt, dass die Würde des Menschen unantastbar ist."
+      ],
+      "justification": "Der Redner hebt hervor, dass die Menschenwürde im Grundgesetz geschützt ist."
+    },
+    {
+      "source_concept": "soziale Medien",
+      "target_concept": "Verletzungen des Grundgesetzes",
+      "source_valence": -0.7,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Verletzungen"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Überhöhen Sie ja ständig in den sogenannten sozialen Medien, die nicht zuletzt von Ihnen befeuert werden."
+      ],
+      "justification": "Der Redner kritisiert die Nutzung sozialer Medien zur Diskreditierung."
+    },
+    {
+      "source_concept": "Abgeordnete",
+      "target_concept": "ungute Gedanken",
+      "source_valence": -0.6,
+      "target_valence": -0.5,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ungute"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Ungute Gedanken und schlechte Fantasien entstehen immer in einem selbst."
+      ],
+      "justification": "Der Redner fordert Selbstreflexion bei Abgeordneten."
+    }
+  ],
+  "ID198909300": [
+    {
+      "source_concept": "Digitalisierung",
+      "target_concept": "Auswärtiges Amt",
+      "source_valence": 0.8,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "dringend notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es ist dringend notwendig, über den Stand der Digitalisierung im Auswärtigen Amt zu sprechen"
+      ],
+      "justification": "Diskussion über Digitalisierungsmaßnahmen und deren Bedeutung"
+    },
+    {
+      "source_concept": "Digitalisierungsstrategie",
+      "target_concept": "Projekte im Auswärtigen Amt",
+      "source_valence": 0.6,
+      "target_valence": -0.2,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wenige Projekte"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "die 170 Seiten der Digitalisierungsstrategie der Bundesregierung ganze drei Projekte für das Auswärtige Amt beinhalten"
+      ],
+      "justification": "Kritik an unzureichender Umsetzung der Digitalisierungsstrategie"
+    },
+    {
+      "source_concept": "Public Diplomacy",
+      "target_concept": "Social Media",
+      "source_valence": 0.7,
+      "target_valence": 0.5,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "dringend notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es ist im digitalen Zeitalter dringend notwendig, „Public Diplomacy“ neu zu erfinden"
+      ],
+      "justification": "Notwendigkeit, neue Strategien in der Diplomatie zu entwickeln"
+    },
+    {
+      "source_concept": "Digitalisierung",
+      "target_concept": "Verwaltungsprozesse",
+      "source_valence": 0.7,
+      "target_valence": -0.4,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unerlässlich"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Verwaltungsabläufe im Amt selbst, aber auch in den Botschaften zu erneuern und zu digitalisieren"
+      ],
+      "justification": "Forderung nach Effizienzsteigerung durch Digitalisierung"
+    },
+    {
+      "source_concept": "Digitalisierung",
+      "target_concept": "Technologiebewertung",
+      "source_valence": 0.8,
+      "target_valence": -0.2,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "nicht überzeugend"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "wie man den technischen Fortschritt heute nicht auf ganz vielen Ebenen und allgegenwärtig wahrnehmen könnte"
+      ],
+      "justification": "Kritik an der Relevanz und Effizienz der vorgeschlagenen Bewertungen"
+    },
+    {
+      "source_concept": "Politik",
+      "target_concept": "Partei FDP",
+      "source_valence": 0.3,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "kritisch"
+      ],
+      "certainty_score": 0.6,
+      "evidence": [
+        "Das ist nicht das, was wir von der FDP erwartet haben"
+      ],
+      "justification": "Unzufriedenheit mit der Digitalisierungspolitik der FDP"
+    },
+    {
+      "source_concept": "Digitalkompetenz",
+      "target_concept": "bindung in der Politik",
+      "source_valence": 0.6,
+      "target_valence": 0.1,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Wir brauchen Digitalkompetenz als Querschnittsaufgabe"
+      ],
+      "justification": "Haltung zu Notwendigkeit digitaler Kompetenzentwicklung"
+    }
+  ],
+  "ID198910400": [],
+  "ID1910308900": [
+    {
+      "source_concept": "Jugend und Parlament",
+      "target_concept": "Protestaktion gegen Klimakrise",
+      "source_valence": 0.8,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Protest",
+        "Klimakrise"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es stimmt: Es hat gestern bei „Jugend und Parlament“ hier im Plenum eine Protestaktion gegen die Klimakrise stattgefunden."
+      ],
+      "justification": "Verweis auf die Protestaktion als legitimiertes Ereignis."
+    },
+    {
+      "source_concept": "Politik des 21. Jahrhunderts",
+      "target_concept": "globale, solidarische Klimastreikbewegung",
+      "source_valence": 0.9,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "solidarisch",
+        "globale"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Die Politik des 21. Jahrhunderts ist eine globale, solidarische Klimastreikbewegung als Antwort auf die globale Klimakrise."
+      ],
+      "justification": "Betonung einer global solidarischen Bewegung als zentrale politische Haltung."
+    },
+    {
+      "source_concept": "Politikstil",
+      "target_concept": "Ignorieren des Gegenübers und Inhalte",
+      "source_valence": -0.7,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "verfehlt",
+        "Ignorieren",
+        "Spott"
+      ],
+      "certainty_score": "0.9",
+      "evidence": [
+        "Dieser Umgang mit den YouTubern ist meiner Ansicht nach einfach ein verfehlter Politikstil, der sich im Ignorieren des Gegenübers, im Ignorieren der Inhalte und auch im Spott zeigt."
+      ],
+      "justification": "Kritik an mangelnder Dialogbereitschaft und respektvollem Umgang."
+    },
+    {
+      "source_concept": "Europawahl",
+      "target_concept": "Ergebnis der Wahlen",
+      "source_valence": 0.4,
+      "target_valence": 0.2,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Planlosigkeit",
+        "Ergebnis"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Bei der Europawahl dann auch ein entsprechendes Ergebnis gezeitigt."
+      ],
+      "justification": "Verbindung zwischen Politikstil und Wahlerfolg."
+    },
+    {
+      "source_concept": "CO2-Bepreisung",
+      "target_concept": "Behinderung durch politische Akteure",
+      "source_valence": -0.8,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Verzögerung",
+        "Hindernis"
+      ],
+      "certainty_score": "0.85",
+      "evidence": [
+        "Sie brauchen überhaupt kein Gutachten. Ihre Botschaft an die Konzerne ist doch: Verpestet ruhig unsere Atmosphäre... Sie wollen das Ganze einfach wieder zehn Jahre lang aufschieben."
+      ],
+      "justification": "Vorwurf, dass politische Entscheidungsträger Klimaschutzmaßnahmen verzögern wollen."
+    },
+    {
+      "source_concept": "Klimaschutzgesetz",
+      "target_concept": "fehlende Umsetzung",
+      "source_valence": -0.9,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Stillstand",
+        "Versäumnis"
+      ],
+      "certainty_score": "1.0",
+      "evidence": [
+        "Das Klimaschutzgesetz liegt irgendwo in der Schublade. Das haben wir im Parlament aber noch nie gesehen."
+      ],
+      "justification": "Kritik an der Untätigkeit bei der Gesetzesumsetzung."
+    }
+  ],
+  "ID1910502400": [],
+  "ID1910712500": [
+    {
+      "source_concept": "Antrag",
+      "target_concept": "Urheberrechtsrichtlinie",
+      "source_valence": 0.2,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schlecht gemacht"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Warum kommt die AfD mit diesem handwerklich schlecht gemachten Antrag um die Ecke?"
+      ],
+      "justification": "Der Antrag wird als inhaltlich und formal falsch bewertet."
+    },
+    {
+      "source_concept": "Antrag",
+      "target_concept": "Verbraucherschutzrichtlinien",
+      "source_valence": 0.3,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ziemlich klar benannt"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "In der Verbraucherrechterichtlinie ist ganz klar als Mittel ein Widerrufsrecht formuliert."
+      ],
+      "justification": "Verbraucherschutzrichtlinien definieren konkrete Mittel."
+    },
+    {
+      "source_concept": "AfD",
+      "target_concept": "europafeindlich",
+      "source_valence": -0.8,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "kerns europafeindliche Partei"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "weil Sie im Kern europafeindliche Partei sind"
+      ],
+      "justification": "Das politische Ziel der Partei wird als europafeindlich charakterisiert."
+    },
+    {
+      "source_concept": "Uploadfilter",
+      "target_concept": "Richtlinie",
+      "source_valence": 0.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Das Wort ‚Uploadfilter’ nicht (mehr) im Text der Richtlinie vorkommt"
+      ],
+      "justification": "Der Begriff ist im Richtlinientext nicht enthalten, wird aber in der Argumentation erwähnt."
+    },
+    {
+      "source_concept": "soziale Netzwerke",
+      "target_concept": "Datenschutz",
+      "source_valence": 0.0,
+      "target_valence": -0.4,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "beeinträchtigen würde"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Dass eine Vorabfilterung auf sozialen Netzwerken den Schutz personenbezogener Daten beeinträchtigen würde."
+      ],
+      "justification": "Kritik an Filtermaßnahmen aufgrund möglicher Datenschutzbeeinträchtigung."
+    },
+    {
+      "source_concept": "Vertragsänderung",
+      "target_concept": "Vertrag über die Arbeitsweise der Europäischen Union",
+      "source_valence": 0.0,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Kommentarliteratur zum Vertrag"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Sobald man in die Kommentarliteratur zum Vertrag über die Arbeitsweise der Europäischen Union schaut."
+      ],
+      "justification": "Die Mittel der EU-Richtlinien sind in der Literatur klar benannt."
+    }
+  ],
+  "ID1912405200": [
+    {
+      "source_concept": "Meinungsfreiheit",
+      "target_concept": "Hass und Hetze",
+      "source_valence": 1.0,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "existenzielle Bedeutung"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "die Meinungsfreiheit ... die für diese Demokratie auch existenzielle Bedeutung hat"
+      ],
+      "justification": "Hass und Hetze greifen die Meinungsfreiheit an und bedrohen die Demokratie"
+    },
+    {
+      "source_concept": "Grenzen der Meinungsfreiheit",
+      "target_concept": "Hass und Hetze",
+      "source_valence": "neutral",
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Grenzen verschieben"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Immer weiter werden die Grenzen des Sagbaren verschoben"
+      ],
+      "justification": "Hass und Hetze überschreiten akzeptierte Grenzen und bedrohen die freiheitliche Ordnung"
+    },
+    {
+      "source_concept": "Social Media",
+      "target_concept": "Hass und Hetze",
+      "source_valence": "neutral",
+      "target_valence": "-0.8",
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": "-0.8",
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Bedrohung"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Hass und Hetze, Beleidigung, massive Drohungen, Hass und Hetze in den Social Media"
+      ],
+      "justification": "Social Media ist Plattform für Hass und Hetze, die die Demokratie gefährden"
+    },
+    {
+      "source_concept": "Antisemitismus",
+      "target_concept": "Judaslohn",
+      "source_valence": "-0.9",
+      "target_valence": "-0.7",
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": "-0.7",
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "antisemitisch"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Den Hashtag „#Judaslohn“ bedienen"
+      ],
+      "justification": "Der Hashtag ist verbunden mit antisemitischen Klischees und Hasspropaganda"
+    },
+    {
+      "source_concept": "AfD",
+      "target_concept": "Sagbare Inhalte",
+      "source_valence": "neutral",
+      "target_valence": "neutral",
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": "0.0",
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "sagbar"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "auf die Rolle der AfD zurück, dass nahezu alles sagbar erscheint"
+      ],
+      "justification": "Die AfD wird mit einer Erweiterung der Sprechfähigkeit und Meinungsfreiheit assoziiert"
+    },
+    {
+      "source_concept": "Recht auf Meinungsfreiheit",
+      "target_concept": "Gesetzgeber",
+      "source_valence": "positive",
+      "target_valence": "positive",
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Aktivrolle"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "wie wir als Staat und als Gesetzgeber unsere Rolle anpassen"
+      ],
+      "justification": "Der Gesetzgeber soll Regeln setzen, um die Meinungsfreiheit trotz extremer Äußerungen zu schützen"
+    },
+    {
+      "source_concept": "Hass- und Hetzrede",
+      "target_concept": "Strafverfolgung",
+      "source_valence": "positive",
+      "target_valence": "positive",
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Schaffung eines materiellen Anspruchs auf Daten"
+      ],
+      "justification": "Stärkere Strafverfolgung ist notwendig, um Hass und Hetzrede effektiv zu bekämpfen"
+    }
+  ],
+  "ID1912712800": [
+    {
+      "source_concept": "Internet",
+      "target_concept": "Krisen",
+      "source_valence": 0.0,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Krise"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Das Internet ist in einer Krise."
+      ],
+      "justification": "Das Redetext betont die multiple Krise des Internets."
+    },
+    {
+      "source_concept": "Monopole",
+      "target_concept": "Wettbewerb",
+      "source_valence": -0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "monopolisierte",
+        "behindert"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Monopole behindern den Wettbewerb."
+      ],
+      "justification": "Das Argument beschreibt, wie Monopole den Wettbewerb einschränken."
+    },
+    {
+      "source_concept": "Macht der Monopole",
+      "target_concept": "Schwächung der Demokratie",
+      "source_valence": -1.0,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schwächt"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Sie profitieren bewusst von Geschäftsmodellen, die... die Demokratie schwächen."
+      ],
+      "justification": "Der Text macht den Zusammenhang zwischen Monopolen und Demokratieschwächung geltend."
+    },
+    {
+      "source_concept": "Dezentralisierung",
+      "target_concept": "Macht Monopole",
+      "source_valence": 0.0,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "dezentralisieren",
+        "Brechen"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Es ist höchste Zeit, das Internet wieder zu dezentralisieren, die Macht der Monopole zu brechen."
+      ],
+      "justification": "Der Aufruf zur Dezentralisierung wird als Mittel gegen Monopole argumentiert."
+    },
+    {
+      "source_concept": "Nutzerinnen und Nutzer",
+      "target_concept": "Ohnmacht",
+      "source_valence": 0.0,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Ohnmacht"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Es braucht ein Ende der Ohnmacht von Nutzerinnen und Nutzern."
+      ],
+      "justification": "Der Text fordert, die Ohnmacht der Nutzer zu beenden."
+    },
+    {
+      "source_concept": "Regulierung",
+      "target_concept": "Internet Konzepte",
+      "source_valence": 0.0,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Regulierung",
+        "Zähne zeigen"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Im Zweifel auch zu zerschlagen und als Regulierer Zähne zu zeigen."
+      ],
+      "justification": "Der Text fordert eine harte Regulierung der Monopole."
+    },
+    {
+      "source_concept": "Gesetze",
+      "target_concept": "Datenverarbeitung",
+      "source_valence": 0.0,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Gesetze brechen"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Sie brechen Gesetze, lügen in Parlamenten."
+      ],
+      "justification": "Die Monopolisten werden hier zu Gesetzesbrechern dargestellt."
+    },
+    {
+      "source_concept": "globale Debattenplattform",
+      "target_concept": "Internet Governance Forum",
+      "source_valence": 0.0,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Antworten finden"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Das Internet Governance Forum... ist eine Gelegenheit, Antworten auf wichtige Fragen zu finden."
+      ],
+      "justification": "Das Forum wird als Plattform für Lösungsansätze beschrieben."
+    }
+  ],
+  "ID1912713300": [
+    {
+      "source_concept": "personalisiertes Verhältniswahlrecht",
+      "target_concept": "Wahlrechtsänderungen",
+      "source_valence": 0.7,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "reformierbar"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Das personalisierte Verhältniswahlrecht ist durchaus noch reformierbar."
+      ],
+      "justification": "Das Scheitern und die Reformmöglichkeiten werden im Text erörtert."
+    },
+    {
+      "source_concept": "Überhangmandate",
+      "target_concept": "Wahlrechtsreform",
+      "source_valence": -0.7,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schlechteste Option"
+      ],
+      "certainty_score": 0.6,
+      "evidence": [
+        "Der Vorschlag der AfD-Fraktion, entstehende Überhangmandate einfach zu streichen, ist sicherlich die schlechteste Option."
+      ],
+      "justification": "Kritische Bewertung des Vorschlags der Anderen."
+    },
+    {
+      "source_concept": "Wahlkreise",
+      "target_concept": "Repräsentanz",
+      "source_valence": 0.8,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "außerordentlich wichtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Uns ist dagegen die Repräsentanz durch in Wahlkreisen gewählte Abgeordnete außerordentlich wichtig."
+      ],
+      "justification": "Hervorhebung der Bedeutung direkter Repräsentanz für die Demokratie."
+    },
+    {
+      "source_concept": "Wahlkreisabgeordnete",
+      "target_concept": "Demokratische Repräsentanz",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Wahlkreisabgeordnete vertreten das ganze Volk, aber haben gleichzeitig eine sichtbare Rückkopplung an ihre konkrete Wahlbevölkerung."
+      ],
+      "justification": "Verbindung zwischen Wahlkreisvertretung und demokratischer Legitimation."
+    },
+    {
+      "source_concept": "verfassungsrechtliche Vorgaben",
+      "target_concept": "Sitzverteilung im Bundestag",
+      "source_valence": -0.4,
+      "target_valence": 0.3,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "nicht verfassungsrechtlich geboten"
+      ],
+      "certainty_score": 0.5,
+      "evidence": [
+        "Die vollständige Proportionalität ist keinesfalls verfassungsrechtlich geboten."
+      ],
+      "justification": "Kritik gegen die Forderung nach absoluter Proportionalität basierend auf Verfassungsurteilen."
+    },
+    {
+      "source_concept": "Überhangmandate",
+      "target_concept": "Föderaler Charakter",
+      "source_valence": -0.6,
+      "target_valence": 0.2,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "widerspricht"
+      ],
+      "certainty_score": 0.6,
+      "evidence": [
+        "Dies widerspricht schon dem föderalen Charakter unserer Bundestagswahl."
+      ],
+      "justification": "Kritik an der nationalen Verrechnung von Überhangmandaten im föderalen System."
+    },
+    {
+      "source_concept": "Vorschlag der AfD-Fraktion",
+      "target_concept": "Schlechteste Option",
+      "source_valence": -0.8,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schlechteste Option"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Der Vorschlag der AfD-Fraktion, entstehende Überhangmandate einfach zu streichen, ist sicherlich die schlechteste Option."
+      ],
+      "justification": "Kritik an einem bestimmten Wahlrecht-Vorschlag."
+    },
+    {
+      "source_concept": "Reformfähigkeit",
+      "target_concept": "System des personalisierten Verhältniswahlrechts",
+      "source_valence": 0.6,
+      "target_valence": 0.3,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "reformierbar"
+      ],
+      "certainty_score": 0.6,
+      "evidence": [
+        "Das personalisierte Verhältniswahlrecht ist durchaus noch reformierbar."
+      ],
+      "justification": "Anerkennung der Möglichkeit einer Reform."
+    }
+  ],
+  "ID1913401700": [
+    {
+      "source_concept": "AfD-Anträge",
+      "target_concept": "Wiederholungsmuster",
+      "source_valence": 0.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Jedes Mal, wenn ich zu einem Antrag der AfD spreche, stelle ich fest: Es wiederholt sich dasselbe Muster"
+      ],
+      "justification": "Der Redner beschreibt, dass sich die Anträge der AfD wiederholen."
+    },
+    {
+      "source_concept": "Medienbeteiligung politischer Parteien",
+      "target_concept": "Meinungsvielfalt in Deutschland",
+      "source_valence": -0.3,
+      "target_valence": -0.3,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es wird unterstellt, die publizistische Vielfalt in Deutschland sei ernsthaft gefährdet, und diese Gefährdung gehe von der Beteiligung politischer Parteien an Medienunternehmen aus."
+      ],
+      "justification": "Der Redner argumentiert, dass die Beteiligung der Parteien die Vielfalt gefährdet."
+    },
+    {
+      "source_concept": "SPD Beteiligung an Medien",
+      "target_concept": "Einfluss auf redaktionelle Inhalte",
+      "source_valence": -0.2,
+      "target_valence": -0.2,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gering"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Der Anteil der SPD an den Medien (40%, 23%) ermöglicht keinen beherrschenden Einfluss."
+      ],
+      "justification": "Der große Anteil der SPD an bestimmten Medien wird als kein signifikanter Einfluss eingeschätzt."
+    },
+    {
+      "source_concept": "Paragraf 24 Parteiengesetz",
+      "target_concept": "Transparenz bei Medienbeteiligungen",
+      "source_valence": 0.5,
+      "target_valence": 0.5,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.5,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Medienbeteiligungen sind im Rechenschaftsbericht der Parteien zu benennen."
+      ],
+      "justification": "Der Paragraf trägt zur Transparenz bei."
+    },
+    {
+      "source_concept": "Gesetzentwurf",
+      "target_concept": "Regelung von Medienprodukten",
+      "source_valence": -0.6,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "überfrachtend",
+        "unklar"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Der Vorschlag, sämtliche Produkte aufzuführen, ist nicht erforderlich und würde die Darstellung unnötig überfrachten."
+      ],
+      "justification": "Der Redner kritisiert den Entwurf als unnötig komplex und unklar."
+    },
+    {
+      "source_concept": "UWG",
+      "target_concept": "Verbot redaktioneller Werbung",
+      "source_valence": 0.4,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "irreführend"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Das Gesetz gegen unlauteren Wettbewerb schützt nicht vor in der Wahlentscheidung beeinflusstem Verhalten."
+      ],
+      "justification": "Der Zusammenhang zwischen Parteienbeteiligung und Werbung wird als unzureichend betrachtet."
+    },
+    {
+      "source_concept": "Medienregulierung",
+      "target_concept": "Medienmarkttransparenz",
+      "source_valence": 0.2,
+      "target_valence": 0.2,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [],
+      "certainty_score": 0.6,
+      "evidence": [
+        "Änderungen in § 30 GWB sind in keinem Zusammenhang mit Parteienbeteiligung."
+      ],
+      "justification": "Der Einfluss der vorgeschlagenen Änderungen auf die Markttransparenz ist fraglich."
+    }
+  ],
+  "ID1913801000": [
+    {
+      "source_concept": "Künstliche Intelligenz",
+      "target_concept": "Technologien",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig",
+        "positiv"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wir müssen uns dem Thema KI positiv stellen"
+      ],
+      "justification": "Sie wird als bedeutend für Fortschritt und Wettbewerbsfähigkeit dargestellt."
+    },
+    {
+      "source_concept": "EU/Deutschland",
+      "target_concept": "Standards setzen",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "richtig",
+        "faire"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "dann wäre es doch richtig, wenn wir von hier aus Standards setzen"
+      ],
+      "justification": "Hervorgehobene Verantwortlichkeit zur Informationsführerrolle in ethischer Ausgestaltung."
+    },
+    {
+      "source_concept": "digitale Technologien",
+      "target_concept": "Wohlstand",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unheimlich wichtig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Für unseren Wohlstand, für unser Fortkommen ist es unheimlich wichtig, dass wir bei der KI wieder auf dem Driver Seat sitzen"
+      ],
+      "justification": "Technologien werden als zentral für ökonomische Stabilität und Fortschritt visualisiert."
+    },
+    {
+      "source_concept": "autonomes Fahren",
+      "target_concept": "KI-Verhalten",
+      "source_valence": -0.2,
+      "target_valence": -0.2,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "negativ",
+        "real"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Eines dieser ständig genannten negativen Themen ist das Verhalten von KI bei Entscheidungen beim autonomen Fahren. Doch sind diese Fragen tatsächlich real?"
+      ],
+      "justification": "Kritik an übermäßiger Fokussierung auf hypothetische Risiken."
+    },
+    {
+      "source_concept": "Google in Kalifornien",
+      "target_concept": "Testmeilen",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "data",
+      "association_valence": 0.9,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        " schafft Fakten"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Während Google in Kalifornien 50 000 Testmeilen fährt"
+      ],
+      "justification": "Hinweis auf praktische Fortschritte gegenüber Deutschland."
+    },
+    {
+      "source_concept": "KI-Bildungschancen",
+      "target_concept": "Gesellschaftlicher Fortschritt",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "eröffnet"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "während in anderen Ländern Kindern mit KI Bildungschancen eröffnet werden"
+      ],
+      "justification": "Gegensatz zwischen aktivem Fortschritt im Ausland und zögernder Haltung in Deutschland."
+    },
+    {
+      "source_concept": "Vertrauen",
+      "target_concept": "KI-Entwicklung",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "vertrauen",
+        "schneller"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "wenn wir mehr wollen und schneller sind, wenn wir vertrauen statt misstrauen"
+      ],
+      "justification": "Vertrauen wird als wichtiger Erfolgsfaktor dargestellt."
+    }
+  ],
+  "ID1916605400": [
+    {
+      "source_concept": "Ansprechpartner für Bürger",
+      "target_concept": "Wahlmöglichkeit bei Polizeiverhalten",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gut"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Die Idee, einen Ansprechpartner für die Bürger zu schaffen"
+      ],
+      "justification": "Der Redner hebt die Schaffung einer Anlaufstelle bei Polizeihandlungen als positive Initiative hervor."
+    },
+    {
+      "source_concept": "Debatte",
+      "target_concept": "kontroverse Argumente",
+      "source_valence": 0.2,
+      "target_valence": -0.3,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "kontrovers"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "es wurde eine ganze Reihe von kontroversen Argumenten vorgetragen"
+      ],
+      "justification": "Der Redner beschreibt die Debatte als kontrovers mit unterschiedlichen Argumenten."
+    },
+    {
+      "source_concept": "Antifa",
+      "target_concept": "großes Geschrei",
+      "source_valence": -0.6,
+      "target_valence": -0.5,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "großes Geschrei"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "bei bestimmten Argumenten oder Stichworten, wie zum Beispiel Antifa, hier großes Geschrei ausbrach"
+      ],
+      "justification": "Der Redner interpretiert das Verhalten bei Erwähnung der Antifa als emotionales Aufbrausen."
+    },
+    {
+      "source_concept": "Polizei",
+      "target_concept": "pauschale Verurteilung",
+      "source_valence": 0.7,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "pauschal"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "die Polizei pauschal zum Freiwild zu erklären"
+      ],
+      "justification": "Der Redner kritisiert die Generalisierung in der öffentlichen Debatte gegen die Polizei."
+    },
+    {
+      "source_concept": "Gesetz und Rechtsstaat",
+      "target_concept": "Vorurteile",
+      "source_valence": 0.8,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Vorurteilen"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Vorurteile gegen wesentliche Säulen unseres Rechtsstaates"
+      ],
+      "justification": "Der Redner betont die Gefahr, Vorurteile gegen Institutionen des Rechtssystems zu schüren."
+    },
+    {
+      "source_concept": "Geldhahn der Antifa",
+      "target_concept": "Institutionalisierte Finanzierung",
+      "source_valence": -0.5,
+      "target_valence": -0.3,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "institutionalisierte Finanzierung"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Frau Künast, statt der Antifa den Geldhahn zuzudrehen, fordert ..."
+      ],
+      "justification": "Der Redner kritisiert die Forderung, Antifa finanziell zu unterstützen."
+    },
+    {
+      "source_concept": "Polizei",
+      "target_concept": "Hinterhalt/Angriffe",
+      "source_valence": 0.6,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Angriffe",
+        "Mordversuche"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "wenn Aktivisten Polizei in Leipzig angegriffen wird ..., das sind Mordversuche"
+      ],
+      "justification": "Der Redner beschreibt gewalttätige Attacken auf die Polizei als Mordversuche."
+    }
+  ],
+  "ID1918003000": [
+    {
+      "source_concept": "Krise",
+      "target_concept": "produktiver Zustand",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "produktiv"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "„Krise ist ein produktiver Zustand.“"
+      ],
+      "justification": "Die Rede hebt hervor, dass die Krise auch als Chance verstanden werden kann."
+    },
+    {
+      "source_concept": "Investitionen",
+      "target_concept": "Wirtschaft",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "notwendig",
+        "richtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "„Wir nehmen Geld in die Hand“, „Investitionen in die Wirtschaft“"
+      ],
+      "justification": "Die Rednerin verbindet Investitionen mit der Stärkung der Wirtschaft während der Krise."
+    },
+    {
+      "source_concept": "Schuldenaufnahme",
+      "target_concept": "Krisenbewältigung",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "„Das bedeutet, Schuldenaufnahme, ja!“"
+      ],
+      "justification": "Die Rednerin argumentiert, dass Schuldenaufnahme ein notwendiges Mittel ist, um die Krise zu bewältigen."
+    },
+    {
+      "source_concept": "Digitalisierung",
+      "target_concept": "Verwaltung",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "innovativ",
+        "effizient"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "„digitalen Zugang zu einzelnen Gerichten“, „Verfahrensbeschleunigung“"
+      ],
+      "justification": "Die Rednerin stellt Digitalisierung als Mittel zur Effizienzsteigerung und Beschleunigung vor."
+    },
+    {
+      "source_concept": "rechtsextremistischer Internetauftritt",
+      "target_concept": "Sicherheit",
+      "source_valence": -0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gefährlich",
+        "unsicher"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "„Verbreitung rechtsextremistischer Strukturen nimmt zu“, „Internet als unsicherer Raum“"
+      ],
+      "justification": "Die Rednerin betont die Gefahr des Extremismus im Internet und die Notwendigkeit der Sicherheitsmaßnahmen."
+    },
+    {
+      "source_concept": "Geld in die Hand nehmen",
+      "target_concept": "Krisenbewältigung",
+      "source_valence": 0.9,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "entscheidend",
+        "notwendig"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "„Geld in die Hand nehmen“, „unsere Aufgabe“"
+      ],
+      "justification": "Die Rednerin verbindet das gezielte finanzielle Handeln mit erfolgreicher Krisenbewältigung."
+    },
+    {
+      "source_concept": "Haushaltsmittel",
+      "target_concept": "Investitionen",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "gerecht",
+        "fair"
+      ],
+      "certainty_score": 0.6,
+      "evidence": [
+        "„bei den offenen Personalstellen“, „faires Aufstellen“"
+      ],
+      "justification": "Es wird kritisiert, dass Haushaltsmittel unsachgemäß dargestellt werden."
+    }
+  ],
+  "ID1918605800": [
+    {
+      "source_concept": "Cannabiskonsum",
+      "target_concept": "Psychosen",
+      "source_valence": -0.8,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "relevant",
+        "schädlich"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Viele meiner Vorredner haben völlig zu Recht darauf hingewiesen, welche Folgen Cannabiskonsum haben kann: Es kommt zu Psychosen."
+      ],
+      "justification": "Gefahr von psychischen Erkrankungen durch Cannabiskonsum wird betont."
+    },
+    {
+      "source_concept": "Cannabislegalisierung",
+      "target_concept": "Verbraucherzahlen",
+      "source_valence": -0.6,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "erhöht"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Dort ist die Zahl der Konsumenten um über 50 Prozent gestiegen."
+      ],
+      "justification": "Statistische Daten aus Kanada deuten auf einen Zusammenhang zwischen Legalisierung und steigenden Konsumentenquoten hin."
+    },
+    {
+      "source_concept": "Cannabiskonsum",
+      "target_concept": "Verkehrsunfälle",
+      "source_valence": -0.7,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "erhöht"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Seit Jahren sinkt auch dank der Initiativen gerade aus der Unionsfraktion die Zahl der Verkehrstoten"
+      ],
+      "justification": "Verkehrssicherheitsmaßnahmen sollen die Zahl der Unfälle reduzieren; Legalisierung wird negativ damit verknüpft."
+    },
+    {
+      "source_concept": "Prävention",
+      "target_concept": "Folgen des Cannabiskonsums",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "besser"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Deswegen kann ich die Kampagnen, die in den vergangenen Wochen von Daniela Ludwig gestartet wurden, mit Nachdruck unterstützen."
+      ],
+      "justification": "Präventionskampagnen werden als wirksame Strategie hervorgehoben."
+    },
+    {
+      "source_concept": "Legalisierung",
+      "target_concept": "Leid",
+      "source_valence": -1.0,
+      "target_valence": -1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -1.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "undesirbar"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Wir werden Ihre Anträge ablehnen. Wir werden nicht den Weg der Legalisierung gehen; denn er bedeutet unsägliches Leid."
+      ],
+      "justification": "Legalisierung wird direkt mit Leid und negativen Folgen verbunden."
+    }
+  ],
+  "ID1918705600": [
+    {
+      "source_concept": "Erneuerbare Energien",
+      "target_concept": "Stromversorgung",
+      "source_valence": 0.9,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "großer Erfolg"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "über 50 Prozent der Erneuerbaren in der Stromversorgung"
+      ],
+      "justification": "Hervorhebung des Anteils erneuerbarer Energien in der Stromproduktion als Erfolg."
+    },
+    {
+      "source_concept": "Klimaneutralität",
+      "target_concept": "2050",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ehrgeiziges Ziel"
+      ],
+      "certainty_score": 1.0,
+      "evidence": [
+        "Klimaneutralität spätestens im Jahre 2050"
+      ],
+      "justification": "Festlegung eines angestrebten Zeithorizonts für Klimaneutralität."
+    },
+    {
+      "source_concept": "Photovoltaik",
+      "target_concept": "Kapazitätssteigerung",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "verdoppelt"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Verdopplung der Photovoltaik auf 100 Gigawatt"
+      ],
+      "justification": "Ankündigung der Ausbauziele für Photovoltaik."
+    },
+    {
+      "source_concept": "Windenergie",
+      "target_concept": "2030",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Steigerung auf 71 GW"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Steigerung der Windenergie auf 71 Gigawatt im Jahre 2030"
+      ],
+      "justification": "Festlegung von Ausbauzielen für Windenergie."
+    },
+    {
+      "source_concept": "Netzausbau",
+      "target_concept": "Energiewende",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "essentiell"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "notwendigkeit des Ausbaus von über 10 000 km Stromleitungen"
+      ],
+      "justification": "Betont die Bedeutung des Netzausbaus für die Energiewende."
+    },
+    {
+      "source_concept": "Wasserstoff",
+      "target_concept": "Energiewende",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "vielfältig einsetzbar"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Grüner Wasserstoff aus erneuerbaren Energien"
+      ],
+      "justification": "Erwähnt die Bedeutung von Wasserstoff für die Sektorkopplung."
+    },
+    {
+      "source_concept": "Koalition",
+      "target_concept": "Klimaschutz",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Konsens"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wunsch nach Konsens vor der Bundestagswahl"
+      ],
+      "justification": "Betont die Notwendigkeit eines politischen Konsenses zu Klimazielen."
+    }
+  ],
+  "ID1919100300": [
+    {
+      "source_concept": "Antrag",
+      "target_concept": "Legislation",
+      "source_valence": 0.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schlecht"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Das Gesetz, das die GroKo vorlegt, ist schlecht"
+      ],
+      "justification": "Kritik am Gesetz wird direkt formuliert."
+    },
+    {
+      "source_concept": "Oppositionsfraktion",
+      "target_concept": "seriöse Haltung",
+      "source_valence": 1.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "seriös"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Welchen Grund für diesen Antrag könnte man als seriöse Oppositionsfraktion haben?"
+      ],
+      "justification": "Infragestellung der Ernsthaftigkeit der Oppositionshaltung."
+    },
+    {
+      "source_concept": "Social Media",
+      "target_concept": "Blockieren des Gesetzgebungsprozesses",
+      "source_valence": -0.6,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "blockieren"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "weil Sie die für sich einnehmen wollen, wollen Sie genauso den Weg der Gesetzgebung blockieren"
+      ],
+      "justification": "Vorwurf, dass soziale Medien den Gesetzgebungsweg stören."
+    },
+    {
+      "source_concept": "Institutionen",
+      "target_concept": "Schmutzziehen",
+      "source_valence": -0.7,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "in den Schmutz ziehen"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Sie wollen die Institutionen in den Schmutz ziehen, weil Sie sie hassen."
+      ],
+      "justification": "Vorwurf von absichtlicher Diffamierung."
+    },
+    {
+      "source_concept": "Gesetz",
+      "target_concept": "Diktatur",
+      "source_valence": -0.8,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Diktatur"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Das Gesetz, das die GroKo vorlegt, ist schlecht, aber es errichtet keine Diktatur."
+      ],
+      "justification": "Abgrenzung des Gesetzes von Diktatur-Szenarien."
+    },
+    {
+      "source_concept": "Änderungsanträge",
+      "target_concept": "Alternativen",
+      "source_valence": 0.5,
+      "target_valence": 0.5,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Alternativen"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Die Grünen haben einen Änderungsantrag vorgelegt. Wir haben einen Änderungsantrag mit einem neuen Abschnitt vorgelegt."
+      ],
+      "justification": "Verweis auf Einsatz von Alternativen durch die Regierung."
+    },
+    {
+      "source_concept": "Gesetzesinitiative",
+      "target_concept": "Haltung der Opposition",
+      "source_valence": -0.3,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Sie reden nur darüber; wir tun es, und dass wir es getan haben."
+      ],
+      "justification": "Hervorhebung der angeblichen Handlungsbereitschaft der eigenen Fraktion."
+    }
+  ],
+  "ID1919111900": [
+    {
+      "source_concept": "Verkehrsunfälle",
+      "target_concept": "Verkehrstote",
+      "source_valence": 0.5,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zu viel"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Jeder Verkehrstote ist ein Toter, ein Opfer, zu viel"
+      ],
+      "justification": "Reduziert Verkehrstote durch Maßnahmen wie Sicherheitssysteme"
+    },
+    {
+      "source_concept": "Investitionen",
+      "target_concept": "Klimafreundlichkeit",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "klimafreundlicher"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Verkehr muss durch Investitionen in Elektromobilität, Wasserstoffantrieb und E-Fuels klimafreundlicher werden"
+      ],
+      "justification": "Erklärung der Maßnahmen zur Abmilderung des Klimawandels im Verkehrssektor"
+    },
+    {
+      "source_concept": "Technologische Innovationen",
+      "target_concept": "Verkehrssicherheit",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Mehr Sicherheit"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Wir wollen, dass Abbiegeassistenzsysteme schneller zur Pflicht gemacht werden"
+      ],
+      "justification": "Technologische Systeme reduzieren Unfälle und Tote im Verkehr"
+    },
+    {
+      "source_concept": "Gesetzesmaßnahmen",
+      "target_concept": "Verkehrstote",
+      "source_valence": -0.4,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Reduktion"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "gesetzliche Maßnahmen, die in den vergangenen Jahren beschlossen wurden – von der Gurtpflicht über das Senken der Promillegrenze"
+      ],
+      "justification": "Gesetzliche Maßnahmen sollen Verkehrstote reduzieren"
+    },
+    {
+      "source_concept": "European harmonization",
+      "target_concept": "Verkehrssicherheit",
+      "source_valence": "neutral",
+      "target_valence": "positive",
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Notwendig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "müssen wir die Entscheidung darüber auf europäischer Ebene abstimmen"
+      ],
+      "justification": "Europäische Rechtssysteme beeinflussen nationale Maßnahmen in der Verkehrssicherheit"
+    },
+    {
+      "source_concept": "Innovationen",
+      "target_concept": "Verkehrssicherheit",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zukunftsweisend"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Wir wollen auf neue Technologien setzen. Wir wollen neue Systeme einführen."
+      ],
+      "justification": "Technologische Innovationen verbessern die Verkehrssicherheit nachhaltig"
+    },
+    {
+      "source_concept": "Maßnahmen",
+      "target_concept": "Gesellschaftliche Akzeptanz",
+      "source_valence": "neutral",
+      "target_valence": "positive",
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "Akzeptanz"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Verkehrserziehung und moderne Medien"
+      ],
+      "justification": "Akzeptanz fördert die Implementierung sicherer Verkehrssysteme"
+    }
+  ],
+  "ID1920606200": [
+    {
+      "source_concept": "globale Kontrolle",
+      "target_concept": "Big Tech",
+      "source_valence": -0.8,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "mächtig",
+        "kontrollieren"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Im Prinzip fünf Konzerne, die das Netz, die Plattformen, die Bezahlfunktionen, die gesamte technische Infrastruktur kontrollieren"
+      ],
+      "justification": "Kontrolle durch wenige große Unternehmen wird als entscheidend für die Macht im digitalen Raum beschrieben"
+    },
+    {
+      "source_concept": "Zensur",
+      "target_concept": "Big Tech",
+      "source_valence": -1.0,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -1.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "willkürlich",
+        "verdrängt"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "die Plattformen löschen, sperren und entziehen Reichweite, machen Beiträge unauffindbar"
+      ],
+      "justification": "Big Tech wird als involviert in Zensurmaßnahmen dargestellt"
+    },
+    {
+      "source_concept": "digitale Öffentlichkeit",
+      "target_concept": "Zugang",
+      "source_valence": 0.5,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "grundversorgung",
+        "essentiell"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Im 21. Jahrhundert gehört der Zugang zur digitalen Öffentlichkeit zur Grundversorgung wie Wasser und Strom"
+      ],
+      "justification": "Digitaler Zugang wird mit lebenswichtigen Ressourcen verglichen"
+    },
+    {
+      "source_concept": "polnisches Gesetz",
+      "target_concept": "Zensurmaßnahmen",
+      "source_valence": 0.8,
+      "target_valence": -0.3,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "richtig",
+        "effektiv"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Die polnische Regierung hat ein Gesetz vorgelegt: Was polnische Gerichte nicht verboten haben, darf nicht mehr gelöscht werden"
+      ],
+      "justification": "Polnisches Gesetz wird als vorbildlich gegen Zensur dargestellt"
+    },
+    {
+      "source_concept": "NetzDG",
+      "target_concept": "Zensur",
+      "source_valence": -0.7,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "problematisch",
+        "fehlgeleitet"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Nichtzensieren wird bestraft; das ist das NetzDG dieser Regierung"
+      ],
+      "justification": "NetzDG wird als problematisch und als Beispiel für Zensurpolitik angeführt"
+    },
+    {
+      "source_concept": "digitaler Totalitarismus",
+      "target_concept": "Überwachung",
+      "source_valence": -0.9,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "überwältigend",
+        "bedrohlich"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Vor unseren Augen entsteht ein globaler Überwachungsstaat und ein so perfektes Zensurregime wie es das noch nie gab"
+      ],
+      "justification": "Digitale Überwachung wird als extrem und gefährlich dargestellt"
+    },
+    {
+      "source_concept": "Silicon Valley",
+      "target_concept": "Herrschaft",
+      "source_valence": -0.6,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "herrschaftlich",
+        "dominant"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Gegen die Herrschaft des Silicon Valley"
+      ],
+      "justification": "Silicon Valley wird als mächtige, dominierende Kraft gesehen, gegen die Widerstand entstehen soll"
+    }
+  ],
+  "ID1920903000": [
+    {
+      "source_concept": "Daten",
+      "target_concept": "Datenpolitik",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "selbstbestimmt",
+        "kritisch"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es geht doch im Kern um die Selbstbestimmung des Einzelnen, um einen funktionierenden Wettbewerb mit und um Daten und um Innovationen."
+      ],
+      "justification": "Verbindung zwischen Daten und zentraler Bedeutung für Gesellschaft und Innovation"
+    },
+    {
+      "source_concept": "Datenstrategie",
+      "target_concept": "Projektsteuerung",
+      "source_valence": -0.7,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zusammenhangslos"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Sie, liebe Bundesregierung, haben eine Datenstrategie vorgelegt, die leider 250 zusammenhanglose Maßnahmen, aber keine Projektsteuerung enthält."
+      ],
+      "justification": "Kritik an fehlender Projektsteuerung in der Datenstrategie"
+    },
+    {
+      "source_concept": "Daten",
+      "target_concept": "Datenteileungspflichten",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "dringend"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Das muss dringend geklärt werden – jetzt; denn sonst ist der Zug abgefahren bei dem ganzen Internet der Dinge."
+      ],
+      "justification": "Hervorhebung der Dringlichkeit bei Klärung von Nutzungsrechten"
+    },
+    {
+      "source_concept": "Datenschutz",
+      "target_concept": "Datenportabilität",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zumutbar"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Kann ich meine Daten von einem zum anderen Anbieter mitnehmen?"
+      ],
+      "justification": "Forderung nach Gestaltung der Datenportabilität zur Erleichterung der Digitalen Selbstbestimmung"
+    },
+    {
+      "source_concept": "Daten",
+      "target_concept": "Nicht-personenbezogene Daten",
+      "source_valence": 0.2,
+      "target_valence": 0.2,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unklar"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Wie gehen wir damit um? Wer hat denn daran Rechte?"
+      ],
+      "justification": "Betonung des Handlungsbedarfs bei Rechtlichkeiten nicht-personenbezogener Daten"
+    },
+    {
+      "source_concept": "Daten",
+      "target_concept": "Nutzungsrechte",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unklar"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Welche Nutzungsrechte an solchen Daten existieren? Die Antwort darauf ist völlig unklar."
+      ],
+      "justification": "Herausstellen der Unsicherheit bezüglich Nutzungsrechten an Daten"
+    },
+    {
+      "source_concept": "Daten",
+      "target_concept": "Internet der Dinge",
+      "source_valence": 0.4,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "abenteuerlich"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "sonst ist der Zug abgefahren bei dem ganzen Internet der Dinge"
+      ],
+      "justification": "Warnung vor Verpassen der Chancen durch unklare Klärung der Nutzungsrechte im IoT"
+    }
+  ],
+  "ID1921105500": [
+    {
+      "source_concept": "Informationsangebot",
+      "target_concept": "BürgerInnen",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "sehr wertgeschätzt"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "dass das Informationsangebot ... von vielen Bürgerinnen und Bürgern sehr wertgeschätzt wird"
+      ],
+      "justification": "Das Zitat betont die positive Wahrnehmung der BürgerInnen gegenüber dem Angebot."
+    },
+    {
+      "source_concept": "Medien",
+      "target_concept": "Informationsangebot",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "insbesondere in den Medien gemacht"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "das zeigen übrigens auch die Befragungen, die wir sehen, die COSMO-Studie und andere mehr"
+      ],
+      "justification": "Die Aussage verbindet Medien mit Beeinflussung der Wahrnehmung des Informationsangebots."
+    },
+    {
+      "source_concept": "Bundesministerium für Gesundheit",
+      "target_concept": "Informationsangebot",
+      "source_valence": 0.6,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "sehr aktiv"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Das Informationsangebot, das wir seitens der Bundesregierung, des Bundesministeriums für Gesundheit, machen"
+      ],
+      "justification": "Der Text beschreibt die Aktivitäten des Ministeriums im Bereich Information."
+    },
+    {
+      "source_concept": "digitale Plattform",
+      "target_concept": "Maßnahmen",
+      "source_valence": 0.7,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.65,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "als Ableitungen möglich"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Die Plattform dafür ist zusammengegencorona.de, die dann bei allen anderen Maßnahmen ... Ableitungen möglich macht"
+      ],
+      "justification": "Das digitale Angebot dient der Unterstützung bei Maßnahmen wie Impfen oder Testen."
+    },
+    {
+      "source_concept": "Social Media",
+      "target_concept": "Informationsverbreitung",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "sehr aktiv"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Wir sind sehr aktiv bei Social Media"
+      ],
+      "justification": "Der Text hebt die aktive Nutzung von Social Media hervor."
+    },
+    {
+      "source_concept": "Informationen",
+      "target_concept": "Lebenssituationen",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "konkreten"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Informationen in konkreten Lebenssituationen"
+      ],
+      "justification": "Das Angebot fokussiert auf praxisnahe Kommunikation."
+    }
+  ],
+  "ID1921406800": [
+    {
+      "source_concept": "Coronapandemie",
+      "target_concept": "Kulturbereich",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "betroffen"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "existenzen sind gefährdet"
+      ],
+      "justification": "Die Pandemie wirkt sich direkt auf den Kulturbereich aus."
+    },
+    {
+      "source_concept": "Maßnahmen",
+      "target_concept": "Kulturbeschränkungen",
+      "source_valence": -0.6,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gesperrt"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Kinos, Theater, Museen, Klubs sind geschlossen"
+      ],
+      "justification": "Schließungen sind eine direkte Folge von Maßnahmen gegen die Pandemie."
+    },
+    {
+      "source_concept": "Unterstützungen",
+      "target_concept": "Kulturwirtschaft",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zuverlässig"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Unterstützungen des Bundes: Überbrückungshilfe I und II, November- und Dezemberhilfe"
+      ],
+      "justification": "Finanzielle Unterstützungen sollen die Existenz sichern."
+    },
+    {
+      "source_concept": "Lockdown",
+      "target_concept": "Gesellschaftliche Unzufriedenheit",
+      "source_valence": -0.8,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "vollkommen normal"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Nase voll vom Lockdown"
+      ],
+      "justification": "Der Lockdown führt zu Unmut in der Bevölkerung."
+    },
+    {
+      "source_concept": "Öffnungsperspektive",
+      "target_concept": "Kulturbereich",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "mutig",
+        "verlässlich"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Öffnungsperspektive und Öffnungsplan",
+        "Konzepte für größere Veranstaltungen"
+      ],
+      "justification": "Vorschläge für schrittweise Rückkehr zu Normalität."
+    },
+    {
+      "source_concept": "Tests and Impfungen",
+      "target_concept": "Gesundheitsschutz",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "maximal"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "testen, impfen, sichere Räume"
+      ],
+      "justification": "Maßnahmen zur Verbesserung des Gesundheitsschutzes."
+    }
+  ],
+  "ID1921813100": [
+    {
+      "source_concept": "AfD",
+      "target_concept": "rechte Hetze",
+      "source_valence": -0.6,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "rechtsextrem"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Die AfD bringt hier einen Gesetzentwurf ein, mit dem sie ihre rechte Hetze weiterhin legitimieren möchte."
+      ],
+      "justification": "Legitimation der rechten Hetze durch den Gesetzentwurf"
+    },
+    {
+      "source_concept": "Social Media Beiträge (z.B. Storch Anfang 2016)",
+      "target_concept": "Stimmungsmache",
+      "source_valence": 0.0,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gefährlich"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Diese gefährlichen rechten Beiträge in der digitalen Welt schaffen Stimmung, mobilisieren und stärken rassistische Netzwerke."
+      ],
+      "justification": "Beiträge verstärken rassistische Netzwerke und stiften Stimmung"
+    },
+    {
+      "source_concept": "rechte Netzwerke",
+      "target_concept": "Gewalt",
+      "source_valence": 0.0,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "bedrohlich"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Aus Worten werden schließlich Taten, wie wir sie in Halle, in Hanau und im Falle von Walter Lübcke mitverfolgt haben."
+      ],
+      "justification": "Verbindung zwischen Worten und Taten im Kontext rechter Gewalt"
+    },
+    {
+      "source_concept": "Facebook-Gruppe 'Patrioten'",
+      "target_concept": "antisemitismus",
+      "source_valence": 0.0,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zutiefst verachtend"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Versendete ein Mitglied der Gruppe eine Fotomontage mit einem Bild von Anne Frank auf einer Pizzaschachtel, versehen mit der Aufschrift 'Die Ofenfrische, locker und knusprig zugleich'."
+      ],
+      "justification": "Deutlicher antisemitischer Ausdruck in den sozialen Medien"
+    },
+    {
+      "source_concept": "Frauen mit Migrationsgeschichte",
+      "target_concept": "rassistische und sexistische Kommentare",
+      "source_valence": 0.0,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "rassistisch",
+        "sexistisch, bedrohlich"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Frauen, vor allem diejenigen mit Migrationsgeschichte, bekommen immer mehr rassistische und sexistische Kommentare und Drohungen ab."
+      ],
+      "justification": "Zunahme von diskriminierenden Kommentaren gegenüber bestimmten Gruppen"
+    },
+    {
+      "source_concept": "Netzwerkdurchsetzungsgesetz",
+      "target_concept": "Effektivität",
+      "source_valence": -0.2,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ineffektiv",
+        "problematisch"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Das Netzwerkdurchsetzungsgesetz der Bundesregierung ist bisher ineffektiv geblieben und rechtlich höchst problematisch."
+      ],
+      "justification": "Gesetz erfüllt nicht die gewünschten Wirksamkeitsziele"
+    }
+  ],
+  "ID1922804700": [
+    {
+      "source_concept": "Zeitverwendung",
+      "target_concept": "Lebenszufriedenheit",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig",
+        "differenziert"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wie wir unsere Zeit verbringen, wie sehr wir selbst darüber bestimmen können, hängt eng mit den Verwirklichungschancen zusammen und auch mit der persönlichen Lebenszufriedenheit"
+      ],
+      "justification": "Zeitverwendung beeinflusst die Lebenszufriedenheit direkt."
+    },
+    {
+      "source_concept": "Datengrundlage",
+      "target_concept": "Informationsnutzung",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.85,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "aktuell",
+        "empfehlenswert"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Eine gut gemachte Erhebung der Zeitverwendung ist unsere Grundlage, an der wir unsere Maßnahmen für eine nachhaltige und moderne Familienpolitik ausrichten können"
+      ],
+      "justification": "Aktuelle und zuverlässige Daten sind Voraussetzungen für sinnvolle Maßnahmen."
+    },
+    {
+      "source_concept": "digitale Gesellschaft",
+      "target_concept": "Kommunikationsformen",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "bunt",
+        "vielfältig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Familienkonstellationen und Kommunikationsformen werden bunter und vielfältiger. Patchworkfamilien, internationale Familien, die Nutzung von Messengerdiensten und Social Media"
+      ],
+      "justification": "Moderne Gesellschaften zeichnen sich durch vielfältige Kommunikations- und Familienstrukturen aus."
+    },
+    {
+      "source_concept": "Care-Arbeit",
+      "target_concept": "Gender Gap",
+      "source_valence": -0.7,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.75,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unsichtbar",
+        "wichtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Unbezahlte Care-Arbeit ist der springende Punkt. Diese unsichtbaren organisatorischen und emotional fordernden Tätigkeiten nehmen viel Raum und viel Zeit ein."
+      ],
+      "justification": "Care-Arbeit trägt wesentlich zur Gender-Pay-Gap und Pensionslücke bei."
+    },
+    {
+      "source_concept": "Homeoffice",
+      "target_concept": "Nutzung und Zufriedenheit",
+      "source_valence": 0.5,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "nicht ausreichend",
+        "geeignet"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Ein einfaches Ja oder Nein reicht nicht aus; das liefert keine Erkenntnisse über die Nutzung, über die Ausstattung und die Zufriedenheit."
+      ],
+      "justification": "Nur differenzierte Daten zu Homeoffice-Nutzung sind hilfreich für politische Entscheidungen."
+    },
+    {
+      "source_concept": "Lebensverlauf",
+      "target_concept": "Veränderung der Verwirklichungschancen",
+      "source_valence": 0.7,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "aufschlussreich",
+        "langfristig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Personen über einen längeren Zeitraum, über den Lebensverlauf hin zu befragen: wie sich Verwirklichungschancen verändern"
+      ],
+      "justification": "Langzeitdaten sind wichtig, um soziale und berufliche Chancenentwicklung zu verstehen."
+    },
+    {
+      "source_concept": "Gesellschaftlicher Wohlstand",
+      "target_concept": "Lebenszufriedenheit",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.85,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig",
+        "fundamental"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "wie sehr wir selbst darüber bestimmen können, hängt eng mit [...] gesellschaftlichem Wohlstand"
+      ],
+      "justification": "Selbstbestimmung und gesellschaftlicher Wohlstand sind eng verbunden."
+    }
+  ],
+  "ID1923804400": [
+    {
+      "source_concept": "Impfaktion",
+      "target_concept": "Schutz vor Todesfällen",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "größte",
+        "erfolgreich"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "haben wir die größte Impfaktion in der Geschichte Deutschlands gestartet",
+        "hat es noch nie gegeben, dass die Menschheit in einer Pandemie einen Impfstoff zur Verfügung hat"
+      ],
+      "justification": "Die Impfung hat schwere Krankheitsverläufe und Todesfälle verhindert."
+    },
+    {
+      "source_concept": "Impfquote",
+      "target_concept": "Schutz der vulnerable Gruppen",
+      "source_valence": 0.7,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "hoch",
+        "fast 85 Prozent"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Bei der über 60-jährigen Bevölkerung, den besonders Verwundbaren, liegt die Impfquote sogar bei über 85 Prozent"
+      ],
+      "justification": "Hohe Impfquote schützt besonders vulnerable Gruppen."
+    },
+    {
+      "source_concept": "Impfstoff",
+      "target_concept": "Made in Germany",
+      "source_valence": 0.6,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "made in Germany"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Dieses Impfstoff, mRNA-Technologie, ist 'made in Germany'"
+      ],
+      "justification": "Der deutsche Impfstoff wird als sicher und innovativ präsentiert."
+    },
+    {
+      "source_concept": "Persönliche Entscheidung",
+      "target_concept": "Freiheit",
+      "source_valence": -0.2,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "freie Entscheidung",
+        "persönlich"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Es ist eine persönliche, eine freie Entscheidung"
+      ],
+      "justification": "Impfen ist individuelle Wahl, aber mit Konsequenzen für die Gemeinschaft."
+    },
+    {
+      "source_concept": "Impfung",
+      "target_concept": "Schutz der Gesellschaft",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schützen",
+        "Verantwortung"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Wer sich impfen lässt, der schützt sich selbst, aber er schützt eben auch diejenigen, die sich nicht impfen lassen können"
+      ],
+      "justification": "Impfen wirkt zum Schutz der Gemeinschaft vor Virusübertragung."
+    },
+    {
+      "source_concept": "Sputnik V",
+      "target_concept": "EU-Zulassung",
+      "source_valence": -0.5,
+      "target_valence": 0.3,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "ideologisch vertrödelt"
+      ],
+      "certainty_score": 0.6,
+      "evidence": [
+        "Würden Sie dem bayerischen Ministerpräsidenten Markus Söder darin zustimmen, was er vor sechs Wochen sagte:..."
+      ],
+      "justification": "Es wird die Verzögerung der EU-Zulassung als politisch motiviert kritisiert."
+    }
+  ]
+}

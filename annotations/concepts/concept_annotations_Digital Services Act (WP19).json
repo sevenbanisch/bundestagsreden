@@ -1,0 +1,2298 @@
+{
+  "ID1920112400": [
+    {
+      "source_concept": "Digitalisierung",
+      "target_concept": "Medienkonvergenz",
+      "source_valence": 0.7,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "hochkomplex",
+        "völlig neue"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Denn durch die Digitalisierung verschmelzen Einzelmedien ineinander – wir sprechen von der sogenannten Medienkonvergenz"
+      ],
+      "justification": "Digitalisierung führt zur Medienkonvergenz durch Verschmelzung der Einzelmedien"
+    },
+    {
+      "source_concept": "Doppelzuständigkeit",
+      "target_concept": "Rechtsunsicherheiten",
+      "source_valence": -0.6,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Rechtsunsicherheiten"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Wenn wir unseren Vorschlag umsetzen, kommt es zu Doppelzuständigkeiten und Rechtsunsicherheiten"
+      ],
+      "justification": "Doppelzuständigkeit führt zu Rechtsunsicherheiten im Jugendschutz"
+    },
+    {
+      "source_concept": "Jugendschutz im Internet",
+      "target_concept": "Effektivität",
+      "source_valence": 0.8,
+      "target_valence": -0.4,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "fehlende Effektivität"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Das Hauptproblem des gegenwärtigen Jugendschutzes im Internet ist die fehlende Effektivität"
+      ],
+      "justification": "Aktuelle Maßnahmen sind nicht effektiv im Jugendschutz"
+    },
+    {
+      "source_concept": "EU-Kommission",
+      "target_concept": "Digital Services Act",
+      "source_valence": 0.9,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "bewährtes Herkunftslandprinzip"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Gestern wurde der Digital Services Act von der EU-Kommission vorgestellt"
+      ],
+      "justification": "EU erkennt das Herkunftslandprinzip an"
+    },
+    {
+      "source_concept": "Gesetzentwurf",
+      "target_concept": "Effektivität des Jugendschutzes",
+      "source_valence": 0.7,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "neues System",
+        "Effektivität steigern"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wir wollen mit diesem Gesetzentwurf ein neues System etablieren, eine neue Systematik einführen, um die Effektivität des Jugendschutzes im Internet zu steigern"
+      ],
+      "justification": "Neues Gesetz soll Effektivität steigern"
+    },
+    {
+      "source_concept": "Medienaufsicht",
+      "target_concept": "Massen an Internetmaterial",
+      "source_valence": -0.8,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "große Mengen",
+        "nicht gerecht werden"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Allein auf YouTube werden 500 Stunden Material pro Minute hochgeladen"
+      ],
+      "justification": "Riesige Mengen an Uploads überfordern die Aufsicht"
+    }
+  ],
+  "ID1920402000": [
+    {
+      "source_concept": "Hilfen",
+      "target_concept": "analoge Wirtschaft",
+      "source_valence": 0.8,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "nicht ankommen"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "die Hilfszahlungen überhaupt nicht ankommen"
+      ],
+      "justification": "Hilfen sollen bei der schwächsten Gruppe ankommen, sind aber bei der analogen Wirtschaft nicht angekommen"
+    },
+    {
+      "source_concept": "Gesetzentwurf",
+      "target_concept": "Wettbewerbsgleichheit",
+      "source_value": 0.6,
+      "target_value": 0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "kein Sinn"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "hat überhaupt keinen Sinn"
+      ],
+      "justification": "Der Gesetzesentwurf berücksichtigt Wettbewerbsfragen nur unzureichend in Bezug auf analoge und digitale Wirtschaft"
+    },
+    {
+      "source_concept": "Minister Altmaier & Scholz",
+      "target_concept": "Auszahlung der Hilfen",
+      "source_valence": -0.9,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gescheitert"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Sie sind, was die Auszahlung der Hilfen angeht, kläglich gescheitert"
+      ],
+      "justification": "Die Auszahlung war mangelhaft, was die Effizienz der Hilfen betrifft"
+    },
+    {
+      "source_concept": "Gesetzentwurf",
+      "target_concept": "Wettbewerbsbehörden",
+      "source_valence": 0.4,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Stärkung"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Eine Stärkung der Wettbewerbsbehörden"
+      ],
+      "justification": "Der Gesetzesentwurf enthält Maßnahmen zur Stärkung der Kartellbehörden"
+    },
+    {
+      "source_concept": "Digital Services Act",
+      "target_concept": "europäischer Ordnungsrahmen",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gute Vorschläge"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Margrethe Vestager und Thierry Breton haben hier mit dem Digital Services Act gute Vorschläge auf den Tisch gelegt"
+      ],
+      "justification": "Die Gesetzesvorschläge sind bedeutend für die europäische Regulierung der Digitalwirtschaft"
+    },
+    {
+      "source_concept": "Wettbewerbsrecht",
+      "target_concept": "Wettbewerbsfähigkeit",
+      "source_valence": -0.6,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "nicht ausreichend"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Das Wettbewerbsrecht alleine sichert nicht die Wettbewerbsfähigkeit"
+      ],
+      "justification": "Der rechtliche Rahmen ist allein nicht ausreichend für die Wettbewerbsfähigkeit der Digitalwirtschaft"
+    },
+    {
+      "source_concept": "Start-ups & Arbeitskräfte",
+      "target_concept": "Wirtschaftswachstum",
+      "source_valence": 0.8,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "besser"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Für Start-ups und Arbeitskräfte braucht es bessere Rahmenbedingungen"
+      ],
+      "justification": "Verbesserte Bedingungen für Innovation und Fachkräfte fördern das Wirtschaftswachstum"
+    }
+  ],
+  "ID1920406400": [
+    {
+      "source_concept": "Angriff auf das Kapitol",
+      "target_concept": "amerikanische Demokratie",
+      "source_valence": 0.0,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "angriff"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Der Angriff auf die Herzkammer der amerikanischen Demokratie"
+      ],
+      "justification": "Das Ereignis wird als Angriff auf die Demokratie beschrieben."
+    },
+    {
+      "source_concept": "Donald Trump",
+      "target_concept": "Missachtung demokratischer Spielregeln",
+      "source_valence": -0.7,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "missachtet"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Donald Trump hat die demokratische Entscheidung der amerikanischen Wählerinnen und Wähler missachtet"
+      ],
+      "justification": "Trump wird als Akteur gezeigt, der die demokratischen Spielregeln verletzt hat."
+    },
+    {
+      "source_concept": "gesellschaftliche Spaltung",
+      "target_concept": "Gefahr für die Demokratie",
+      "source_valence": 0.0,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Spaltung",
+        "Gefahr"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Die gesellschaftliche Spaltung ... ist eine Gefahr für die Demokratie"
+      ],
+      "justification": "Spaltung wird als Bedrohung für die demokratischen Prozesse dargestellt."
+    },
+    {
+      "source_concept": "soziale Netzwerke",
+      "target_concept": "Verantwortung für Demokratie",
+      "source_valence": 0.0,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Verantwortung"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Soziale Netzwerke tragen heute große Verantwortung für das Funktionieren unserer Demokratie"
+      ],
+      "justification": "Netzwerke werden als Akteure mit Verantwortung beschrieben."
+    },
+    {
+      "source_concept": "Hetze im Netz",
+      "target_concept": "Gefahr für Demokratie",
+      "source_valence": -0.8,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Hetze",
+        "Gefahr"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "wie wir Hetze im Netz eindämmen"
+      ],
+      "justification": "Hetze wird als gefährlich für die Demokratie beschrieben und soll eingedämmt werden."
+    },
+    {
+      "source_concept": "Transatlantische Zusammenarbeit",
+      "target_concept": "demokratische Verteidigung",
+      "source_valence": 0.0,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "starker Partner"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "in Präsident Biden einen starken transatlantischen Partner haben"
+      ],
+      "justification": "Die Zusammenarbeit mit den USA wird als defensiv gegen Bedrohungen für die Demokratie beschrieben."
+    },
+    {
+      "source_concept": "Impfstoffe gegen Coronavirus",
+      "target_concept": "Schutz der Demokratien",
+      "source_valence": 0.0,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Schutz"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Rekordzeit Impfstoffe gegen das Coronavirus entwickelt"
+      ],
+      "justification": "Impferfolge werden als Mittel zum Schutz der Gesellschaft und damit auch der Demokratie dargestellt."
+    },
+    {
+      "source_concept": "demokratische Staatsform",
+      "target_concept": "beste und menschlichste Form",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "beste",
+        "menschlichste"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Die Demokratie ... ist die beste und auch die menschlichste Staatsform"
+      ],
+      "justification": "Die breite Überzeugung, dass Demokratie die optimalste Staatsform ist."
+    }
+  ],
+  "ID1920407600": [],
+  "ID1920606700": [
+    {
+      "source_concept": "Meinungsfreiheit",
+      "target_concept": "Demokratie",
+      "source_valence": 1.0,
+      "target_valence": 1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 1.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "elementar",
+        "hohes Gut"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Denn sie ist elementar für die Demokratie."
+      ],
+      "justification": "Meinungsfreiheit wird als essenziell für Demokratie dargestellt."
+    },
+    {
+      "source_concept": "Internetkonzerne",
+      "target_concept": "Macht im öffentlichen Raum",
+      "source_valence": -0.6,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Macht",
+        "große Macht"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Mit dieser Macht haben die Internetkonzerne eine Steuergewalt über den öffentlichen Raum."
+      ],
+      "justification": "Internetkonzerne werden als mächtige Akteure mit Einfluss auf den öffentlichen Diskurs beschrieben."
+    },
+    {
+      "source_concept": "Netzwerkdurchsetzungsgesetz",
+      "target_concept": "Schutz der Grundrechte",
+      "source_valence": 0.0,
+      "target_valence": 1.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "dringend verbessert"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Das Netzwerkdurchsetzungsgesetz muss dringend verbessert werden."
+      ],
+      "justification": "Es wird eine Notwendigkeit zur Verbesserung des Gesetzes zur Wahrung der Rechtssicherheit gefordert."
+    },
+    {
+      "source_concept": "Hasskriminalität",
+      "target_concept": "Meinungsvielfalt",
+      "source_valence": 0.0,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "bekämpfen",
+        "wirklich Folgen"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Opfer von Hasskriminalität dürfen nicht aus dem öffentlichen Diskurs gedrängt werden."
+      ],
+      "justification": "Hasskriminalität soll die Meinungsvielfalt bedrohen, wodurch das Vertrauen in die Meinungsfreiheit geschwächt wird."
+    },
+    {
+      "source_concept": "Algorithmen",
+      "target_concept": "Meinungsbildungsprozess",
+      "source_valence": 0.0,
+      "target_valence": -0.5,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "beeinflussen",
+        "bevorzugen"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Algorithmen und Geschäftsmodelle sozialen Medien den Meinungsbildungsprozess beeinflussen."
+      ],
+      "justification": "Der Einsatz von Algorithmen führt zu einer Bevorzugung bestimmter Inhalte, was die Meinungsvielfalt beeinflusst."
+    },
+    {
+      "source_concept": "Digital Services Act",
+      "target_concept": "Regulierung sozialer Medien",
+      "source_valence": 1.0,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtiger Schritt"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Der Digital Services Act ist ein wichtiger Schritt in die richtige Richtung."
+      ],
+      "justification": "Der Gesetzesentwurf wird als bedeutende Maßnahme zur Regulierung sozialer Medien bewertet."
+    },
+    {
+      "source_concept": "Falschmeldungen / Hasskommentare",
+      "target_concept": "Einschränkung der Meinungsfreiheit",
+      "source_valence": -0.7,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "missbraucht",
+        "gefährlich"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Hasskommentare werden oft ohne genauere Prüfung gelöscht oder Accounts gesperrt."
+      ],
+      "justification": "Missbrauch der Meldefunktion führt zu Einschränkungen bei erlaubter Meinungsäußerung."
+    }
+  ],
+  "ID1920606800": [
+    {
+      "source_concept": "Plattformen",
+      "target_concept": "Macht",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unbegrenzte Möglichkeiten"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Plattformen haben Macht"
+      ],
+      "justification": "Plattformen bieten nahezu unbegrenzte Möglichkeiten der Informations- und Meinungsäußerung."
+    },
+    {
+      "source_concept": "soziale Netzwerke",
+      "target_concept": "Antisemitismus Rassismus Hass Hetze",
+      "source_valence": 0.0,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "leider Gottes"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Antisemitismus, Rassismus, Hass und Hetze ... haben ihren Platz"
+      ],
+      "justification": "Soziale Netzwerke bieten Raum für diskriminierende Inhalte, die dort Platz finden."
+    },
+    {
+      "source_concept": "Hass",
+      "target_concept": "Stimmung machen, Stimmen kaufen",
+      "source_valence": -0.8,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "skandalös"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Hass ist die Währung ... Stimmen kaufen"
+      ],
+      "justification": "Hass wird als Mittel genutzt, um politische Stimmung zu beeinflussen."
+    },
+    {
+      "source_concept": "AfD",
+      "target_concept": "Hass, Hetze",
+      "source_valence": 0.0,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "Scheinheiligkeit"
+      ],
+      "certainty_score": 0.6,
+      "evidence": [
+        "AfD beantragt diese Aktuelle Stunde ... Hass ist ... Futter der AfD"
+      ],
+      "justification": "Kritik wird formuliert, dass die AfD Hass nutzt, um Stimmung zu machen."
+    },
+    {
+      "source_concept": "soziale Netzwerke",
+      "target_concept": "Meinungsfreiheit",
+      "source_valence": 0.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "missbrauchen"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Sie missbrauchen die sozialen Netzwerke"
+      ],
+      "justification": "Behauptung, dass soziale Netzwerke für politische Zwecke missbraucht werden."
+    },
+    {
+      "source_concept": "Demokratie",
+      "target_concept": "Verteidigen",
+      "source_valence": 1.0,
+      "target_valence": 1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 1.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "verteidigen"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Wir werden diese Demokratie verteidigen"
+      ],
+      "justification": "Absicht, die Demokratie gegen Attacken zu schützen."
+    },
+    {
+      "source_concept": "Regulierungen",
+      "target_concept": "soziale Medien",
+      "source_valence": 0.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Regelungen",
+        "Gesetze"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Wir haben wichtige Regelungen geschaffen"
+      ],
+      "justification": "Verweis auf gesetzgeberische Maßnahmen zur Medienregulierung."
+    },
+    {
+      "source_concept": "digitale Raum",
+      "target_concept": "Grenzen",
+      "source_valence": 0.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Grenzen"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Der digitale Raum macht natürlich nicht an Grenzen halt"
+      ],
+      "justification": "Behauptung, dass Grenzen im digitalen Raum notwendig sind."
+    }
+  ],
+  "ID1920607100": [
+    {
+      "source_concept": "Recht auf Meinungsfreiheit",
+      "target_concept": "Hassrede",
+      "source_valence": 0.8,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "hoher Wert",
+        "geschütztes Gut"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Die Meinungsfreiheit in unserem Land ist ein geschütztes Gut von besonders hohem Wert.",
+        "Die Freiheit im Internet ist nicht durch unsere Gesetze bedroht, sondern durch Diffamierung und Hetze."
+      ],
+      "justification": "Die Rede hebt hervor, dass Hass und Hetze auf das Recht auf Meinungsfreiheit negativ wirken können."
+    },
+    {
+      "source_concept": "Netzwerkdurchsetzungsgesetz",
+      "target_concept": "Hass und Hetze im Internet",
+      "source_valence": 0.9,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "bewährt",
+        "unterstützt"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Das Netzwerkdurchsetzungsgesetz hat sich bewährt.",
+        "Wir unterstützen die Novelle des Netzwerkdurchsetzungsgesetzes."
+      ],
+      "justification": "Die Rede argumentiert, dass das Gesetz wirksam gegen Hass im Netz ist."
+    },
+    {
+      "source_concept": "Hausordnungen",
+      "target_concept": "Virtuelle und reale Welt",
+      "source_valence": 0.0,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "vergleichen",
+        "gemeinsam"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Solche Hausordnungen in der virtuellen und in der realen Welt haben in Deutschland eines gemeinsam."
+      ],
+      "justification": "Hier wird die Verbindung zwischen Hausordnungen in realer und virtueller Welt hergestellt."
+    },
+    {
+      "source_concept": "Recht auf Grundrechte",
+      "target_concept": "Hausrecht der Plattformbetreiber",
+      "source_valence": 0.9,
+      "target_valence": 0.2,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ungewissen",
+        "Nicht über dem Gesetz"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Dieses Hausrecht steht niemals über dem Gesetz."
+      ],
+      "justification": "Die Rede stellt klar, dass Hausrechte der Plattformbetreiber gesetzlichen Grenzen unterliegen."
+    },
+    {
+      "source_concept": "Zukunftsmaßnahmen",
+      "target_concept": "NetzDG 2.0",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "weiterentwickeln",
+        "Maßstäbe setzen"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wir werden in wenigen Wochen hier weitere neue Maßstäbe setzen werden."
+      ],
+      "justification": "Es wird auf geplante gesetzgeberische Weiterentwicklungen zur Regulierung sozialer Medien verwiesen."
+    },
+    {
+      "source_concept": "Fall Walter Lübcke",
+      "target_concept": "Hass und Hetze im Netz",
+      "source_valence": 0.1,
+      "target_valence": -1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "tiefer Einschnitt",
+        "abscheulich"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "Der Fall Walter Lübcke, der Mord am Kasseler Regierungspräsidenten, war ein tiefer Einschnitt."
+      ],
+      "justification": "Der Zusammenhang zwischen Hass im Netz und realweltlicher Gewalt wird betont."
+    }
+  ],
+  "ID1920607400": [
+    {
+      "source_concept": "Twitter-Account",
+      "target_concept": "Trump",
+      "source_valence": 0.8,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gesperrt"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "der Twitter-Account ihres Freundes Trump gesperrt wurde"
+      ],
+      "justification": "Das Sperren des Trump-Accounts wird als berechtigte Maßnahme gegen Falschinformationen dargestellt."
+    },
+    {
+      "source_concept": "Netzwerke",
+      "target_concept": "Meinungsfreiheit",
+      "source_valence": 0.5,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "rechtskonform"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "die Netzwerke haben da viel zu spät reagiert",
+        "Netzwerke nicht unberechtigt in die Meinungsfreiheit eingegriffen haben"
+      ],
+      "justification": "Die Netzwerke sollen fair und in Übereinstimmung mit der Meinungsfreiheit handeln."
+    },
+    {
+      "source_concept": "Meinungsfreiheit",
+      "target_concept": "Artikel 5 Grundgesetz",
+      "source_valence": 1.0,
+      "target_valence": 1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "fundamental"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Ausgangspunkt dieser Debatte ist die Meinungsfreiheit in Artikel 5 unseres Grundgesetzes"
+      ],
+      "justification": "Grundrechte bilden die Basis für die Debatte um Meinungsfreiheit."
+    },
+    {
+      "source_concept": "Fake News",
+      "target_concept": "Meinungsfreiheit",
+      "source_valence": -0.8,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "rebuttal",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schädlich"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Fake News fällt eben gerade die Verbreitung von Fake News nicht in die Meinungsfreiheit"
+      ],
+      "justification": "Fake News sind von Meinungsfreiheit ausgeschlossen, da sie schädlich sind."
+    },
+    {
+      "source_concept": "Gewaltaufruf",
+      "target_concept": "Meinungsfreiheit",
+      "source_valence": 0.7,
+      "target_valence": 0.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "legitim"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Ein Gewaltaufruf ist in Deutschland tatsächlich von der Meinungsfreiheit umfasst"
+      ],
+      "justification": "Gewaltaufrufe können in Grenzen der Meinungsfreiheit bestehen bleiben."
+    },
+    {
+      "source_concept": "NetzDG",
+      "target_concept": "Meinungsfreiheit",
+      "source_valence": -0.3,
+      "target_valence": 0.2,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "behauptet"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Das NetzDG beschränkt die Meinungsfreiheit – Blödsinn!"
+      ],
+      "justification": "Das Gesetz dient dem Schutz persönlicher Rechte auf Online-Plattformen."
+    },
+    {
+      "source_concept": "Plattformregulierung",
+      "target_concept": "Verantwortung",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Auch Netzwerke haben Verantwortung für die Debattenkultur"
+      ],
+      "justification": "Plattformen sollen aktiv zur verantwortungsvollen Debattenkultur beitragen."
+    },
+    {
+      "source_concept": "Digital Services Act",
+      "target_concept": "Rechtliche Regulierung",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "fortschritt"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Der Digital Services Act greift genau diese Problematik auf"
+      ],
+      "justification": "Der Gesetzgeber schafft mit dem Gesetz regulatorische Rahmenbedingungen für Online-Plattformen."
+    }
+  ],
+  "ID1920903700": [
+    {
+      "source_concept": "Datenstrategie",
+      "target_concept": "digitale Gesellschaft",
+      "source_valence": 0.8,
+      "target_valence": 0.5,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Fundament",
+        "klar"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Die Datenstrategie ist das Fundament der Digitalisierung."
+      ],
+      "justification": "Die Strategie wird als Basis für die Digitalisierung dargestellt."
+    },
+    {
+      "source_concept": "Daten",
+      "target_concept": "Grundwasser/Oel",
+      "source_valence": 0.7,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "neues",
+        "Wert"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Daten als das neue Grundwasser oder das Öl der digitalen Gesellschaft"
+      ],
+      "justification": "Vergleich zur Hervorhebung der Bedeutung von Daten."
+    },
+    {
+      "source_concept": "Daten",
+      "target_concept": "Standardisierung",
+      "source_valence": 0.9,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "klare",
+        "sicher"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Dafür bedarf es klarer Standards, einer sicheren Infrastruktur."
+      ],
+      "justification": "Hervorhebung der Notwendigkeit von Standards für Datensicherheit."
+    },
+    {
+      "source_concept": "Digitalministerium",
+      "target_concept": "Führung",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "richtige"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Das Digitalministerium ist das zentrale Ministerium."
+      ],
+      "justification": "Positionierung des Digitalministeriums als Verantwortlicher."
+    },
+    {
+      "source_concept": "Datenkompetenz",
+      "target_concept": "Privatbereich",
+      "source_valence": 0.6,
+      "target_valence": 0.5,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zentral"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Kompetenz im Umgang mit Daten ist nicht nur für Unternehmen, sondern auch im privaten Bereich wichtig."
+      ],
+      "justification": "Betont die Bedeutung von Datenkompetenz im privaten Alltag."
+    },
+    {
+      "source_concept": "Daten",
+      "target_concept": "Gesundheit",
+      "source_valence": 0.5,
+      "target_valence": 0.4,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "z.B.",
+        "Smartwatch"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Beim Tragen einer Smartwatch mit Blick auf die Gesundheitsdaten"
+      ],
+      "justification": "Veranschaulicht den Einsatz von Gesundheitsdaten."
+    }
+  ],
+  "ID1921202500": [
+    {
+      "source_concept": "europäische Beschaffung der Impfstoffe",
+      "target_concept": "solidarischer Europa",
+      "source_valence": 0.8,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "solidarisch"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Eine gemeinsame europäische Beschaffung der Impfstoffe war der einzig vernünftige Weg."
+      ],
+      "justification": "Gemeinsame Beschaffung stärkt Solidarität und verhindert Unsicherheiten."
+    },
+    {
+      "source_concept": "solidarischer Kurs",
+      "target_concept": "europäischer Zusammenhalt",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "solidarisch"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wir müssen den im letzten Jahr eingeschlagenen solidarischen Kurs fortsetzen."
+      ],
+      "justification": "Solidarität ist grundlegend für Europas Krisenbewältigung und zukünftige Stärke."
+    },
+    {
+      "source_concept": "EUROPA IN KRISE",
+      "target_concept": "Transformation",
+      "source_valence": 0.6,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.75,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "reforming",
+        "transformative"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Wir brauchen die Kraft zu einer echten Transformation."
+      ],
+      "justification": "Nur durch tiefgehende Reformen können Herausforderungen bewältigt werden."
+    },
+    {
+      "source_concept": "digitaler Wandel",
+      "target_concept": "digital souveränes Europa",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.75,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zukunftsträchtig",
+        "souverän"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Das Fundament ist das Digital Services Act und der Digital Markets Act."
+      ],
+      "justification": "Förderung digitaler Unabhängigkeit stärkt Europas Wettbewerbsfähigkeit."
+    },
+    {
+      "source_concept": "Klima- und Umweltschutz",
+      "target_concept": "globale Vorreiterrolle",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Vorreiterrolle",
+        "rechtzeitig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Mit unserem ehrgeizigen Klimaziel hat Europa rechtzeitig eine globale Vorreiterrolle eingenommen."
+      ],
+      "justification": "Aktive Klimapolitik stärkt Europas internationaler Einfluss."
+    },
+    {
+      "source_concept": "globale Herausforderungen",
+      "target_concept": "gemeinsames Handeln",
+      "source_valence": 0.6,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.65,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gemeinsam"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Nie zuvor waren wir uns so einig, dass die Herausforderungen Chinas oder Russlands gemeinsam angegangen werden müssen."
+      ],
+      "justification": "Koordiniertes Vorgehen erhöht die Effektivität bei internationalen Konflikten."
+    },
+    {
+      "source_concept": "Impfgerechtigkeit",
+      "target_concept": "globale Gesundheit",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.75,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gerecht",
+        "solidarisch"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Unterstützung des Covid-19 Tools Accelerator mit über 3 Milliarden Euro."
+      ],
+      "justification": "Gerechte Verteilung von Impfstoffen ist essenziell für globale Gesundheit."
+    }
+  ],
+  "ID1921203300": [
+    {
+      "source_concept": "Europäische Union",
+      "target_concept": "Bewältigung der Coronakrise",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "sensationell"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Es ist sensationell, dass wir ... Impfstoff verimpft haben."
+      ],
+      "justification": "Die EU trägt signifikant zur Bewältigung der Pandemie bei."
+    },
+    {
+      "source_concept": "Europäische Union",
+      "target_concept": "Grenzenloses Virus",
+      "source_valence": 1.0,
+      "target_valence": -1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "keine Grenzen"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Ein Virus kennt keine nationalen Grenzen."
+      ],
+      "justification": "Das Virus macht nationale Grenzen bedeutungslos, was eine europäische Strategie notwendig macht."
+    },
+    {
+      "source_concept": "Aufbaufonds",
+      "target_concept": "Wirtschaftlicher Erfolg",
+      "source_valence": 0.9,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "erfolgreich"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Der Erfolg zeigt sich an den geringeren Spreads."
+      ],
+      "justification": "Der Fonds fördert Investitionen und wirtschaftlichen Stabilität."
+    },
+    {
+      "source_concept": "Euro",
+      "target_concept": "globale Zahlungsmittel",
+      "source_valence": 0.7,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "am häufigsten genutzt"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Der Euro ist mittlerweile das weltweit am häufigsten genutzte Zahlungsmittel."
+      ],
+      "justification": "Zeigt die Bedeutung des Euro für europäische Wirtschaft und Integration."
+    },
+    {
+      "source_concept": "Reformen",
+      "target_concept": "Zukunftssicherung",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Alle Mitgliedstaaten müssen jetzt Reformen liefern."
+      ],
+      "justification": "Reformen sichern Stabilität und nachhaltige Entwicklung."
+    },
+    {
+      "source_concept": "Klimaneutralität 2050",
+      "target_concept": "globale Klimapolitik",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ambitioniert"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Einigung auf Klimaneutralität bis 2050."
+      ],
+      "justification": "EU setzt klare Ziele für globale Klimaziele."
+    },
+    {
+      "source_concept": "Digitalisierung",
+      "target_concept": "Innovationsförderung",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "stark verbessert"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "EU ordnet den Marktplatz für Digitales neu."
+      ],
+      "justification": "Regulierungen schaffen eine bessere Wettbewerbsumgebung."
+    },
+    {
+      "source_concept": "digitale Ökosystem",
+      "target_concept": "Wissenschaft, Forschung, Wirtschaft",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "implicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Europäisches digitales Ökosystem für Innovationen."
+      ],
+      "justification": "Verknüpfung fördert technologische Entwicklung und Wettbewerbsfähigkeit."
+    }
+  ],
+  "ID1921908600": [
+    {
+      "source_concept": "digitaler Handel",
+      "target_concept": "Wachstum",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "boom"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Komfort, Zeitersparnis, Bequemlichkeit und Corona, das sind Gründe, warum der digitale Handel boomt."
+      ],
+      "justification": "Kausalzusammenhang zwischen digitalen Annehmlichkeiten und Wachstum des digitalen Handels"
+    },
+    {
+      "source_concept": "Unternehmen wie Amazon",
+      "target_concept": "Krisengewinner",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Krisengewinner"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Krisengewinnler sind Unternehmen wie Amazon"
+      ],
+      "justification": "Nennung spezifischer Beispiele für Marktmacht im Zusammenhang mit Krisengewinn"
+    },
+    {
+      "source_concept": "Mängel im Verbraucherschutz",
+      "target_concept": "nicht behoben",
+      "source_valence": -0.8,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Trauerspiel"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Hier gravierende Mängel im Verbraucherschutz. Aber genau diese Mängel werden nicht behoben – ein Trauerspiel für den Verbraucherschutz."
+      ],
+      "justification": "Positive Einschätzung des Zustands des Verbraucherschutzes aufgrund unbehandelter Mängel"
+    },
+    {
+      "source_concept": "Transparenzverstöße",
+      "target_concept": "EU-Richtlinie",
+      "source_valence": -0.6,
+      "target_valence": 0.5,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Verstöße"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Transparenzverstöße, falsche Bewertungen, Schleichwerbung, dieser Realität hinken EU-Richtlinie und Ihr Gesetzentwurf deutlich hinterher."
+      ],
+      "justification": "Kritik an mangelnder Maßnahmen im Vergleich zu bestehenden Richtlinien"
+    },
+    {
+      "source_concept": "Ranking- und Bewertungsverpflichtungen",
+      "target_concept": "objektive Kriterien",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "objektiv"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Sie sollten sich darauf verlassen können, dass Rankings nur nach objektiven Kriterien zustande kommen."
+      ],
+      "justification": "Forderung nach objektiven Bewertungsmaßstäben"
+    },
+    {
+      "source_concept": "Fake-Bewertungen",
+      "target_concept": "Falschdeklarationen",
+      "source_valence": -0.7,
+      "target_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Fake",
+        "Falsch"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Platformen sollten verpflichtet werden, gegen Fake-Bewertungen vorzugehen und Prüfmechanismen einzuführen, damit Falschdeklarationen ... unterbunden werden."
+      ],
+      "justification": "Forderung nach Maßnahmen gegen Manipulationen bei Bewertungen"
+    },
+    {
+      "source_concept": "Digital Services Act",
+      "target_concept": "Plattformen in Verantwortung nehmen",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Chance"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Das alles kann jedenfalls nur ein Anfang sein. Der Digital Services Act bietet nun die Chance, Plattformen stärker in die Verantwortung zu nehmen."
+      ],
+      "justification": "Bewertung der Gesetzesinitiative als Gelegenheit zur Stärkung der Verantwortlichkeit"
+    }
+  ],
+  "ID1922203500": [
+    {
+      "source_concept": "KI-Strategie der Bundesregierung",
+      "target_concept": "unzureichende Regulierung",
+      "source_valence": 0.2,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unzureichend"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Da unterscheide wir uns aber. Genau das hat die Bundesregierung mit dieser überarbeiteten Strategie eben nicht geliefert."
+      ],
+      "justification": "Kritik an mangelnder Regulierung in der Strategie."
+    },
+    {
+      "source_concept": "Datenethikkommission und Enquete-Kommission",
+      "target_concept": "konkrete Handlungsempfehlungen",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "konkret"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Sowohl die Datenethikkommission als auch die Enquete-Kommission haben konkrete Handlungsempfehlungen zu diesen Fragen vorgelegt."
+      ],
+      "justification": "Vorliegen konkreter Empfehlungen durch Kommissionen."
+    },
+    {
+      "source_concept": "Projektgruppe Medien",
+      "target_concept": "Plattformregulierungen",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "konkret"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "In der Projektgruppe 'Medien' konkrete Handlungsempfehlungen für Plattformregulierungen erarbeitet."
+      ],
+      "justification": "Erarbeitung konkreter Regulierungsmaßnahmen."
+    },
+    {
+      "source_concept": "GAIA-X",
+      "target_concept": "vertrauenswürdige europäische Dateninfrastruktur",
+      "source_valence": 0.7,
+      "target_valence": 0.1,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.4,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "vertrauenswürdig"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Was macht dieses Unternehmen? Dieses Unternehmen verarbeitet große Datenmengen für Nachrichtendienste. Das würde ich jetzt nicht unbedingt als erste vertrauensbildende Maßnahme einschätzen."
+      ],
+      "justification": "Zweifel an der Vertrauenswürdigkeit innerhalb der Infrastruktur."
+    },
+    {
+      "source_concept": "Palantir",
+      "target_concept": "Datenschutznutzung für Nachrichtendienste",
+      "source_valence": -0.7,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unvertrauenswürdig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Dieses Unternehmen verarbeitet große Datenmengen für Nachrichtendienste. Das würde ich jetzt nicht unbedingt als erste vertrauensbildende Maßnahme einschätzen."
+      ],
+      "justification": "Bedenken bezüglich der Datenverarbeitung durch Palantir."
+    },
+    {
+      "source_concept": "Verständnis von Angriff und Schutz",
+      "target_concept": "Vertrauenswürdigkeit technischer Maßnahmen",
+      "source_valence": 0.5,
+      "target_valence": -0.5,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unverständlich"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Klärung, was unter Angriff und Schutz verstanden wird, ist notwendig."
+      ],
+      "justification": "Unklarheit über definierte Begriffe beeinträchtigt Vertrauen."
+    },
+    {
+      "source_concept": "Vertrauen in europäische KI-Entwicklung",
+      "target_concept": "EU-Ordnungsrahmen",
+      "source_valence": 0.4,
+      "target_valence": 0.2,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": 0.3,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.7,
+      "evidence": [
+        "Es wird diskutiert, wie man im Rahmen des Digital Services Acts mitwirkt."
+      ],
+      "justification": "Beteiligung am europäischen Ordnungsrahmen wird als notwendig erachtet."
+    }
+  ],
+  "ID1922709800": [
+    {
+      "source_concept": "Hass und Hetze im Netz",
+      "target_concept": "demokratischer Diskurs",
+      "source_valence": -0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Gift"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Hass und Hetze im Netz – das ist ein Gift"
+      ],
+      "justification": "Hass und Hetze werden als schädlich für den demokratischen Diskurs beschrieben."
+    },
+    {
+      "source_concept": "Hass und Hetze im Netz",
+      "target_concept": "Gesellschaftliche Verantwortung",
+      "source_valence": -0.9,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "verantwortungsvoll"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Wir haben die Hauptverantwortung"
+      ],
+      "justification": "Die Gesellschaft muss aktiv gegen Hass im Netz vorgehen."
+    },
+    {
+      "source_concept": "NetzDG",
+      "target_concept": "Maßnahmen gegen Hass",
+      "source_valence": 0.9,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Erfolgsmodell"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "NetzDG ist ein Erfolgsmodell"
+      ],
+      "justification": "Das Gesetz wird als wirksame Maßnahme gegen Hass im Netz dargestellt."
+    },
+    {
+      "source_concept": "Digital Services Act",
+      "target_concept": "Verbesserung der Verfahren",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "knowledge",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "verbessert"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Der Digital Services Act verbessert die Verfahren"
+      ],
+      "justification": "Der Digital Services Act dient der Verbesserung der Regulierung im digitalen Raum."
+    },
+    {
+      "source_concept": "Hass und Hetze",
+      "target_concept": "Freiheit der Meinungsäußerung",
+      "source_valence": -0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ausgewogen"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "ein ausgewogenes Verhältnis zwischen Regulierung und Meinungsfreiheit"
+      ],
+      "justification": "Maßnahmen sollen Hass bekämpfen, ohne die Meinungsfreiheit zu stark einzuschränken."
+    },
+    {
+      "source_concept": "Forschung",
+      "target_concept": "Datenzugang",
+      "source_valence": 0.6,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Forschern den Zugang zu Daten ermöglichen"
+      ],
+      "justification": "Zugang zu Netzwerksdaten ist notwendig für wirksame Maßnahmen gegen Hass im Netz."
+    }
+  ],
+  "ID1922802700": [
+    {
+      "source_concept": "Pressefreiheit",
+      "target_concept": "Sicherheit der Journalistinnen und Journalisten",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unabhängige",
+        "geschützte"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Pressefreiheit ist nicht nur auf Zensurfreiheit zu reduzieren, sondern betrifft auch die Sicherheit der Journalistinnen und Journalisten"
+      ],
+      "justification": "Verbindung zwischen Pressefreiheit und Schutz der Journalisten"
+    },
+    {
+      "source_concept": "Gewalt gegen Journalistinnen und Journalisten",
+      "target_concept": "Angriff auf Demokratie",
+      "source_valence": -0.9,
+      "target_valence": -1.0,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -1.0,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Angriffe",
+        "Bedrohungen"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Jeder Fall von Einschüchterung, Bedrohung und Denunziation des freien Wortes ist ein Angriff auf die Demokratie"
+      ],
+      "justification": "Gewalt gegen Journalisten gefährdet demokratische Werte"
+    },
+    {
+      "source_concept": "soziale Netzwerke",
+      "target_concept": "Gefährdung des gesellschaftlichen Diskurses",
+      "source_valence": -0.7,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "systematisch infrage gestellt"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "Diese Unternehmen haben keinerlei Interesse daran, die Freiheit des Wortes im Sinne der Demokratie zu fördern"
+      ],
+      "justification": "soziale Netzwerke destabilisieren den gesellschaftlichen Diskurs"
+    },
+    {
+      "source_concept": "Legislative Maßnahmen",
+      "target_concept": "Schutz der digitalen Öffentlichkeit",
+      "source_valence": 0.9,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "richtig"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Es ist richtig, dass der Bundestag im letzten Jahr das Gesetz zur Bekämpfung des Rechtsextremismus und der Hasskriminalität beschlossen hat"
+      ],
+      "justification": "Gesetzgebung stärkt die Regulierung digitaler Plattformen"
+    },
+    {
+      "source_concept": "Medien",
+      "target_concept": "Funktion in der Gesellschaft",
+      "source_valence": 0.7,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "zentrale Funktion",
+        "neutrale"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "die klassischen Medien eine zentrale Funktion übernehmen müssen"
+      ],
+      "justification": "Medien sollen neutrale Berichterstattung gewährleisten"
+    },
+    {
+      "source_concept": "Rechtsstaat",
+      "target_concept": "Effektivität beim Vorgehen gegen Gewalt",
+      "source_valence": 0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "mit aller Konsequenz"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "deshalb muss der Rechtsstaat mit aller Konsequenz vorgehen"
+      ],
+      "justification": "stärkere Durchsetzung von Recht und Ordnung"
+    }
+  ],
+  "ID1922803000": [
+    {
+      "source_concept": "Meinungsvielfalt",
+      "target_concept": "freie Gesellschaften",
+      "source_valence": 0.8,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Grundpfeiler"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Meinungsvielfalt, Meinungsfreiheit und publizistische Vielfalt sind die Grundpfeiler freier und offener Gesellschaften"
+      ],
+      "justification": "Verbindung von Meinungsfreiheit mit demokratischer Gesellschaft."
+    },
+    {
+      "source_concept": "Desinformation und Hassrede",
+      "target_concept": "Gefahr für Demokratie",
+      "source_valence": -0.8,
+      "target_valence": -0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gefährlich"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Sie gefährden die freie Meinungsbildung und den offenen Diskurs. Sie sind eine Gefahr für unsere Demokratie."
+      ],
+      "justification": "Darstellung der negativen Auswirkungen von Desinformation auf die Demokratie."
+    },
+    {
+      "source_concept": "Hass und Hetze",
+      "target_concept": "Betroffenheit Frauen",
+      "source_valence": 0.4,
+      "target_valence": -0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "überproportional"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Frauen sind aber überproportional häufig im sexuellen Kontext oder im Hinblick auf ihr äußeres Erscheinungsbild mit Hasskommentaren konfrontiert."
+      ],
+      "justification": "Quantitative Darstellung von Diskriminierung gegenüber Frauen."
+    },
+    {
+      "source_concept": "Gesetze",
+      "target_concept": "Schutz vor Hass im Netz",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Wir brauchen nationale und europäische Gesetze."
+      ],
+      "justification": "Betonung der Notwendigkeit rechtlicher Maßnahmen."
+    },
+    {
+      "source_concept": "Medienregulierung",
+      "target_concept": "Medienkompetenz",
+      "source_valence": 0.5,
+      "target_valence": 0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Zur weiteren Erhöhung der Medienkompetenz ... fördern und weiterentwickeln."
+      ],
+      "justification": "Verbindung von Regulierung mit Bildungsmaßnahmen zur Verbesserung der Medienkompetenz."
+    },
+    {
+      "source_concept": "öffentlich-rechtlicher Rundfunk",
+      "target_concept": "Vertrauen und Glaubwürdigkeit",
+      "source_valence": 0.9,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.9,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "vertrauenswürdig"
+      ],
+      "certainty_score": 0.95,
+      "evidence": [
+        "In der Pandemie hat sich gezeigt, dass ... öffentlich-rechtliche Programme ... die Menschen ... überzeugt haben."
+      ],
+      "justification": "Stärkung des öffentlichen Rundfunks aufgrund seiner Glaubwürdigkeit."
+    }
+  ],
+  "ID1922809400": [
+    {
+      "source_concept": "Meinungsfreiheit",
+      "target_concept": "Demokratie",
+      "source_valence": 0.8,
+      "target_valence": 0.9,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "essentiell"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "„Ich muss nicht betonen, dass die Freiheiten der Meinungsäußerung und der Information für eine Demokratie von essenzieller Bedeutung sind.“"
+      ],
+      "justification": "Meinungsfreiheit wird als Grundpfeiler der Demokratie dargestellt."
+    },
+    {
+      "source_concept": "Hass und Hetze im Internet",
+      "target_concept": "Schutz der Grundrechte",
+      "source_valence": -0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "ungehemmt"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "„Das Internet darf nicht ein Ort werden, in dem sich Hass, Hetze und Lüge ungehemmt entfalten.“"
+      ],
+      "justification": "Das Internet sollte vor Hass und Hetze geschützt werden, um die Grundrechte zu sichern."
+    },
+    {
+      "source_concept": "Staatliche Regulierung von Internetgiganten",
+      "target_concept": "Meinungsvielfalt",
+      "source_valence": -0.6,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "gefährdet"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "„Es gefährdet die Meinungsvielfalt und den Zusammenhalt der Gesellschaft.“"
+      ],
+      "justification": "Unkontrollierte Machtkonzentration von Internetkonzernen bedroht die gesellschaftliche Meinungsvielfalt."
+    },
+    {
+      "source_concept": "öffentlich-rechtlicher Rundfunk",
+      "target_concept": "öffentliche Meinungsbildung",
+      "source_valence": 0.7,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unabhängig"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "„Der öffentlich-rechtliche Rundfunk ist eine unabhängige Institution, die den öffentlichen Raum und die Öffentlichkeit gestaltet.“"
+      ],
+      "justification": "Der öffentlich-rechtliche Rundfunk trägt wesentlich zur öffentlichen Meinungsbildung bei."
+    },
+    {
+      "source_concept": "Algorithmische Entscheidungssysteme",
+      "target_concept": "Meinungsbildung",
+      "source_valence": -0.5,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "neutral",
+      "association_type": "claim",
+      "association_valence": -0.5,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "kontrolliert"
+      ],
+      "certainty_score": 0.75,
+      "evidence": [
+        "„Wenn sie Profile von Nutzern und Nutzerinnen erstellen und ihre Gewinne mit personalisierten Daten maximieren.“"
+      ],
+      "justification": "Algorithmische Systeme beeinflussen Meinungsbildungsprozesse und müssen reguliert werden."
+    },
+    {
+      "source_concept": "Regulierung im digitalen Raum",
+      "target_concept": "Demokratischer Diskurs",
+      "source_valence": 0.6,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "notwendig"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "„Wir brauchen eine gemeinsame Öffentlichkeit, in der Menschen in gegenseitiger Achtung und auf der Basis von Vernunft und Wahrheit um das bessere Argument ringen.“"
+      ],
+      "justification": "Eine stärkere Regulierung fördert einen fairen und sachlichen Austausch im digitalen Diskurs."
+    },
+    {
+      "source_concept": "Zensurvorwürfe gegen NetzDG",
+      "target_concept": "Meinungsvielfalt",
+      "source_valence": -0.8,
+      "target_valence": 0.7,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unbegründet"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "„Es ist doch so, dass diejenigen die Meldemechanismen der Social-Media-Kanäle missbrauchen, die für sie unangenehme Meinungen aus dem Diskurs drängen.“"
+      ],
+      "justification": "Der Vorwurf der Zensur ist unbegründet, da Regelungen vor allem gegen Missbrauch gerichtet sind."
+    }
+  ],
+  "ID1922810000": [
+    {
+      "source_concept": "Meinungsfreiheit",
+      "target_concept": "Demokratie",
+      "source_valence": 0.8,
+      "target_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "schützend",
+        "demokratisch"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Die Meinungsfreiheit schützt ... Demokratie"
+      ],
+      "justification": "Die Rede betont, dass Meinungsfreiheit ein Grundpfeiler der Demokratie ist."
+    },
+    {
+      "source_concept": "AfD",
+      "target_concept": "Fake News",
+      "source_valence": -0.6,
+      "target_valence": -0.6,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.6,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "digitaler Brandbeschleuniger"
+      ],
+      "certainty_score": 0.85,
+      "evidence": [
+        "Die AfD ist digitaler Brandbeschleuniger von Fake News"
+      ],
+      "justification": "Die Rede beschreibt die AfD als Ursache für die Verbreitung falscher Inhalte im Netz."
+    },
+    {
+      "source_concept": "Meinungsdiktatur",
+      "target_concept": "1945",
+      "target_valence": 0.7,
+      "source_valence": -0.2,
+      "source_target_logical_coherence": "inconsistent",
+      "association_type": "claim",
+      "association_valence": -0.2,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "Unsinn"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Völliger Blödsinn! ... die Meinungsdiktatur von rechts haben wir 1945 beendet"
+      ],
+      "justification": "Die Aussage relativiert die historische Verbindung zwischen Meinungsdiktatur und Jahr 1945."
+    },
+    {
+      "source_concept": "Zivilrecht, Strafrecht, NetzDG, Digital Services Act",
+      "target_concept": "Meinungsfreiheit",
+      "target_valence": 0.9,
+      "source_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "effektiv",
+        "rechtlich abgesichert"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "haben wir ... in Deutschland das Zivilrecht, das Strafrecht, das NetzDG ..."
+      ],
+      "justification": "Die Maßnahmen dienen dem Schutz der Persönlichkeitsrechte innerhalb der Meinungsfreiheit."
+    },
+    {
+      "source_concept": "Fake News",
+      "target_concept": "Fake News oder alternative Fakten",
+      "target_valence": -0.8,
+      "source_valence": -0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": -0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "unwahr",
+        "falsch"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Die Meinungsfreiheit schützt keine unwahren Tatsachenaussagen, also keine Fake News."
+      ],
+      "justification": "Die Rede macht deutlich, dass Fake News kein Recht sind."
+    },
+    {
+      "source_concept": "Medienkompetenz, Medienresilienz",
+      "target_concept": "Bekämpfung von Fake News",
+      "target_valence": 0.7,
+      "source_valence": 0.7,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.7,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "wichtig",
+        "ausbaufähig"
+      ],
+      "certainty_score": 0.8,
+      "evidence": [
+        "Medienkompetenz und Medienresilienz – beides ist ausbaufähig"
+      ],
+      "justification": "Es wird betont, dass Medienkompetenz notwendig ist, um Fake News zu bekämpfen."
+    },
+    {
+      "source_concept": "Meinungsvielfalt, Meinungspluralismus",
+      "target_concept": "verfassungsrechtliches Gebot",
+      "target_valence": 0.9,
+      "source_valence": 0.8,
+      "source_target_logical_coherence": "consistent",
+      "association_type": "claim",
+      "association_valence": 0.8,
+      "epistemic_frame": "belief",
+      "explicitness_level": "explicit",
+      "evaluation_terms": [
+        "sichern",
+        "verfassungsrechtlich geboten"
+      ],
+      "certainty_score": 0.9,
+      "evidence": [
+        "Diese Einrichtungen sollen Meinungsvielfalt und Meinungspluralismus sichern – ein verfassungsrechtliches Gebot"
+      ],
+      "justification": "Die Aussage unterstreicht, dass Vielfalt gesetzlich verankert ist."
+    }
+  ]
+}
