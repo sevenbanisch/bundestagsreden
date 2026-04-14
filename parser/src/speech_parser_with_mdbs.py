@@ -190,7 +190,7 @@ def parse(legislature_period: int, with_comments: bool) -> None:
 
 
 def parse_speeches():
-    lp = input('Select legislative period (19 or 20): ')
+    lp = input('Select legislative period (19 or 20 or 21): ')
     with_comments = input('Shall comments be included? (y or n): ')
 
     parse(lp, with_comments == 'y')
