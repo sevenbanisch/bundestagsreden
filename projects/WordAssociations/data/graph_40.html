@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 550px;
+                 background-color: black;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightcoral", "font": {"color": "white"}, "id": "0", "label": "rechtsextrem", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "1", "label": "rechtsextremismus", "shape": "dot", "size": 14}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "2", "label": "mord", "shape": "dot", "size": 11}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3", "label": "verfassungsschutz", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "4", "label": "rassistisch", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "5", "label": "sicherheitsbeh\u00f6rde", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "6", "label": "extremismus", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "7", "label": "netzwerk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "8", "label": "antisemitisch", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "9", "label": "hetze", "shape": "dot", "size": 8}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "10", "label": "anschlag", "shape": "dot", "size": 8}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "11", "label": "hass", "shape": "dot", "size": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "13", "label": "rassismus", "shape": "dot", "size": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "15", "label": "grundordnung", "shape": "dot", "size": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "16", "label": "islamistisch", "shape": "dot", "size": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "32", "label": "bedrohung", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "25", "label": "t\u00e4ter", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "29", "label": "terror", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "12", "label": "rechter", "shape": "dot", "size": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "14", "label": "antisemitismus", "shape": "dot", "size": 7}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "21", "label": "polizei", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "35", "label": "meinungsfreiheit", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "19", "label": "straftat", "shape": "dot", "size": 6}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "24", "label": "verbreiten", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "27", "label": "storch", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "18", "label": "feind", "shape": "dot", "size": 6}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "38", "label": "polizist", "shape": "dot", "size": 4}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "23", "label": "rundfunk", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "30", "label": "news", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "33", "label": "\u00f6ffentlichrechtlich", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "34", "label": "fake", "shape": "dot", "size": 5}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "37", "label": "journalist", "shape": "dot", "size": 4}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "17", "label": "rechte", "shape": "dot", "size": 6.888551754707233}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "20", "label": "wehrbeauftragte", "shape": "dot", "size": 6.657744122873859}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "22", "label": "aktionsplan", "shape": "dot", "size": 5.943831783431377}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "26", "label": "angreifen", "shape": "dot", "size": 5.559807559488483}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "28", "label": "demonstration", "shape": "dot", "size": 5.4132118453636355}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "31", "label": "\u00e4u\u00dferung", "shape": "dot", "size": 5.277899642645798}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "36", "label": "gewalt", "shape": "dot", "size": 4.985043143007161}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "39", "label": "innenminister", "shape": "dot", "size": 4.852468943347811}]);
+                  edges = new vis.DataSet([{"color": "steelblue", "community": 0, "from": "0", "to": "1", "width": 4.866803446868575}, {"color": "steelblue", "community": 0, "from": "0", "to": "2", "width": 3.717133484088878}, {"color": "steelblue", "community": 0, "from": "0", "to": "3", "width": 3.636779968758061}, {"color": "steelblue", "community": 0, "from": "0", "to": "4", "width": 3.5941145423330934}, {"color": "steelblue", "community": 0, "from": "0", "to": "5", "width": 3.4306869974324483}, {"color": "steelblue", "community": 0, "from": "0", "to": "6", "width": 3.3892232338093935}, {"color": "steelblue", "community": 0, "from": "0", "to": "7", "width": 3.34682981477659}, {"color": "steelblue", "community": 0, "from": "0", "to": "8", "width": 3.3347985679485888}, {"color": "steelblue", "community": 0, "from": "0", "to": "9", "width": 2.8883383214763323}, {"color": "steelblue", "community": 0, "from": "0", "to": "10", "width": 2.7170087384128063}, {"color": "steelblue", "community": 0, "from": "1", "to": "2", "width": 3.28403748327984}, {"color": "steelblue", "community": 0, "from": "1", "to": "3", "width": 4.020866178416751}, {"color": "steelblue", "community": 0, "from": "1", "to": "4", "width": 3.222217153294435}, {"color": "steelblue", "community": 0, "from": "1", "to": "5", "width": 3.5274142016477263}, {"color": "steelblue", "community": 0, "from": "1", "to": "6", "width": 5.684057324942681}, {"color": "steelblue", "community": 0, "from": "1", "to": "11", "width": 2.81188820929194}, {"color": "steelblue", "community": 0, "from": "1", "to": "13", "width": 4.126057192684271}, {"color": "steelblue", "community": 0, "from": "1", "to": "15", "width": 2.8274865566099314}, {"color": "steelblue", "community": 0, "from": "1", "to": "16", "width": 3.31699658032908}, {"color": "steelblue", "community": 0, "from": "1", "to": "32", "width": 2.9479667526078743}, {"color": "steelblue", "community": 0, "from": "2", "to": "4", "width": 4.050774535885815}, {"color": "steelblue", "community": 0, "from": "2", "to": "8", "width": 2.734154240086075}, {"color": "steelblue", "community": 0, "from": "2", "to": "9", "width": 2.942090989381856}, {"color": "steelblue", "community": 0, "from": "2", "to": "25", "width": 2.89781677662559}, {"color": "steelblue", "community": 0, "from": "2", "to": "29", "width": 3.180562491799197}, {"color": "steelblue", "community": 0, "from": "2", "to": "10", "width": 3.37779894352021}, {"color": "steelblue", "community": 0, "from": "2", "to": "11", "width": 2.9694322532471857}, {"color": "steelblue", "community": 0, "from": "3", "to": "5", "width": 3.9309877113735245}, {"color": "steelblue", "community": 0, "from": "3", "to": "6", "width": 3.935915450207516}, {"color": "steelblue", "community": 0, "from": "3", "to": "15", "width": 3.8294932593778275}, {"color": "steelblue", "community": 0, "from": "3", "to": "16", "width": 2.907441912113699}, {"color": "steelblue", "community": 0, "from": "4", "to": "8", "width": 4.0077964412381135}, {"color": "steelblue", "community": 0, "from": "4", "to": "9", "width": 3.2295379767625345}, {"color": "steelblue", "community": 0, "from": "4", "to": "10", "width": 3.259041467277388}, {"color": "steelblue", "community": 0, "from": "4", "to": "11", "width": 2.718631772537483}, {"color": "steelblue", "community": 0, "from": "4", "to": "12", "width": 2.853099054984814}, {"color": "steelblue", "community": 0, "from": "4", "to": "13", "width": 6.097005742660894}, {"color": "steelblue", "community": 0, "from": "4", "to": "14", "width": 2.7115004443023953}, {"color": "steelblue", "community": 0, "from": "5", "to": "6", "width": 3.7682923286572003}, {"color": "steelblue", "community": 0, "from": "5", "to": "10", "width": 3.7600595604111566}, {"color": "steelblue", "community": 0, "from": "5", "to": "16", "width": 3.774713951309841}, {"color": "steelblue", "community": 0, "from": "5", "to": "21", "width": 2.9009879755962915}, {"color": "steelblue", "community": 0, "from": "6", "to": "15", "width": 4.290580758961079}, {"color": "steelblue", "community": 0, "from": "6", "to": "16", "width": 3.9680793503020464}, {"color": "steelblue", "community": 0, "from": "7", "to": "9", "width": 2.8613956658657598}, {"color": "steelblue", "community": 0, "from": "7", "to": "35", "width": 3.4683933528360447}, {"color": "steelblue", "community": 0, "from": "8", "to": "9", "width": 3.1039231919954666}, {"color": "steelblue", "community": 0, "from": "8", "to": "11", "width": 2.9582028503206645}, {"color": "steelblue", "community": 0, "from": "8", "to": "13", "width": 2.6895788926539366}, {"color": "steelblue", "community": 0, "from": "8", "to": "14", "width": 7.448405229310486}, {"color": "steelblue", "community": 0, "from": "8", "to": "19", "width": 4.221019035186761}, {"color": "steelblue", "community": 0, "from": "9", "to": "11", "width": 6.1770588920384135}, {"color": "steelblue", "community": 0, "from": "9", "to": "24", "width": 2.781118522501535}, {"color": "steelblue", "community": 0, "from": "9", "to": "35", "width": 3.5490581273403503}, {"color": "steelblue", "community": 0, "from": "10", "to": "16", "width": 4.3784246679603065}, {"color": "steelblue", "community": 0, "from": "10", "to": "29", "width": 3.8440826831808743}, {"color": "steelblue", "community": 0, "from": "11", "to": "13", "width": 2.852363089589644}, {"color": "steelblue", "community": 0, "from": "11", "to": "35", "width": 3.417518368953971}, {"color": "steelblue", "community": 0, "from": "12", "to": "29", "width": 2.687304806168004}, {"color": "steelblue", "community": 0, "from": "13", "to": "14", "width": 3.9838609806015612}, {"color": "steelblue", "community": 0, "from": "13", "to": "21", "width": 2.905099187621619}, {"color": "steelblue", "community": 0, "from": "14", "to": "27", "width": 2.694384415030438}, {"color": "steelblue", "community": 0, "from": "15", "to": "18", "width": 3.723973446581672}, {"color": "steelblue", "community": 0, "from": "16", "to": "29", "width": 5.332609661092631}, {"color": "steelblue", "community": 0, "from": "19", "to": "25", "width": 3.4186271575967035}, {"color": "steelblue", "community": 0, "from": "21", "to": "38", "width": 4.831166251125037}, {"color": "steelblue", "community": 0, "from": "23", "to": "30", "width": 3.061544556787507}, {"color": "steelblue", "community": 0, "from": "23", "to": "33", "width": 11.138533771802814}, {"color": "steelblue", "community": 0, "from": "23", "to": "34", "width": 2.9129561531817405}, {"color": "steelblue", "community": 0, "from": "23", "to": "37", "width": 4.091912720086568}, {"color": "steelblue", "community": 0, "from": "24", "to": "30", "width": 4.345736547469699}, {"color": "steelblue", "community": 0, "from": "24", "to": "34", "width": 4.247561837233283}, {"color": "steelblue", "community": 0, "from": "30", "to": "33", "width": 3.2009985467889956}, {"color": "steelblue", "community": 0, "from": "30", "to": "34", "width": 10.045541506043252}, {"color": "steelblue", "community": 0, "from": "30", "to": "35", "width": 2.9232938447779167}, {"color": "steelblue", "community": 0, "from": "33", "to": "34", "width": 3.0567406298566784}, {"color": "steelblue", "community": 0, "from": "33", "to": "37", "width": 4.196715871725546}, {"color": "steelblue", "community": 0, "from": "34", "to": "35", "width": 2.858057897409002}, {"color": "steelblue", "community": 0, "from": "35", "to": "37", "width": 2.9162714469683615}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"color": {"inherit": true}, "size": 1000}, "edges": {"width": 1000, "color": {"inherit": true}, "selfReferenceSize": null, "selfReference": {"angle": 0.7853981633974483}, "smooth": false}, "physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -8000}, "minVelocity": 0.075, "maxVelocity": 2}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
