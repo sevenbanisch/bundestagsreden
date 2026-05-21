@@ -133,6 +133,8 @@ data/*
 private/*
 #html/*
 
+autosave_results_*.json
+
 # Jetbrains IDEs
 /.idea
 
