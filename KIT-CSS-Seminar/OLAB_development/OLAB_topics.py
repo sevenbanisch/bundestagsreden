@@ -27,12 +27,14 @@ def load_data(legislatur):
     alleReden.sort(key = lambda x:x['date'])
     return alleReden
 
-alleReden = load_data(20)
+WP = 20
+alleReden = load_data(WP)
 st.write("Anzahl Reden:", len(alleReden))
 
 # Load the topic annotations
-with open("../WoerkingWithLLMTopics/topic_annotations_WP20.json", "r", encoding="utf-8") as f:
+with open(f"../../annotations/topics/topic_annotations_WP{WP}.json", "r", encoding="utf-8") as f:
     themen_annot = json.load(f)
+
 
 ########################################################
 
