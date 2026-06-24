@@ -137,18 +137,18 @@ Erstellen Sie mindestens fünf aussagekräftige Statistiken oder Visualisierunge
 st.markdown("""
 ### Mögliche Analysen
 
-- Anzahl der Reden zum Thema über die Zeit
-- Parteien mit den meisten Reden zum Thema
-- Redner:innen mit den meisten Beiträgen
-- Durchschnittliche Redelänge nach Partei
+- Verteilung der Redeanzahl pro Partei zur Auswahl
+- Verhältnis zur Gesamtanzahl im Datensatz (Wichtig zur Normalisierung)
+- Redner:innen mit den meisten Beiträgen oder Keywords
 - Entwicklung des Themas über die Wahlperioden
 - Häufigste Wörter im Themenbereich
 - Vergleich zweier Parteien hinsichtlich des Themas
 - Anteil des Themas an allen Reden einer Wahlperiode
 - Welche weiteren Themen treten häufig gemeinsam auf?
+- Anzahl der Reden zum Thema über die Zeit
 - Zeitliche Entwicklung einzelner Schlüsselbegriffe
-- Verteilung der Reden auf Ausschüsse oder Debatten
 - Unterschiede zwischen Regierungs- und Oppositionsparteien
 - Parteien, die das Thema besonders früh oder spät aufgegriffen haben
-- Top 20 Redner:innen nach kumulierter Redezeit bzw. Wortzahl
+- Wie ist das Geschlechterverhältnis? 
+- **Gerne auch eigene Analysen mit Bezug zur Forschungsfrage!**
 """)
